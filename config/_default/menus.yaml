@@ -1,0 +1,39 @@
+main:
+  - name: Home
+    url: /
+    weight: 1
+  - name: About
+    url: about/
+    weight: 2
+  - name: Elements
+    url: elements/
+    weight: 3
+  - weight: 4
+    name: Pages
+    hasChildren: true
+  - parent: Pages
+    name: Blog
+    url: blog/
+  - parent: Pages
+    name: Contact
+    url: contact/
+  - parent: Pages
+    name: Authors
+    url: authors/
+  - parent: Pages
+    name: Categories
+    url: categories/
+  - parent: Pages
+    name: 404 Page
+    url: 404/
+
+footer:
+  - name: About
+    url: about/
+    weight: 1
+  - name: Elements
+    url: elements/
+    weight: 2
+  - name: Privacy Policy
+    url: privacy-policy/
+    weight: 3

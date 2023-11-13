@@ -971,3 +971,6 @@
     @apply dark:text-darkmode-primary; }
   .search-wrapper .search-result-item:focus, .search-wrapper .search-result-item.search-item-selected, .search-wrapper .search-result-item:hover {
     @apply dark:bg-darkmode-primary/10; }
+
+.contact-link {
+  @apply text-primary dark:text-darkmode-primary; }
