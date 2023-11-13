@@ -1,3 +1,3 @@
 ---
-title: "Directory Of Trusted Professionals"
+title: "Trusted Professionals Directory"
 ---
