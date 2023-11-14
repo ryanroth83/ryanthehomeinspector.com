@@ -10,12 +10,14 @@ hasCJKLanguage: false
 permalinks:
   page:
     pages: /:slugorfilename/
+
 module:
   mounts:
     - source: assets
       target: assets
     - source: hugo_stats.json
       target: assets/watching/hugo_stats.json
+
 build:
   noJSConfigInAssets: false
   useResourceCacheWhen: fallback
@@ -34,15 +36,18 @@ build:
       target: css
     - source: assets/.*\.(.*)$
       target: $1
+
 outputs:
   home:
     - HTML
     - RSS
     - WebAppManifest
     - SearchIndex
+
 imaging:
   quality: 90
   resampleFilter: Lanczos
+
 caches:
   images:
     dir: :resourceDir/_gen
@@ -50,6 +55,7 @@ caches:
   assets:
     dir: :resourceDir/_gen
     maxAge: 720h
+
 markup:
   goldmark:
     renderer:
@@ -60,10 +66,12 @@ markup:
     startLevel: 2
     endLevel: 5
     ordered: true
+
 mediaTypes:
   application/manifest+json:
     suffixes:
       - webmanifest
+
 outputFormats:
   WebAppManifest:
     mediaType: application/manifest+json
@@ -73,6 +81,12 @@ outputFormats:
     baseName: searchindex
     isPlainText: true
     notAlternative: true
+  
+taxonomies:
+  category: categories
+  directory: directory
+  tag: tags
+
 params:
   plugins:
     css:

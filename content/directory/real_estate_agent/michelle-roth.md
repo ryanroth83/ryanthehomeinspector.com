@@ -5,6 +5,7 @@ email: texasmamasellshomes@gmail.com
 phone: 832-339-7300
 image: "https://dtzulyujzhqiu.cloudfront.net//profiles/1683058006.jpg"
 description: "Realtor - JPAR | The Sears Group"
+directory: ["Real Estate Agent", "Realtor"]
 social:
   - name: facebook
     icon: fa-brands fa-square-facebook
