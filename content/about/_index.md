@@ -1,9 +1,10 @@
 ---
-title: "I'm Ryan The Home Inspector"
+title: "Ryan Roth"
 meta_title: "About"
 description: "About Me"
-image: "/images/avatar.png"
+image: "/images/ryanthehomeinspector.png"
 draft: false
 ---
+A.K.A "Ryan The Home Inspector"
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Born and rasied outside of Cincinnati, Ohio. and moved to Houston in 2017. After having many issue after purching a new build house I reliezed the importance of a home inspection. I, as many people still think, thought that a new build house would not need me to have inspected. I was under the impression that city/county perfomred all the required inspections. 
