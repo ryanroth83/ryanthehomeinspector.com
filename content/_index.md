@@ -24,6 +24,5 @@ features:
     button:
       enable: true
       label: "Trusted Professional Directory"
-      link: "/directory"
-      
+      link: "/directory"      
 ---
