@@ -1,5 +1,5 @@
 ---
-enable: true
+enable: false
 title: "What Clients Are Saying About Ryan The Home Inspector & KeenEye Inspections."
 description: "Don't just take our word for it - hear from some of our satisfied Client!  Check out some of our testimonials below to see what others are saying about us."
 

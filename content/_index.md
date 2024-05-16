@@ -11,18 +11,23 @@ banner:
 
 # Features
 features:
-  - title: "Proud Part of KeenEye Inspections"
-    image: "/images/keeneyeinspections-logo.png"
-    content: "Ryan The Home Inspector has partnered with KeeenEye Inspections to provide the best home inspections in the Houston area."
+
+ - title: "Qualified, Unbiased & Honest Inspector"
+    image: "/images/interNACHI-CPI.png"
+    content: "As an independent home inspector, I work for you to report the facts on the condition of the house or building being inspected without any pressure from a company to meet any type of metric. I am able to taylor each inspection to the clients individual needs and produce an honest & unbiased report. You will have all the information you need to make the best descion for you. I will be available to answer any questions so you and your realestate agent can better negatiate repairs, price or decide to continue looking."
+    
     bulletpoints:
-      - "Buyer Inspections"
-      - "Seller Inspection"
-      - "Rehab Inspections"
-      - "Maintenance Inspection"
-      - "Commercial Building Inspections"
-      - "Wood Destoying Insect inspections"
+      - "Texas Licenced Home Inspector<br>TREC Licence Number: 25791"
+      - "interNACH Certified Professional Inspector (CPI)"
+      - "I explain the condition of the house and option while staying unbiased."
+      - "I work with you & your real estate agent to help you make an informed desision."
     button:
       enable: true
+      label: "interNACH Certifications"
+      link: "https://www.nachi.org/certified-inspectors/ryan-roth-trec-25791-164888"
+      
+    button:
+      enable: 
       label: "Book Inspection"
       link: "/book-inspection"
 
@@ -39,18 +44,8 @@ features:
       enable: true
       label: "Trusted Professional Directory"
       link: "/directory"
-
-  - title: "Qualified, Unbiased & Honest Inspector"
-    image: "/images/interNACHI-CPI.png"
-    content: "As a home inspecpector I work for you to report the facts on the condition of the house or building being inspected so you have all the information you need to make the best descion for you. Then you and your realestate agentent can use the report to negatiate price, repairs or decide to contenue looking."
-    
-    bulletpoints:
-      - "Texas Licenced Home Inspector<br>TREC Licence Number: 25791"
-      - "interNACH Certified Professional Inspector (CPI)"
-      - "I explain the condition of the house and option while staying unbiased."
-      - "I work with you & your real estate agent to help you make an informed desision."
-    button:
-      enable: true
-      label: "interNACH Certifications"
-      link: "https://www.nachi.org/certified-inspectors/ryan-roth-trec-25791-164888"
+      
 ---
+ 
+
+ 
