@@ -8,6 +8,6 @@ description: "TREC Consumer Protection Notice"
 draft: false
 ---
 ## TREC Consumer Protection Notice
-<iframe src='https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-5_0.pdf?iframe=1' scrolling="no" style="border:0;height:100vh;width:100vh"></iframe>
+<iframe src='https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-5_0.pdf?iframe=1' scrolling="no" style="border:0;height:100%;width:100%"></iframe>
 
 [Click Here For More Information](https://www.trec.texas.gov/forms/consumer-protection-notice)
