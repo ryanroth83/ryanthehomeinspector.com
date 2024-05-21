@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Ryan The Home Inspector"
-  content: "Your Honest Home Inspector"
+  content: "\"Your Honest & Unbiased Home Inspector\""
   image: "/images/ryanthehomeinspector.png"
   button:
     enable: true
@@ -27,7 +27,8 @@ features:
   
 
   - title: "Honesty Is Garanteed!"
-    image: "/images/HONOR_HIGH_DARK_BACKROUND.png"
+    image: "/images/HONOR_HIGH_LIGHT_BACKROUND.png"
+    image_darkmode: "/images/HONOR_HIGH_DARK_BACKROUND.png"
     content: "Trust is a major part in choosing a home inspector. You don't have to rely on just my word, I've been backround checked by TREC and I am garanteed honest by InterNACHI® with the Honnor Garantee."
     bulletpoints:
       - "Background Checked By TREC"

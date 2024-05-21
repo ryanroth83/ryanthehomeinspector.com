@@ -37,5 +37,5 @@ footer:
     weight: 2
  
   - name: TREC Consumer Protection Notice
-    url:  /trec_notice
+    url:  https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-5_0.pdf
     weight: 1
