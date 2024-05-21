@@ -2,38 +2,40 @@ main:
   - name: Home
     url: /
     weight: 1
+
   - name: About
     url: about/
-    weight: 2
-  - name: Elements
-    url: elements/
-    weight: 3
-  - weight: 4
-    name: Pages
-    hasChildren: true
-  - parent: Pages
-    name: Blog
+    weight: 5
+
+  - name: Blog
     url: blog/
-  - parent: Pages
-    name: Contact
-    url: contact/
-  - parent: Pages
-    name: Authors
-    url: authors/
-  - parent: Pages
-    name: Categories
-    url: categories/
-  - parent: Pages
-    name: 404 Page
-    url: 404/
+    weight: 4
+
+  - name: Trusted Profesional Directory
+    url: directory/
+    weight: 2
+
+  - weight: 3
+    name: Home Maintenance Library
+    hasChildren: true
+  
+  - parent: Home Maintenance Library
+    name: Understanding My House
+    url: understanding/
+  
+  - parent: Home Maintenance Library
+    name: Maintenance & Repairs
+    url: maintenance/
+  
+  - parent: Home Maintenance Library
+    name: Appliance Information & Manuals
+    url: manuals/
 
 footer:
   - name: About
     url: about/
-    weight: 1
-  - name: Elements
-    url: elements/
     weight: 2
-  - name: Privacy Policy
-    url: privacy-policy/
-    weight: 3
+ 
+  - name: TREC Consumer Protection Notice
+    url:  /trec_notice
+    weight: 1

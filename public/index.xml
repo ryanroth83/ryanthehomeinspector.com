@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ryan The Home Inspector</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Ryan The Home Inspector</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to build an Application with modern Technology</title>
+      <link>http://localhost:1313/blog/post-1/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-1/</guid>
+      <description>Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat.</description>
+    </item>
+    <item>
+      <title>How to build an Application with modern Technology</title>
+      <link>http://localhost:1313/blog/post-2/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-2/</guid>
+      <description>Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat.</description>
+    </item>
+    <item>
+      <title>How to build an Application with modern Technology</title>
+      <link>http://localhost:1313/blog/post-3/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-3/</guid>
+      <description>Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat.</description>
+    </item>
+    <item>
+      <title>How to build an Application with modern Technology</title>
+      <link>http://localhost:1313/blog/post-4/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-4/</guid>
+      <description>Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat.</description>
+    </item>
+    <item>
+      <title>Andrew Graesser</title>
+      <link>http://localhost:1313/directory/insurance_agent/andrew-graesser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/directory/insurance_agent/andrew-graesser/</guid>
+      <description>About Andrew At Andrew Graesser State Farm, we believe the protection you have should match the things you want to protect.</description>
+    </item>
+    <item>
+      <title>Book Inspection</title>
+      <link>http://localhost:1313/book-inspection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book-inspection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dena Musfy</title>
+      <link>http://localhost:1313/directory/real_estate_agent/dena-musfy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/directory/real_estate_agent/dena-musfy/</guid>
+      <description>About Dena Dena Musfy has a decade of professional recruiting experience in two major industries.</description>
+    </item>
+    <item>
+      <title>Michelle Roth</title>
+      <link>http://localhost:1313/directory/real_estate_agent/michelle-roth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/directory/real_estate_agent/michelle-roth/</guid>
+      <description>Hi, I&amp;rsquo;m Michelle Roth, a realtor based in Houston, Texas, and the proud owner of &amp;ldquo;Texas Mama Sells Homes&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Ready to build your next project with Hugo?</title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid></guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ryan Roth</title>
+      <link>http://localhost:1313/authors/john-doe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/authors/john-doe/</guid>
+      <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    <item>
+      <title>TREC Consumer Protection Notice</title>
+      <link>http://localhost:1313/trec_notice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/trec_notice/</guid>
+      <description>TREC Consumer Protection Notice Click Here For More Information </description>
+    </item>
+    <item>
+      <title>What Clients Are Saying About Ryan The Home Inspector &amp; KeenEye Inspections.</title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid></guid>
+      <description></description>
+    </item>
+    <item>
+      <title>William Jacob</title>
+      <link>http://localhost:1313/blog/william-jacob/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/william-jacob/</guid>
+      <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+  </channel>
+</rss>
