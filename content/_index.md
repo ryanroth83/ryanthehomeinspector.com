@@ -27,7 +27,7 @@ features:
   
 
   - title: "Honesty Is Garanteed!"
-    image: "/images/HONOR_HIGH_LIGHT_BACKROUND.png"
+    image: "/images/HONOR_HIGH_COLOR.png"
     image_darkmode: "/images/HONOR_HIGH_DARK_BACKROUND.png"
     content: "Trust is a major part in choosing a home inspector. You don't have to rely on just my word, I've been backround checked by TREC and I am garanteed honest by InterNACHI® with the Honnor Garantee."
     bulletpoints:
@@ -38,7 +38,7 @@ features:
     button:
       enable: true
       label: "More Details"
-      link: "https://www.nachi.org/honor.htm"
+      link: "https://www.nachi.org/honor.html"
 
 
 
