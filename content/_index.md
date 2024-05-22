@@ -3,7 +3,7 @@
 banner:
   title: "Ryan The Home Inspector"
   content: "\"Your Honest & Unbiased Home Inspector\""
-  image: "/images/ryanthehomeinspector.png"
+  image: "images/RTHI.png"
   button:
     enable: true
     label: "Book Inspection"
