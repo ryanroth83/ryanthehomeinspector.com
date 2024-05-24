@@ -5,6 +5,9 @@ email: texasmamasellshomes@gmail.com
 phone: 832-339-7300
 image: "https://dtzulyujzhqiu.cloudfront.net//profiles/1683058006.jpg"
 description: "Realtor - JPAR | The Sears Group"
+profession: ["Real Estate Agent"]
+location: ["Rosenberg", "Richmond", "Sugar Land", "Fort Bend County"]
+Language: ["English"]
 social:
   - name: facebook
     icon: fa-brands fa-square-facebook

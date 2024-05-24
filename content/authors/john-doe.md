@@ -1,8 +1,8 @@
 ---
-title: John Doe
-email: johndoe@email.com
+title: Ryan Roth
+email: contact@ryanthehomeinspector.com
 image: "/images/avatar.png"
-description: this is meta description
+description:AKA: Ryan The Home Inspector
 social:
   - name: github
     icon: fa-brands fa-github

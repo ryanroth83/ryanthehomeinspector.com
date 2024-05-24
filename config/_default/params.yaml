@@ -34,7 +34,6 @@ search:
 metadata:
   keywords:
     - Home Inspections
-    - KeenEye
   description: Ryan The Home Inspector
   author: Ryan Roth
   image: images/og-image.png
@@ -55,6 +54,10 @@ widgets:
   sidebar:
     - categories
     - tags
+  sidebar_directory:
+    - profession
+    - location
+    - language
 google_map:
   enable: false
   map_api_key: AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU
