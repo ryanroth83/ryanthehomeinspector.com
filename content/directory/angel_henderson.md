@@ -1,13 +1,13 @@
 ---
-title: 
+title: "Angel Henderson State Farm"
 name: "Angel Henderson"
-email: Angel.h.henderson.fc4c@statefarm.com
+email: "Angel.h.henderson.fc4c@statefarm.com"
 phone: 832-300-1400
-image: "/images/directory/profiles/angel_henderson.jpg"
-description: "Commercial Insurance"
+image: "/directory/profiles/angel_henderson.jpg"
+description: "Commercial Insurance Agent"
 company: "State Farm"
-logo: "/images/directory/logos/state_farm_logo.png"
-profession: ["Insurance Agent"]
+logo: "/directory/logos/state_farm_logo.png"
+indus: ["Insurance Agent"]
 location: ["Houston" , "Harris County"]
 Language: ["English", "Spanish" ]
 social:

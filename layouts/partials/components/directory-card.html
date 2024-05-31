@@ -10,7 +10,8 @@
     <h5>
      {{ .Params.Description }}
     </h5>
-    <img src="{{ .Params.Logo }}" width="70%">
+    <br>
+    <img src="{{ .Params.Logo }}" class="directory-logo">
     <br>
     <p class="mb-4">
      {{ .Summary }}
@@ -18,9 +19,13 @@
   </a>
 
   <p class="contact-link">
+    <a href="tel:{{ .Params.Phone }}">{{ .Params.Phone }}</a>
+    <br>
     <a href="mailto:{{ .Params.Email }}">{{ .Params.Email }}</a>
     <br>
-    <a href="tel:{{ .Params.Phone }}">{{ .Params.Phone }}</a>
+    <a href="{{ .Params.Website }}" target="_blank">
+      {{ .Params.Website }}</a>
+    <br>
     <br>
   </p>
   <br>
