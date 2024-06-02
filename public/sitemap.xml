@@ -70,9 +70,19 @@
   </url><url>
     <loc>http://localhost:1313/directory/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/directory/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/insurance/</loc>
+  </url><url>
+    <loc>http://localhost:1313/languages/</loc>
+  </url><url>
+    <loc>http://localhost:1313/locations/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/michelle_roth/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/</loc>
+  </url><url>
+    <loc>http://localhost:1313/professions/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
@@ -81,10 +91,6 @@
     <loc>http://localhost:1313/authors/sam-wilson/</loc>
   </url><url>
     <loc>http://localhost:1313/sections/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/test/</loc>
-  </url><url>
-    <loc>http://localhost:1313/trec_notice/</loc>
   </url><url>
     <loc>http://localhost:1313/authors/william-jacob/</loc>
   </url><url>
