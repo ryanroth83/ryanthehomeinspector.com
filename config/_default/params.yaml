@@ -54,10 +54,9 @@ widgets:
   sidebar:
     - categories
     - tags
-  sidebar_directory:
-    - profession
-    - location
-    - language
+    - professions
+    - locations
+    - languages
 google_map:
   enable: false
   map_api_key: AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU

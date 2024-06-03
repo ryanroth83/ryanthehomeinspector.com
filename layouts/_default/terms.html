@@ -35,9 +35,39 @@
             </li>
           {{ end }}
         {{ end }}
-        {{/* directory */}}
-        {{ if eq .Permalink (`directory/` | absLangURL) }}
-          {{ range site.Taxonomies.directory.ByCount }}
+        {{/* professions */}}
+        {{ if eq .Permalink (`professions/` | absLangURL) }}
+          {{ range site.Taxonomies.professions.ByCount }}
+            <li class="m-3 inline-block">
+              <a
+                href="{{ .Page.Permalink }}"
+                class="bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
+                {{ .Page.Title }}
+                <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
+                  {{ .Count }}
+                </span>
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+        {{/* locations */}}
+        {{ if eq .Permalink (`locations/` | absLangURL) }}
+          {{ range site.Taxonomies.locations.ByCount }}
+            <li class="m-3 inline-block">
+              <a
+                href="{{ .Page.Permalink }}"
+                class="bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
+                {{ .Page.Title }}
+                <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
+                  {{ .Count }}
+                </span>
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+        {{/* languages */}}
+        {{ if eq .Permalink (`languages/` | absLangURL) }}
+          {{ range site.Taxonomies.languages.ByCount }}
             <li class="m-3 inline-block">
               <a
                 href="{{ .Page.Permalink }}"
