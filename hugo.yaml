@@ -84,8 +84,10 @@ outputFormats:
   
 taxonomies:
   category: categories
-  directory: directory
   tag: tags
+  directory: directory
+  directory_language: directory_language
+  directory_location: directory_location
 
 params:
   plugins:

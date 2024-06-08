@@ -1,15 +1,15 @@
 ---
-title: Andrew Graesser
-name:
+title: "Andrew Graesser"
+name: Andrew Graesser
 email: andrew.graesser.e3t5@statefarm.com
 phone: 281-822-8850
 image: "/images/directory/profiles/andrew_graesser.webp"
 description: "State Farm Insurance Agent"
 company: "State Farm"
 logo: "/images/directory/logos/state_farm_logo.png"
-profession: ["Insurance Agent"]
-location: ["Houston" , "Harris County"]
-Language: [English","Spanish"]
+directory: ["Insurance Agent"]
+directory_location: ["Houston" , "Harris County"]
+directory_language: [English", "Spanish"]
 social:
   - name: facebook
     icon: fa-brands fa-square-facebook
