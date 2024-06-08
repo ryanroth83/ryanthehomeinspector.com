@@ -1,5 +1,5 @@
 ---
-title: 
+title: "Andrew Graesser"
 name: "Angel Henderson"
 email: Angel.h.henderson.fc4c@statefarm.com
 phone: 832-300-1400
@@ -7,9 +7,9 @@ image: "/images/directory/profiles/angel_henderson.jpg"
 description: "Commercial Insurance"
 company: "State Farm"
 logo: "/images/directory/logos/state_farm_logo.png"
-profession: ["Insurance Agent"]
-location: ["Houston" , "Harris County"]
-Language: ["English", "Spanish" ]
+directory: ["Insurance Agent"]
+directory_location: ["Houston" , "Harris County"]
+directory_language: ["English", "Spanish" ]
 social:
   - name: facebook
     icon: fa-brands fa-square-facebook

@@ -3,7 +3,7 @@
 banner:
   title: "Ryan The Home Inspector"
   content: "\"Your Honest & Unbiased Home Inspector\""
-  image: "images/RTHI.png"
+  image: "images/RTHI_Blue-Circle.png"
   button:
     enable: true
     label: "Book Inspection"
@@ -58,7 +58,7 @@ features:
 
 
   - title: "Trusted Profesional Directory"
-    image: "/images/directory.png"
+    image: "/images/directory/directory.png"
     content: "Directory of trusted professionals available to anyone, created for the benefit of my clients. I maintain this directory at no cost and expect nothing in return other than honest and quality services with open communication and willingness to correct any issue on the behalf of the client in a timely manner."
     bulletpoints:
       - "I have a trusted relationship with everyone listed in this directory."
