@@ -70,23 +70,17 @@
   </url><url>
     <loc>http://localhost:1313/directory/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory_language/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory_location/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory_language/english/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory_language/english/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory_location/harris-county/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory_location/houston/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/insurance-agent/</loc>
+  </url><url>
+    <loc>http://localhost:1313/languages/</loc>
+  </url><url>
+    <loc>http://localhost:1313/locations/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/michelle_roth/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/realtor/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
@@ -95,8 +89,6 @@
     <loc>http://localhost:1313/authors/sam-wilson/</loc>
   </url><url>
     <loc>http://localhost:1313/sections/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory_language/spanish/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/test/</loc>
   </url><url>

@@ -86,8 +86,8 @@ taxonomies:
   category: categories
   tag: tags
   directory: directory
-  directory_language: directory_language
-  directory_location: directory_location
+  language: languages
+  location: locations
 
 params:
   plugins:

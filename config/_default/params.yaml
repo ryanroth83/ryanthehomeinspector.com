@@ -10,6 +10,7 @@ theme_switcher: true
 theme_default: system
 mainSections:
   - blog
+  - directory
 contact_form_action: '#'
 google_tag_manager: ''
 google_adsense: ''
@@ -27,6 +28,7 @@ search:
   primary_color: '#121212'
   include_sections:
     - blog
+    - directory
   show_image: true
   show_description: true
   show_tags: true
@@ -54,7 +56,7 @@ widgets:
   sidebar:
     - categories
     - tags
-  sidebar_directory:
+  directory:
     - profession
     - location
     - language

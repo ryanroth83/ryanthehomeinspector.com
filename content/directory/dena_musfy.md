@@ -1,11 +1,11 @@
 ---
 title: Dena Musfy
-name:
+name: Dena Musfy
 email: dena.musfy@compass.com
 phone: 281-935-6993
 image: "https://www.compass.com/m/13/db49b7ee-9d96-47ab-871f-96a3eb8415d1/origin.jpg"
 description: "Realtor - Compass Real Estate"
-profession: ["Real Estate Agent"]
+directory: Realtor
 location: ["Houston" , "Harris County"]
 Language: ["English", "Arabic", "Egyptian" ]
 social:

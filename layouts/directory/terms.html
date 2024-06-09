@@ -1,12 +1,13 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
-  {{ partial "directory-index" . }}
+Directory Page
+
   <section class="section">
     <div class="container">
       <ul class="text-center">
-        {{/* categories */}}
-        {{ if eq .Permalink (`categories/` | absLangURL) }}
-          {{ range site.Taxonomies.categories.ByCount }}
+        {{/* location */}}
+        {{ if eq .Permalink (`location/` | absLangURL) }}
+          {{ range site.Taxonomies.location.ByCount }}
             <li class="m-3 inline-block">
               <a
                 href="{{ .Page.Permalink }}"
@@ -18,36 +19,21 @@
               </a>
             </li>
           {{ end }}
+        {{/* language */}}
+        {{ if eq .Permalink (`language/` | absLangURL) }}
+        {{ range site.Taxonomies.language.ByCount }}
+          <li class="m-3 inline-block">
+            <a
+              href="{{ .Page.Permalink }}"
+              class="bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
+              {{ .Page.Title }}
+              <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
+                {{ .Count }}
+              </span>
+            </a>
+          </li>
         {{ end }}
-        {{/* directory_language */}}
-        {{ if eq .Permalink (`directory_language/` | absLangURL) }}
-          {{ range site.Taxonomies.directory_language.ByCount }}
-            <li class="m-3 inline-block">
-              <a
-                href="{{ .Page.Permalink }}"
-                class="bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
-                {{ .Page.Title }}
-                <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
-                  {{ .Count }}
-                </span>
-              </a>
-            </li>
-          {{ end }}
-        {{ end }}
-        {{/* directory_location */}}
-        {{ if eq .Permalink (`directory_location/` | absLangURL) }}
-          {{ range site.Taxonomies.directory_location.ByCount }}
-            <li class="m-3 inline-block">
-              <a
-                href="{{ .Page.Permalink }}"
-                class="bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
-                {{ .Page.Title }}
-                <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
-                  {{ .Count }}
-                </span>
-              </a>
-            </li>
-          {{ end }}
+      {{ end }}
         {{ end }}
         {{/* directory */}}
         {{ if eq .Permalink (`directory/` | absLangURL) }}
