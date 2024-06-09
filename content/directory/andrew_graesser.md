@@ -1,10 +1,11 @@
 ---
 title: "Andrew Graesser"
-name: Andrew Graesser
-email: andrew.graesser.e3t5@statefarm.com
-phone: 281-822-8850
+name: "Andrew Graesser"
+email: "andrew.graesser.e3t5@statefarm.com"
+phone: "281-822-8850"
+website: "https://andrewgraessersf.com/"
 image: "/images/directory/profiles/andrew_graesser.webp"
-description: "State Farm Insurance Agent"
+description: "Property & Casualty Insurance"
 company: "State Farm"
 logo: "/images/directory/logos/state_farm_logo.png"
 directory: ["Insurance Agent"]
@@ -23,12 +24,7 @@ social:
   - name: google
     icon: fa-brands fa-google
     link: https://g.page/r/Ca6QatKfIIIKEBM/review
-  - name: website
-    icon: fa-solid fa-globe
-    link: https://andrewgraessersf.com/ 
 ---
-### About Andrew
-
 At Andrew Graesser State Farm, we believe the protection you have should match the things you want to protect. Although property is critical to insure, most customers agree that protecting their family’s future is most important. Call, text or stop by to get your Life Insurance plan started today
 
 We are one of the fastest growing State Farm agencies in Houston and we're eager to earn your business! Call or stop by our office today to find out why! We're known for making the insurance experience simple and one that makes sense to you. We take seriously the task of helping protect what you've worked so hard to accumulate, including and especially your family. I am a proud former student of Texas A&M University, Class of 2002 where I met my wife of 20+ years. I'm a long time resident of Houston and now live in Katy with my beautiful wife and 5 kids.
