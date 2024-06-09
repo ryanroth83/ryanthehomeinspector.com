@@ -8,29 +8,24 @@ description: "State Farm Insurance Agent"
 company: "State Farm"
 logo: "/images/directory/logos/state_farm_logo.png"
 directory: ["Insurance Agent"]
-directory_location: ["Houston" , "Harris County"]
-directory_language: [English", "Spanish"]
+location: ["Houston" , "Harris County"]
+language: [English", "Spanish"]
 social:
   - name: facebook
     icon: fa-brands fa-square-facebook
     link: https://www.facebook.com/646418445483227
-
   - name: linkedin
-    icon: fa-brands fa-square-linkedin
+    icon: fa-brands fa-linkedin
     link: https://www.linkedin.com/in/andrew-graesser-79230647
-
   - name: yelp
     icon: fa-brands fa-yelp
     link: https://www.yelp.com/biz/andrew-graesser-state-farm-insurance-agent-houston
-
   - name: google
     icon: fa-brands fa-google
     link: https://g.page/r/Ca6QatKfIIIKEBM/review
-
   - name: website
     icon: fa-solid fa-globe
-    link: https://andrewgraessersf.com/
-    
+    link: https://andrewgraessersf.com/ 
 ---
 ### About Andrew
 
