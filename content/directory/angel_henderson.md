@@ -4,7 +4,7 @@ name: "Angel Henderson"
 email: Angel.h.henderson.fc4c@statefarm.com
 phone: 832-300-1400
 website: https://www.compass.com/agents/dena-musfy/
-image: "/images/directory/profiles/angel_henderson.jpg"
+profile: "/images/directory/profiles/angel_henderson.jpg"
 description: "Commercial Insurance"
 company: "State Farm"
 logo: "/images/directory/logos/state_farm_logo.png"

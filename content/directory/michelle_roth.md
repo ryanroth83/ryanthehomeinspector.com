@@ -4,7 +4,7 @@ name: Michelle Roth
 email: texasmamasellshomes@gmail.com
 phone: 832-339-7300
 website: https://www.jparhouston.com/agent/1448580-michelle-roth/
-image: "https://dtzulyujzhqiu.cloudfront.net//profiles/1683058006.jpg"
+profile: "https://dtzulyujzhqiu.cloudfront.net//profiles/1683058006.jpg"
 description: "Realtor - JPAR | The Sears Group"
 directory: Realtor
 location: ["Rosenberg", "Richmond", "Sugar Land", "Fort Bend County"]

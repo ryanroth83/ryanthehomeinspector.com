@@ -2,7 +2,13 @@
   class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 text-center">
 
   <a href="{{ .RelPermalink }}">
-    <img src="{{ .Params.Image }}" class="mx-auto mb-6 rounded" width="120">
+
+
+    {{ $profile := .Params.profile }}
+    {{ $path := resources.Get $profile }}
+    {{ $image := $path }}
+    <img src="{{ $image }}" class="mx-auto mb-6 rounded" />
+
     <h4 class="mb-3">
       {{ .Params.Name }}
     </h4>
