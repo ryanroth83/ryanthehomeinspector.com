@@ -3,6 +3,7 @@ title: Michelle Roth
 name: Michelle Roth
 email: texasmamasellshomes@gmail.com
 phone: 832-339-7300
+website: https://www.jparhouston.com/agent/1448580-michelle-roth/
 image: "https://dtzulyujzhqiu.cloudfront.net//profiles/1683058006.jpg"
 description: "Realtor - JPAR | The Sears Group"
 directory: Realtor
@@ -20,13 +21,7 @@ social:
   - name: tiktok
     icon: fa-brands fa-tiktok
     link: https://www.tiktok.com/@texasmamasellshomes?_t=8hJNGxn9Dry&_r=1
-
-  - name: website
-    icon: fa-solid fa-globe
-    link: https://www.jparhouston.com/agent/1448580-michelle-roth/
-    
 ---
-
 Hi, I'm Michelle Roth, a realtor based in Houston, Texas, and the proud owner of "Texas Mama Sells Homes". I'm not just a realtor, though- I'm also a mom of four and a wife. My family means everything to me, and I believe that my experience as a mom has given me a unique perspective on what families are looking for in a home.
  
 As a realtor, I understand the importance of effective communication and great negotiation skills. I believe that these skills are crucial when it comes to buying and selling homes. I am always committed to providing exceptional service to my clients and strive to make the process as stress-free as possible. 

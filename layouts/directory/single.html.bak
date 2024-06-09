@@ -1,0 +1,67 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+  <section class="section">
+    <div class="container">
+      <div class="row gx-5">
+        <div class="lg:col-8">
+          <div class="row">
+            <div class="md:col-6 mb-14">
+              <div
+              class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 text-center">             
+              <a href="{{ .RelPermalink }}">
+                <img src="{{ .Params.Image }}" class="mx-auto mb-6 rounded" width="120">
+                <h4 class="mb-3">
+                  {{ .Params.Name }}
+                </h4>
+                <h5>
+                 {{ .Params.Description }}
+                </h5>
+                <img src="{{ .Params.Logo }}" class="directory-logo">
+                <p class="mb-4">
+                 {{ .Content }}
+                </p>
+              </a>
+              <br>
+              <p class="contact-link">
+                <a href="tel:{{ .Params.Phone }}">{{ .Params.Phone }}</a>
+                <br>
+                <a href="mailto:{{ .Params.Email }}">{{ .Params.Email }}</a>
+                <br>
+                <a href="{{ .Params.Website }}" target="_blank">
+                  {{ .Params.Website }}</a>
+                <br>
+                <br>
+              </p>
+              <br>
+              <ul class="social-icons">
+                {{ range .Params.social }}
+                  <li>
+                    <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
+                      <span class="sr-only">{{ .title }}</span>
+                      <i class="{{ .icon }}"></i>
+                    </a>
+                  </li>
+                {{ end }}
+                </ul>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
