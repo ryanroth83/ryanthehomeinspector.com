@@ -4,12 +4,14 @@
   <a href="{{ .RelPermalink }}">
 
 
-    {{ $profile := .Params.profile }}
-    {{ $path := resources.Get $profile }}
-    {{ $image := $path }}
-    <img src="{{ $image }}" class="mx-auto mb-6 rounded" />
-
+    {{ if .Params.profile }}
+      {{ $profile := .Resources.GetMatch .Params.profile }}
+      {{ $image := $profile.Fit "200x200" }}
+      <img class="mx-auto mb-6 rounded" src="{{ $image }}" width="80%" height="auto">
+    {{ end }}
+    
     <h4 class="mb-3">
+
       {{ .Params.Name }}
     </h4>
     <h5>
