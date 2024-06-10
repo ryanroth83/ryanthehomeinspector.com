@@ -10,7 +10,7 @@ company: "State Farm"
 logo: "/images/directory/logos/state_farm_logo.png"
 directory: ["Insurance Agent"]
 location: ["Houston" , "Harris County"]
-language: [English", "Spanish"]
+language: ["English", "Spanish"]
 social:
   - name: facebook
     icon: fa-brands fa-square-facebook
