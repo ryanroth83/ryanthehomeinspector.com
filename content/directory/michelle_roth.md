@@ -6,6 +6,7 @@ phone: 832-339-7300
 website: https://www.jparhouston.com/agent/1448580-michelle-roth/
 profile: "/images/directory/profiles/michelle_roth.jpeg"
 description: "Realtor - JPAR | The Sears Group"
+logo: "/images/directory/logos/JPAR_Logo.svg"
 directory: Realtor
 location: ["Rosenberg", "Richmond", "Sugar Land", "Fort Bend County"]
 Language: ["English"]
