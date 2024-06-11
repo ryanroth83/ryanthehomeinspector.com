@@ -7,7 +7,7 @@ website: https://www.compass.com/agents/dena-musfy/
 profile: "/images/directory/profiles/angel_henderson.jpg"
 description: "Commercial Insurance"
 company: "State Farm"
-logo: "/images/directory/logos/state_farm_logo.png"
+logo: "/images/directory/logos/state_farm_logo.svg"
 directory: ["Insurance Agent"]
 location: ["Houston" , "Harris County"]
 language: ["English", "Spanish" ]

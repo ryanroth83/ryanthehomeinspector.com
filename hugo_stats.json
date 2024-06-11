@@ -15,6 +15,7 @@
       "h3",
       "h4",
       "h5",
+      "h6",
       "head",
       "header",
       "html",
@@ -314,6 +315,10 @@
     ],
     "ids": [
       "-disclosure---michelle-is-my-wife-it-does-not-effect-either-one-of-our-professional-intarity-when-we-work-together",
+      "br",
+      "br-1",
+      "br-2",
+      "chance-burroughs-cfp-crpc-cfs",
       "creative-design",
       "disqus_thread",
       "email",
@@ -324,8 +329,10 @@
       "nav-toggle",
       "search-modal-input",
       "show-button",
+      "test",
       "theme-switcher",
-      "trec-consumer-protection-notice"
+      "trec-consumer-protection-notice",
+      "vice-president--senior-financial-advisor"
     ]
   }
 }

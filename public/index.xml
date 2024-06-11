@@ -37,6 +37,13 @@
       <description>Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat.</description>
     </item>
     <item>
+      <title></title>
+      <link>http://localhost:1313/directory/blank-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/directory/blank-copy/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Andrew Graesser</title>
       <link>http://localhost:1313/directory/andrew_graesser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -56,6 +63,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book-inspection/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Chance Burroughs</title>
+      <link>http://localhost:1313/directory/chance_burroughs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/directory/chance_burroughs/</guid>
+      <description>CFP®, CRPC®, CFS® &lt;br&gt; Senior Financial Advisor &lt;br&gt; Vice President</description>
     </item>
     <item>
       <title>Dena Musfy</title>

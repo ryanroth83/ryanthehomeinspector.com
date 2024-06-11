@@ -1,16 +1,10 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
+Directory Single
 
-
-  <section class="section-sm">
+  <section class="section">
     <div class="container">
-      <div class="row justify-center">
-        <div class="lg:col-10">
-          <div class="content">
-            {{ partial "components/directory-single" . }}
-          </div>
-        </div>
-      </div>
+      {{ partial "components/directory-single" . }}
     </div>
   </section>
 {{ end }}

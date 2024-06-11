@@ -1,35 +1,20 @@
 <div
   class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 text-center">
-
-  <a href="{{ .RelPermalink }}">
-
-  {{ with resources.Get .Params.profile }}
-    {{ with .Fill "200x200 Top" }}
-      <img src="{{ .RelPermalink }}" class="mx-auto mb-6 rounded" width="{{ .Width }}" height="{{ .Height }}" alt="">
-    {{ end }}
-  {{ end }}
-
+  <div>
+    <img src="{{ .Params.Image }}" class="mx-auto mb-6 rounded" width="120">
     <h4 class="mb-3">
       {{ .Params.Name }}
     </h4>
     <h5>
      {{ .Params.Description }}
     </h5>
-<br>
-    {{ with resources.Get .Params.logo }}
-      {{ if not (eq .MediaType.SubType "svg") }}
-        {{ with .Fit "300x200" }}
-        <img src="{{ .RelPermalink }}" class="directory-logo">
-        {{ end }}
-      {{ else }}
-        <img src="{{ .RelPermalink }}" class="directory-logo">
-      {{ end }}
-    {{ end }}
-<br>
+    <img src="{{ .Params.Logo }}" class="directory-logo">
     <p class="mb-4">
-     {{ .Summary }}
+     {{ .Content }}
     </p>
-  </a>
+  </div>
+
+  <br>
 
   <p class="contact-link">
     <a href="tel:{{ .Params.Phone }}">{{ .Params.Phone }}</a>
@@ -41,7 +26,7 @@
     <br>
     <br>
   </p>
-  <br>
+  
   <ul class="social-icons">
     {{ range .Params.social }}
       <li>
