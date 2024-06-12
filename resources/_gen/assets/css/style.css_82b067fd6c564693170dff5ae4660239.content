@@ -3868,6 +3868,13 @@ input#nav-toggle:checked ~ #nav-menu {
 .taglist li:after {
   content: ", "; }
 
+.directory-content p {
+  margin: 1;
+  text-align: left; }
+
+.directory-content ul {
+  list-style-type: style square; }
+
 @media (min-width: 540px) {
 
   .sm\:col-10 {

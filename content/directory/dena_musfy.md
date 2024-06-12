@@ -3,7 +3,8 @@ title: Dena Musfy
 name: Dena Musfy
 email: dena.musfy@compass.com
 phone: 281-935-6993
-website: https://www.compass.com/agents/dena-musfy/
+website: "compass.com/agents/dena-musfy"
+logo: "/images/directory/logos/compass_logo.png"
 profile: "/images/directory/profiles/dena_musfy.jpeg"
 description: "Realtor - Compass Real Estate"
 directory: Realtor

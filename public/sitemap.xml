@@ -56,8 +56,6 @@
     <loc>http://localhost:1313/categories/test/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/directory/blank-copy/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/andrew_graesser/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/angel_henderson/</loc>
@@ -70,17 +68,23 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/delara_aubon/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/dena_musfy/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/financial/</loc>
+    <loc>http://localhost:1313/directory/finance--insurance/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/insurance-agent/</loc>
+    <loc>http://localhost:1313/directory/jamie-humphrey/</loc>
   </url><url>
     <loc>http://localhost:1313/languages/</loc>
   </url><url>
     <loc>http://localhost:1313/locations/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/luke_jander/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/maria_barbra_garcia.md/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/michelle_roth/</loc>
   </url><url>
@@ -97,6 +101,8 @@
     <loc>http://localhost:1313/sections/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/test/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/title-services/</loc>
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
   </url><url>
