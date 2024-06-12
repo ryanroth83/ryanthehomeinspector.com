@@ -8,7 +8,7 @@ profile: "/images/directory/profiles/chance_burroughs.jpeg"
 description: Financial Advisor
 company: Manske Wealth Management
 logo: "/images/directory/logos/manske-logo.svg"
-directory: "Financial"
+directory: Finance & Insurance
 location: "Houston"
 language: "English"
 social:
@@ -22,8 +22,8 @@ summary: "CFP®, CRPC®, CFS® <br> Senior Financial Advisor <br> Vice President
 ---
 ## CHANCE BURROUGHS, CFP®, CRPC®, CFS®
 ## VICE PRESIDENT & SENIOR FINANCIAL ADVISOR
-
-- Serves as the Team Lead for the firm’s Athlete Asset Management Group which provides professional athletes sophisticated management of their investments, financial well-being for the long term, and disciplined focus on stability after their sports career
+# <br>
+ - Serves as the Team Lead for the firm’s Athlete Asset Management Group which provides professional athletes sophisticated management of their investments, financial well-being for the long term, and disciplined focus on stability after their sports career
 
 - Serves as the Team Lead for the firm’s Attorney Advisory Group which provides the legal community with the investment expertise and resources necessary to assist in situations such as Divorce, Inheritance, Legal Awards, and Major Asset Sales/Divisions
 
