@@ -86,11 +86,15 @@
   </url><url>
     <loc>http://localhost:1313/directory/maria_barbra_garcia.md/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/matthew_bell/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/michelle_roth/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/realtor/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/reena_bansal/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
@@ -99,6 +103,8 @@
     <loc>http://localhost:1313/authors/sam-wilson/</loc>
   </url><url>
     <loc>http://localhost:1313/sections/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/technology/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/test/</loc>
   </url><url>
