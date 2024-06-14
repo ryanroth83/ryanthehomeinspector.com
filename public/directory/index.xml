@@ -22,6 +22,13 @@
       <description></description>
     </item>
     <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/directory/technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/directory/technology/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Test</title>
       <link>http://localhost:1313/directory/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
