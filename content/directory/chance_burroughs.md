@@ -8,7 +8,7 @@ profile: "/images/directory/profiles/chance_burroughs.jpeg"
 description: Financial Advisor
 company: Manske Wealth Management
 logo: "/images/directory/logos/manske-logo.svg"
-directory: Finance & Insurance
+directory: Finance
 location: "Houston"
 language: "English"
 social:

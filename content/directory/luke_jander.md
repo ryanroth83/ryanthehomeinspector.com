@@ -8,7 +8,7 @@ profile: /images/directory/profiles/luke_jander.jpeg
 description: Life and Disability Insurance
 company: The Fitzpatrick Group
 logo: /images/directory/logos/fitzpatrick_group.png
-directory: Finance & Insurance
+directory: Insurance
 location: Houston
 language: English
 social:

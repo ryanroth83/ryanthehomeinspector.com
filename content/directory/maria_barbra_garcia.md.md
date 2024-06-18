@@ -8,7 +8,7 @@ profile: /images/directory/profiles/maria_barbara_garcia.png
 description: Health & Life Insurance
 company: Vista Agency
 logo: /images/directory/logos/vista_agency.png
-directory: Finance & Insurance
+directory: Insurance
 location: Houston
 language: English
 social:
