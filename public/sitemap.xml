@@ -74,7 +74,9 @@
   </url><url>
     <loc>http://localhost:1313/directory/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/finance--insurance/</loc>
+    <loc>http://localhost:1313/directory/finance/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/insurance/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/jamie-humphrey/</loc>
   </url><url>

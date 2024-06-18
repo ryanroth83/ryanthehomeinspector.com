@@ -8,7 +8,7 @@ profile: /images/directory/profiles/matthew_bell.jpeg
 description: Morgage loan Consultant
 company: First United Mortgage Group
 logo: /images/directory/logos/first_united_mortgage.jpeg
-directory: Finance & Insurance
+directory: Finance
 location: Houston
 language: English
 social:

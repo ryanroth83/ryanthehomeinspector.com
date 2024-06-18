@@ -8,7 +8,7 @@ profile: "/images/directory/profiles/andrew_graesser.webp"
 description: "Property & Casualty Insurance"
 company: "State Farm"
 logo: "/images/directory/logos/state_farm_logo.svg"
-directory: Finance & Insurance
+directory: Insurance
 location: ["Houston" , "Harris County"]
 language: ["English", "Spanish"]
 social:

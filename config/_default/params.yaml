@@ -54,10 +54,10 @@ cookies:
   button: I Accept
 widgets:
   sidebar:
-    - categories
+    - directory
     - tags
   directory:
-    - profession
+    - directory
     - location
     - language
 google_map:

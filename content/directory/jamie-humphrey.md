@@ -8,7 +8,7 @@ profile: /images/directory/profiles/jamie_humphrey.jpeg
 description: Certified Public Accountant (CPA)
 company: Jaime M Humphrey CPA, LLC
 logo: /images/directory/logos/jaime_humphrey_cpa.webp
-directory: Finance & Insurance
+directory: Finance
 location: Houston
 language: English
 social:
