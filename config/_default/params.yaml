@@ -55,11 +55,6 @@ cookies:
 widgets:
   sidebar:
     - directory
-    - tags
-  directory:
-    - directory
-    - location
-    - language
 google_map:
   enable: false
   map_api_key: AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU

@@ -3,33 +3,9 @@ main:
     url: /
     weight: 1
 
-  - name: About
-    url: about/
-    weight: 5
-
-  - name: Blog
-    url: blog/
-    weight: 4
-
   - name: Trusted Profesional Directory
     url: directory/
     weight: 2
-
-  - weight: 3
-    name: Home Maintenance Library
-    hasChildren: true
-  
-  - parent: Home Maintenance Library
-    name: Understanding My House
-    url: understanding/
-  
-  - parent: Home Maintenance Library
-    name: Maintenance & Repairs
-    url: maintenance/
-  
-  - parent: Home Maintenance Library
-    name: Appliance Information & Manuals
-    url: manuals/
 
 footer:
   - name: About
