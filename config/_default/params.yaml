@@ -15,7 +15,7 @@ contact_form_action: '#'
 google_tag_manager: ''
 google_adsense: ''
 custom_script: ''
-copyright: 'Ryan The Home Inspetor<br>RAR of Texas, LLC'
+copyright: 'Ryan The Home Inspetor<br>A Division of:<br>RAR of Texas, LLC'
 preloader:
   enable: false
   preloader: ''

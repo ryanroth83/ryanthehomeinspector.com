@@ -2,6 +2,7 @@
   "htmlElements": {
     "tags": [
       "a",
+      "b",
       "blockquote",
       "body",
       "br",
@@ -84,6 +85,7 @@
       "dark:text-darkmode-primary",
       "dark:text-white",
       "dark:to-darkmode-theme-light",
+      "devText",
       "directory-content",
       "directory-logo",
       "fa",

@@ -8,8 +8,8 @@ main:
     weight: 2
 
 footer:
-  - name: About
-    url: about/
+  - name: Credits
+    url: credits/
     weight: 2
  
   - name: TREC Consumer Protection Notice

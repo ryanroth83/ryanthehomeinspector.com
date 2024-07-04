@@ -3770,6 +3770,21 @@ input#nav-toggle:checked ~ #nav-menu {
 .directory-content ul {
   list-style-type: style square; }
 
+.devRow {
+  display: flex; }
+
+.devColumn {
+  flex: 33.33%;
+  padding: 5px; }
+
+.devCompanies {
+  flex: 60%;
+  padding: 5px; }
+
+.devText {
+  text-align: center;
+  margin-bottom: 0; }
+
 @media (min-width: 540px) {
 
   .sm\:col-10 {

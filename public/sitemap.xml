@@ -20,9 +20,13 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/contractor/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/delara_aubon/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/dena_musfy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/credits/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/</loc>
   </url><url>
@@ -49,6 +53,8 @@
     <loc>http://localhost:1313/directory/realtor/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/reena_bansal/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/reinel_solano/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
