@@ -1,9 +1,4 @@
-
-  <div class="container">
-    <div class="row justify-center">
-      <div class="col-12">
-        <img class= "indexLogo" src="{{ site.Params.index_logo }}">
-    </div>
-
-</section>
-<!-- /Banner -->
+<div>
+  {{ $asset := resources.Get "/images/RTHI_Logo.png" }}
+  <img class="indexLogo"alt="" src="{{ $asset.RelPermalink }}" />
+</div>
