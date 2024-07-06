@@ -58,10 +58,6 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/authors/john-doe/</loc>
-  </url><url>
-    <loc>http://localhost:1313/authors/sam-wilson/</loc>
-  </url><url>
     <loc>http://localhost:1313/sections/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -71,7 +67,5 @@
     <loc>http://localhost:1313/directory/title-services/</loc>
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
-  </url><url>
-    <loc>http://localhost:1313/authors/william-jacob/</loc>
   </url>
 </urlset>

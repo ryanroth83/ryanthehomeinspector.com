@@ -54,7 +54,7 @@
       <link>http://localhost:1313/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/credits/</guid>
-      <description> Site Created By: Ryan Roth Powered By: Hugo Theme: </description>
+      <description> Site Created By: Ryan Roth Powered By: Hugo Theme: Hugoplate Hosted With: Github Served Using: Cloudflare Pages </description>
     </item>
     <item>
       <title>Jaime Humphrey</title>
@@ -92,13 +92,6 @@
       <description>Hi, I&amp;rsquo;m Michelle Roth, a realtor based in Houston, Texas, and the proud owner of &amp;ldquo;Texas Mama Sells Homes&amp;rdquo;.</description>
     </item>
     <item>
-      <title>Ready to build your next project with Hugo?</title>
-      <link></link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid></guid>
-      <description></description>
-    </item>
-    <item>
       <title>Reena Bansal</title>
       <link>http://localhost:1313/directory/reena_bansal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -113,20 +106,6 @@
       <description>Floor Coverings International provides expert flooring design and installation to the Houston area!</description>
     </item>
     <item>
-      <title>Ryan Roth</title>
-      <link>http://localhost:1313/authors/john-doe/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/john-doe/</guid>
-      <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    <item>
-      <title>Sam Wilson</title>
-      <link>http://localhost:1313/authors/sam-wilson/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/sam-wilson/</guid>
-      <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    <item>
       <title>TREC Consumer Protection Notice</title>
       <link>http://localhost:1313/trec_notice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -139,13 +118,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid></guid>
       <description></description>
-    </item>
-    <item>
-      <title>William Jacob</title>
-      <link>http://localhost:1313/authors/william-jacob/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/william-jacob/</guid>
-      <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
   </channel>
 </rss>
