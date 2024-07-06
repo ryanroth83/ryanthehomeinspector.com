@@ -1,10 +1,11 @@
-favicon: images/favicon.png
-logo: images/ryan_glass.png
-logo_darkmode: images/ryan_glass.png
+favicon: '/images/RTHI_Blue-Logo.png'
+logo: 
+logo_darkmode: 
 logo_width: 160px
 logo_height: 32px
 logo_webp: true
 logo_text: Ryan The Home Inspector
+index_logo: '/images/RTHI_Logo.png'
 navbar_fixed: true
 theme_switcher: true
 theme_default: system
