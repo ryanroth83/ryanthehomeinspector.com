@@ -1,12 +1,9 @@
-<!-- Banner -->
+
 {{ with .Params.banner }}
-<section class="section pt-14">
-  <div class="container">
-    <div class="row justify-center">
-      <div class="lg:col-7 mb-8 text-center">
-        <h1 class="mb-4">
+<div class="bannerText">
+        <h4>
           {{ .title | markdownify }}
-        </h1>
+        </h4>
         <p class="mb-8">
           {{ .content | markdownify }}
         </p>
@@ -18,9 +15,5 @@
             </a>
           {{ end }}
         {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
+</div>        
 {{ end }}
-<!-- /Banner -->
