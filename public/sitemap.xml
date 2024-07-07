@@ -21,6 +21,11 @@
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <loc>http://localhost:1313/directory/contractor/</loc>
+  </url><url>
+>>>>>>> 5-7
 =======
     <loc>http://localhost:1313/directory/contractor/</loc>
   </url><url>
@@ -58,6 +63,11 @@
     <loc>http://localhost:1313/directory/reena_bansal/</loc>
   </url><url>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <loc>http://localhost:1313/directory/reinel_solano/</loc>
+  </url><url>
+>>>>>>> 5-7
 =======
     <loc>http://localhost:1313/directory/reinel_solano/</loc>
   </url><url>
@@ -74,8 +84,11 @@
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
 <<<<<<< HEAD
+<<<<<<< HEAD
   </url><url>
     <loc>http://localhost:1313/authors/william-jacob/</loc>
+=======
+>>>>>>> 5-7
 =======
 >>>>>>> 5-7
   </url>

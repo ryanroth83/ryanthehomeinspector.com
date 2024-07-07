@@ -2505,9 +2505,12 @@ input#nav-toggle:checked ~ #nav-menu {
   margin-right: 1.25rem;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mt-10 {
   margin-top: 2.5rem;
 }
+=======
+>>>>>>> 5-7
 =======
 >>>>>>> 5-7
 .mt-11 {
@@ -2671,9 +2674,12 @@ input#nav-toggle:checked ~ #nav-menu {
   padding-right: 1.25rem;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .pt-14 {
   padding-top: 3.5rem;
 }
+=======
+>>>>>>> 5-7
 =======
 >>>>>>> 5-7
 .text-center {
@@ -3746,7 +3752,10 @@ input#nav-toggle:checked ~ #nav-menu {
   list-style-type: style square; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5-7
 .devRow {
   display: flex; }
 
@@ -3785,6 +3794,9 @@ input#nav-toggle:checked ~ #nav-menu {
 .bannerFrame {
   padding-bottom: 64px; }
 
+<<<<<<< HEAD
+>>>>>>> 5-7
+=======
 >>>>>>> 5-7
 @media (min-width: 540px) {
 
@@ -3876,11 +3888,14 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .hover\:bg-theme-light:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(246 246 246 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 5-7
 =======
 >>>>>>> 5-7
 .hover\:text-primary:hover {
@@ -3942,11 +3957,14 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 :is(.dark .dark\:hover\:bg-darkmode-theme-light:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(34 34 34 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 5-7
 =======
 >>>>>>> 5-7
 :is(.dark .dark\:hover\:text-darkmode-primary:hover) {

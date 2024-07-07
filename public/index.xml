@@ -51,7 +51,10 @@
     </item>
     <item>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5-7
       <title>Developer Credits</title>
       <link>http://localhost:1313/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -59,6 +62,9 @@
       <description> Site Created By: Ryan Roth Powered By: Hugo Theme: Hugoplate Hosted With: Github Served Using: Cloudflare Pages </description>
     </item>
     <item>
+<<<<<<< HEAD
+>>>>>>> 5-7
+=======
 >>>>>>> 5-7
       <title>Jaime Humphrey</title>
       <link>http://localhost:1313/directory/jamie-humphrey/</link>
@@ -100,6 +106,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/directory/reena_bansal/</guid>
       <description>We are an IT consulting company and provide technology solutions. We assist our clients to achieve their business objectives.</description>
+<<<<<<< HEAD
     </item>
     <item>
 <<<<<<< HEAD
@@ -113,6 +120,12 @@
       <title>Ryan Roth</title>
       <link>http://localhost:1313/authors/john-doe/</link>
 =======
+      <title>Reinel Solano</title>
+      <link>http://localhost:1313/directory/reinel_solano/</link>
+>>>>>>> 5-7
+=======
+    </item>
+    <item>
       <title>Reinel Solano</title>
       <link>http://localhost:1313/directory/reinel_solano/</link>
 >>>>>>> 5-7
@@ -135,6 +148,7 @@
       <description></description>
     </item>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <item>
       <title>William Jacob</title>
       <link>http://localhost:1313/authors/william-jacob/</link>
@@ -142,6 +156,8 @@
       <guid>http://localhost:1313/authors/william-jacob/</guid>
       <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
+=======
+>>>>>>> 5-7
 =======
 >>>>>>> 5-7
   </channel>
