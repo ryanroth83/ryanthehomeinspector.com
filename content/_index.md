@@ -1,13 +1,8 @@
 ---
 # Banner
 banner:
-<<<<<<< HEAD
   title: "Ryan The Home Inspector"
   content: "\"Your Honest & Unbiased Home Inspector\""
-=======
-  title: "\"Your Honest & Unbiased Home Inspector\""
-  content: "TREC Licence Number: 25791"
->>>>>>> 5-7
   image: "images/RTHI_Blue-Circle.png"
   button:
     enable: true
