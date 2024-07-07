@@ -3768,6 +3768,9 @@ input#nav-toggle:checked ~ #nav-menu {
   white-space: nowrap;
   padding-top: 12px; }
 
+.bannerFrame {
+  padding-bottom: 64px; }
+
 @media (min-width: 540px) {
 
   .sm\:col-10 {

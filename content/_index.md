@@ -30,7 +30,7 @@ features:
     content: "Not only am I licened by TREC to peform home inspections in the state of Texas, I am also a Certified Professional Inspetor (CPI) by InterNACHI®."
     bulletpoints:
       - "Texas Licenced Home Inspector<br>TREC Licence Number: 25791"
-      - "InterNACHI® Certified Professional Inspector (CPI)"
+      - "InterNACHI® Certified Professional Inspector (CPI)<br>interNACHI ID: NACHI22091803"
     button:
       enable: true
       label: "interNACH Certifications"

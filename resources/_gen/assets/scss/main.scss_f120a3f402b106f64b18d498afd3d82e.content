@@ -1035,3 +1035,6 @@
   text-align: center;
   white-space: nowrap;
   padding-top: 12px; }
+
+.bannerFrame {
+  padding-bottom: 64px; }

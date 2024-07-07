@@ -1,19 +1,21 @@
 
 {{ with .Params.banner }}
-<div class="bannerText">
-        <h4>
-          {{ .title | markdownify }}
-        </h4>
-        <p class="mb-8">
-          {{ .content | markdownify }}
-        </p>
-        {{ with .button }}
-          {{ if .enable }}
-            <a class="btn btn-primary" href="{{ .link | absURL }}">
-              {{ .label }}
-              <i class="fa fa-arrow-right pl-2"></i>
-            </a>
+<div class="bannerFrame">
+  <div class="bannerText">
+          <h4>
+            {{ .title | markdownify }}
+          </h4>
+          <p class="mb-8">
+            {{ .content | markdownify }}
+          </p>
+          {{ with .button }}
+            {{ if .enable }}
+              <a class="btn btn-primary" href="{{ .link | absURL }}">
+                {{ .label }}
+                <i class="fa fa-arrow-right pl-2"></i>
+              </a>
+            {{ end }}
           {{ end }}
-        {{ end }}
-</div>        
+  </div>  
+</div>      
 {{ end }}

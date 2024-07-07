@@ -49,6 +49,7 @@
       "2xl:hidden",
       "absolute",
       "active",
+      "bannerFrame",
       "bannerText",
       "bg-body",
       "bg-gradient",
