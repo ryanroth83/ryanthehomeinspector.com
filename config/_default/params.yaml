@@ -1,10 +1,11 @@
-favicon: images/favicon.png
-logo: images/ryan_glass.png
-logo_darkmode: images/ryan_glass.png
+favicon: '/images/RTHI_Logo.png'
+logo: 
+logo_darkmode: 
 logo_width: 160px
 logo_height: 32px
 logo_webp: true
 logo_text: Ryan The Home Inspector
+index_logo: '/images/RTHI_Logo.png'
 navbar_fixed: true
 theme_switcher: true
 theme_default: system
@@ -15,7 +16,8 @@ contact_form_action: '#'
 google_tag_manager: ''
 google_adsense: ''
 custom_script: ''
-copyright: 'Ryan The Home Inspetor<br>RAR of Texas, LLC'
+copyright: 'Ryan The Home Inspector<br><br>A Division of:'
+copyright_logo: '/logos/rar_of_texas.svg'
 preloader:
   enable: false
   preloader: ''

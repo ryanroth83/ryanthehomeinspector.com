@@ -2,6 +2,10 @@
   "htmlElements": {
     "tags": [
       "a",
+<<<<<<< HEAD
+=======
+      "b",
+>>>>>>> 5-7
       "blockquote",
       "body",
       "br",
@@ -48,14 +52,14 @@
       "2xl:hidden",
       "absolute",
       "active",
+      "bannerFrame",
+      "bannerText",
       "bg-body",
       "bg-gradient",
       "bg-gradient-to-b",
       "bg-gray-200",
-      "bg-primary",
       "bg-theme-light",
       "block",
-      "border-b",
       "border-border",
       "border-r",
       "border-t",
@@ -68,22 +72,29 @@
       "contact-link",
       "container",
       "content",
+      "copyrightLogo",
       "cursor-pointer",
       "dark:bg-darkmode-body",
-      "dark:bg-darkmode-primary",
       "dark:bg-darkmode-theme-light",
       "dark:border-darkmode-border",
       "dark:from-darkmode-body",
+<<<<<<< HEAD
       "dark:hover:bg-darkmode-theme-light",
+=======
+>>>>>>> 5-7
       "dark:hover:text-darkmode-primary",
       "dark:opacity-0",
       "dark:opacity-100",
-      "dark:text-dark",
       "dark:text-darkmode-dark",
       "dark:text-darkmode-light",
       "dark:text-darkmode-primary",
       "dark:text-white",
       "dark:to-darkmode-theme-light",
+<<<<<<< HEAD
+=======
+      "devColumn",
+      "devRow",
+>>>>>>> 5-7
       "directory-content",
       "directory-logo",
       "fa",
@@ -119,9 +130,13 @@
       "h5",
       "header",
       "hidden",
+<<<<<<< HEAD
       "hover:bg-theme-light",
+=======
+>>>>>>> 5-7
       "hover:text-primary",
       "img",
+      "indexLogo",
       "inlin-block",
       "inline-block",
       "inline-flex",
@@ -130,7 +145,6 @@
       "justify-center",
       "left-0",
       "left-[4px]",
-      "lg:!max-w-[800px]",
       "lg:bg-green-200",
       "lg:block",
       "lg:col-10",
@@ -174,7 +188,10 @@
       "ml-auto",
       "mr-1",
       "mr-5",
+<<<<<<< HEAD
       "mt-10",
+=======
+>>>>>>> 5-7
       "mt-11",
       "mt-4",
       "mt-6",
@@ -192,19 +209,22 @@
       "order-1",
       "order-3",
       "p-8",
-      "pb-0",
-      "pb-14",
-      "pb-16",
       "pb-6",
       "pl-2",
       "pl-6",
       "pr-5",
+<<<<<<< HEAD
       "pt-14",
+=======
+>>>>>>> 5-7
       "px-2",
       "px-4",
       "px-7",
       "px-8",
+<<<<<<< HEAD
       "py-1.5",
+=======
+>>>>>>> 5-7
       "py-10",
       "py-14",
       "py-2",
@@ -235,7 +255,6 @@
       "sm:hidden",
       "social-icons",
       "space-x-1",
-      "space-x-3",
       "space-y-4",
       "sr-only",
       "sticky",
@@ -253,7 +272,6 @@
       "text-light",
       "text-primary",
       "text-red-500",
-      "text-white",
       "text-xl",
       "theme-switcher",
       "to-theme-light",

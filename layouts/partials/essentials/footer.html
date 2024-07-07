@@ -51,9 +51,10 @@
  
   <div class="border-border dark:border-darkmode-border border-t py-7">
     <div class="text-light dark:text-darkmode-light container text-center">
-      <p>
-        {{ site.Params.copyright | markdownify }}
-      </p>
+      &copy; {{ site.Params.copyright | markdownify }}
+      <a href="https://raroftexas.com" target="_blank">
+        <img class= "copyrightLogo" src="{{ site.Params.copyright_logo }}" alt="RAR of Texas, LLC">
+      </a>
     </div>
   </div>
 </footer>

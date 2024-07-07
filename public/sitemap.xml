@@ -20,9 +20,16 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
+<<<<<<< HEAD
+=======
+    <loc>http://localhost:1313/directory/contractor/</loc>
+  </url><url>
+>>>>>>> 5-7
     <loc>http://localhost:1313/directory/delara_aubon/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/dena_musfy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/credits/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/</loc>
   </url><url>
@@ -50,11 +57,12 @@
   </url><url>
     <loc>http://localhost:1313/directory/reena_bansal/</loc>
   </url><url>
+<<<<<<< HEAD
+=======
+    <loc>http://localhost:1313/directory/reinel_solano/</loc>
+  </url><url>
+>>>>>>> 5-7
     <loc>http://localhost:1313/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/authors/john-doe/</loc>
-  </url><url>
-    <loc>http://localhost:1313/authors/sam-wilson/</loc>
   </url><url>
     <loc>http://localhost:1313/sections/</loc>
   </url><url>
@@ -65,7 +73,10 @@
     <loc>http://localhost:1313/directory/title-services/</loc>
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
+<<<<<<< HEAD
   </url><url>
     <loc>http://localhost:1313/authors/william-jacob/</loc>
+=======
+>>>>>>> 5-7
   </url>
 </urlset>

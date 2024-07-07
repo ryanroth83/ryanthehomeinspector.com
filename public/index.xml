@@ -50,6 +50,16 @@
       <description>Dena Musfy has a decade of professional recruiting experience in two major industries.</description>
     </item>
     <item>
+<<<<<<< HEAD
+=======
+      <title>Developer Credits</title>
+      <link>http://localhost:1313/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/credits/</guid>
+      <description> Site Created By: Ryan Roth Powered By: Hugo Theme: Hugoplate Hosted With: Github Served Using: Cloudflare Pages </description>
+    </item>
+    <item>
+>>>>>>> 5-7
       <title>Jaime Humphrey</title>
       <link>http://localhost:1313/directory/jamie-humphrey/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -85,13 +95,14 @@
       <description>Hi, I&amp;rsquo;m Michelle Roth, a realtor based in Houston, Texas, and the proud owner of &amp;ldquo;Texas Mama Sells Homes&amp;rdquo;.</description>
     </item>
     <item>
-      <title>Ready to build your next project with Hugo?</title>
-      <link></link>
+      <title>Reena Bansal</title>
+      <link>http://localhost:1313/directory/reena_bansal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid></guid>
-      <description></description>
+      <guid>http://localhost:1313/directory/reena_bansal/</guid>
+      <description>We are an IT consulting company and provide technology solutions. We assist our clients to achieve their business objectives.</description>
     </item>
     <item>
+<<<<<<< HEAD
       <title>Reena Bansal</title>
       <link>http://localhost:1313/directory/reena_bansal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -101,16 +112,13 @@
     <item>
       <title>Ryan Roth</title>
       <link>http://localhost:1313/authors/john-doe/</link>
+=======
+      <title>Reinel Solano</title>
+      <link>http://localhost:1313/directory/reinel_solano/</link>
+>>>>>>> 5-7
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/john-doe/</guid>
-      <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    <item>
-      <title>Sam Wilson</title>
-      <link>http://localhost:1313/authors/sam-wilson/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/sam-wilson/</guid>
-      <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+      <guid>http://localhost:1313/directory/reinel_solano/</guid>
+      <description>Floor Coverings International provides expert flooring design and installation to the Houston area!</description>
     </item>
     <item>
       <title>TREC Consumer Protection Notice</title>
@@ -126,6 +134,7 @@
       <guid></guid>
       <description></description>
     </item>
+<<<<<<< HEAD
     <item>
       <title>William Jacob</title>
       <link>http://localhost:1313/authors/william-jacob/</link>
@@ -133,5 +142,7 @@
       <guid>http://localhost:1313/authors/william-jacob/</guid>
       <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
+=======
+>>>>>>> 5-7
   </channel>
 </rss>

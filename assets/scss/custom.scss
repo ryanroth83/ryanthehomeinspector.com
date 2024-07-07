@@ -32,4 +32,54 @@ content: ", ";
   list-style-type: style square;
 
   }
+<<<<<<< HEAD
   
+=======
+  
+.devRow {
+    display: flex;
+  }
+  
+.devColumn {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+.devCompanies {
+  flex: 60%;
+  padding: 5px;
+}
+
+.devText {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+.copyright {
+  padding-bottom: none;
+}
+
+.copyrightLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 4rem;
+}
+
+.indexLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 70vh;
+}
+
+.bannerText {
+  text-align: center;
+  white-space: nowrap;
+  padding-top: 12px;
+}
+
+.bannerFrame {
+  padding-bottom: 64px;
+}
+>>>>>>> 5-7

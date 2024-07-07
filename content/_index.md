@@ -1,8 +1,13 @@
 ---
 # Banner
 banner:
+<<<<<<< HEAD
   title: "Ryan The Home Inspector"
   content: "\"Your Honest & Unbiased Home Inspector\""
+=======
+  title: "\"Your Honest & Unbiased Home Inspector\""
+  content: "TREC Licence Number: 25791"
+>>>>>>> 5-7
   image: "images/RTHI_Blue-Circle.png"
   button:
     enable: true
@@ -11,36 +16,6 @@ banner:
 
 # Features
 features:
-
-
-  - title: "Qualified To Inspect Your House"
-    image: "/images/interNACHI-CPI.png"
-    content: "Not only am I licened by TREC to peform home inspections in the state of Texas, I am also a Certified Professional Inspetor (CPI) by InterNACHI®."
-    bulletpoints:
-      - "Texas Licenced Home Inspector<br>TREC Licence Number: 25791"
-      - "InterNACHI® Certified Professional Inspector (CPI)"
-    button:
-      enable: true
-      label: "interNACH Certifications"
-      link: "https://www.nachi.org/certified-inspectors/ryan-roth-trec-25791-164888"
-  
-  
-
-  - title: "Honesty Is Garanteed!"
-    image: "/images/HONOR_HIGH_COLOR.png"
-    image_darkmode: "/images/HONOR_HIGH_DARK_BACKROUND.png"
-    content: "Trust is a major part in choosing a home inspector. You don't have to rely on just my word, I've been backround checked by TREC and I am garanteed honest by InterNACHI® with the Honnor Garantee."
-    bulletpoints:
-      - "Background Checked By TREC"
-      - "Garantee Backed By InterNACHI®"
-      - "Up to $25,000 for the cost of replacement of personal property lost"
-
-    button:
-      enable: true
-      label: "More Details"
-      link: "https://www.nachi.org/honor.html"
-
-
 
   - title: "Buy Back Garantee"
     image: "/images/BUY_BACK_HIGH.png"
@@ -55,7 +30,30 @@ features:
       label: "More Details"
       link: "https://www.nachi.org/buy.htmL"
 
+  - title: "Qualified To Inspect Your House"
+    image: "/images/interNACHI-CPI.png"
+    content: "Not only am I licened by TREC to peform home inspections in the state of Texas, I am also a Certified Professional Inspetor (CPI) by InterNACHI®."
+    bulletpoints:
+      - "Texas Licenced Home Inspector<br>TREC Licence Number: 25791"
+      - "InterNACHI® Certified Professional Inspector (CPI)<br>interNACHI ID: NACHI22091803"
+    button:
+      enable: true
+      label: "interNACH Certifications"
+      link: "https://www.nachi.org/certified-inspectors/ryan-roth-trec-25791-164888"
+  
+  - title: "Honesty Is Garanteed!"
+    image: "/images/HONOR_HIGH_COLOR.png"
+    image_darkmode: "/images/HONOR_HIGH_DARK_BACKROUND.png"
+    content: "Trust is a major part in choosing a home inspector. You don't have to rely on just my word, I've been backround checked by TREC and I am garanteed honest by InterNACHI® with the Honnor Garantee."
+    bulletpoints:
+      - "Background Checked By TREC"
+      - "Garantee Backed By InterNACHI®"
+      - "Up to $25,000 for the cost of replacement of personal property lost"
 
+    button:
+      enable: true
+      label: "More Details"
+      link: "https://www.nachi.org/honor.html"
 
   - title: "Trusted Profesional Directory"
     image: "/images/directory/directory.png"
