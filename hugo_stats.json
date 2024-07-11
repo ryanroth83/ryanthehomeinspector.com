@@ -2,14 +2,7 @@
   "htmlElements": {
     "tags": [
       "a",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       "b",
->>>>>>> 5-7
-=======
-      "b",
->>>>>>> 5-7
       "blockquote",
       "body",
       "br",
@@ -82,13 +75,6 @@
       "dark:bg-darkmode-theme-light",
       "dark:border-darkmode-border",
       "dark:from-darkmode-body",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "dark:hover:bg-darkmode-theme-light",
-=======
->>>>>>> 5-7
-=======
->>>>>>> 5-7
       "dark:hover:text-darkmode-primary",
       "dark:opacity-0",
       "dark:opacity-100",
@@ -97,16 +83,8 @@
       "dark:text-darkmode-primary",
       "dark:text-white",
       "dark:to-darkmode-theme-light",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       "devColumn",
       "devRow",
->>>>>>> 5-7
-=======
-      "devColumn",
-      "devRow",
->>>>>>> 5-7
       "directory-content",
       "directory-logo",
       "fa",
@@ -122,6 +100,7 @@
       "fa-solid",
       "fa-square-facebook",
       "fa-square-instagram",
+      "fa-tictok",
       "fa-tiktok",
       "fa-twitter",
       "fa-yelp",
@@ -142,13 +121,6 @@
       "h5",
       "header",
       "hidden",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "hover:bg-theme-light",
-=======
->>>>>>> 5-7
-=======
->>>>>>> 5-7
       "hover:text-primary",
       "img",
       "indexLogo",
@@ -203,13 +175,6 @@
       "ml-auto",
       "mr-1",
       "mr-5",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "mt-10",
-=======
->>>>>>> 5-7
-=======
->>>>>>> 5-7
       "mt-11",
       "mt-4",
       "mt-6",
@@ -231,24 +196,10 @@
       "pl-2",
       "pl-6",
       "pr-5",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "pt-14",
-=======
->>>>>>> 5-7
-=======
->>>>>>> 5-7
       "px-2",
       "px-4",
       "px-7",
       "px-8",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "py-1.5",
-=======
->>>>>>> 5-7
-=======
->>>>>>> 5-7
       "py-10",
       "py-14",
       "py-2",

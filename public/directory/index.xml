@@ -8,20 +8,9 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/directory/index.xml" rel="self" type="application/rss+xml" />
     <item>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <title>Finance</title>
-      <link>http://localhost:1313/directory/finance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-=======
       <title>Contractor</title>
       <link>http://localhost:1313/directory/contractor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-=======
-      <title>Contractor</title>
-      <link>http://localhost:1313/directory/contractor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
->>>>>>> 5-7
       <guid>http://localhost:1313/directory/contractor/</guid>
       <description></description>
     </item>
@@ -29,10 +18,6 @@
       <title>Finance</title>
       <link>http://localhost:1313/directory/finance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-<<<<<<< HEAD
->>>>>>> 5-7
-=======
->>>>>>> 5-7
       <guid>http://localhost:1313/directory/finance/</guid>
       <description></description>
     </item>
