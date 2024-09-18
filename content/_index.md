@@ -35,11 +35,22 @@ features:
       enable: true
       label: "interNACH Certifications"
       link: "https://www.nachi.org/certified-inspectors/ryan-roth-trec-25791-164888"
-  
-  - title: "Honesty Is Garanteed!"
+
+  - title: "First-Time Home Buyer-Friendly!"
+    image: "/images/FIRST_TIME_HIGH.png"
+    content: "As a first-time home buyer I'm sure you have lots of questions."
+    bulletpoints:
+      - "You will receive a free copy of Now That You've Had a Home Inspection."
+      - "Additional time will be scheduled for any questions you may have."
+      - "I will go over home maintenance, emergency shut-offs & reset procedures."
+    button:
+      enable: true
+      label: "More Details"
+      link: "https://www.nachi.org/first-time-home-buyer-friendly.htm"
+
+  - title: "Honesty Is Guaranteed!"
     image: "/images/HONOR_HIGH_COLOR.png"
-    image_darkmode: "/images/HONOR_HIGH_DARK_BACKROUND.png"
-    content: "Trust is a major part in choosing a home inspector. You don't have to rely on just my word, I've been backround checked by TREC and I am garanteed honest by InterNACHI® with the Honnor Garantee."
+    content: "Trust is a major part in choosing a home inspector. You don't have to rely on just my word, I've been backround checked by TREC and I am guaranteed honest by InterNACHI® with the Honnor Garantee."
     bulletpoints:
       - "Background Checked By TREC"
       - "Garantee Backed By InterNACHI®"
@@ -56,7 +67,6 @@ features:
     bulletpoints:
       - "Quality WDI inspection by a local, honest & experienced pest control company."
       - "Seamlessly schedule your WDI inspection when scheduling your home inspection."
-      - "Get an experienced independent pest inspector to perform your WDI inspection."
       - "Lead Inspector: John Harrington, Licence #0925441"
     button:
       enable: true
