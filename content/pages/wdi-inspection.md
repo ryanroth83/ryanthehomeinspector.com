@@ -28,4 +28,5 @@ I have partnered with a local, family-owned pest control company to perform my W
 Just check the box to schedule the WDI inspection when you schedule your home inspection, I will take care of the rest. We have worked together to streamline the scheduling and payment systems to provide a seamless experience & a competitive rate, that is even cheaper then some competitors that don't have a dedicated insect inspector come out.
 
 ### Who does the WDI inspection?
+
 [Mama Bear Pest & Outdoor](/directory/mama_bear_pest/), a family-owned company located in Katy, TX.
