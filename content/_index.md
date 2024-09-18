@@ -50,6 +50,19 @@ features:
       label: "More Details"
       link: "https://www.nachi.org/honor.html"
 
+  - title: "Profesional Wood Destroying Inspections"
+    image: "/images/directory/logos/mama_bear_pest.png"
+    content: "Profesional Wood Destroying Inspections performed by Mama Bear Pest & Outdoor."
+    bulletpoints:
+      - "Quality WDI inspection by a local, honest & experienced pest control company."
+      - "Seamlessly schedule your WDI inspection when scheduling your home inspection."
+      - "Get an experienced independent pest inspector to perform your WDI inspection."
+      - "Lead Inspector: John Harrington, Licence #0925441"
+    button:
+      enable: true
+      label: "WDI Inspection"
+      link: "/wdi-inspection"
+
   - title: "Trusted Profesional Directory"
     image: "/images/directory/directory.png"
     content: "Directory of trusted professionals available to anyone, created for the benefit of my clients. I maintain this directory at no cost and expect nothing in return other than honest and quality services with open communication and willingness to correct any issue on the behalf of the client in a timely manner."
@@ -63,6 +76,5 @@ features:
       enable: true
       label: "Trusted Professional Directory"
       link: "/directory"
-
 
 ---

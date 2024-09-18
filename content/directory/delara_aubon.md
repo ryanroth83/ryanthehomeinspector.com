@@ -8,9 +8,7 @@ profile: /images/directory/profiles/delara_aubon.jpg
 description: 
 company: Allegiance Title
 logo: /images/directory/logos/allegiance_title.svg
-directory:
-  - Title Services
-  - Realtor
+directory: Title Services
 location: Houston
 language: English
 social:
