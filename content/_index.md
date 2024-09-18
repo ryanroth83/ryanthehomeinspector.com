@@ -12,11 +12,11 @@ banner:
 # Features
 features:
 
-  - title: "Buy Back Garantee"
+  - title: "Buy Back Guarantee"
     image: "/images/BUY_BACK_HIGH.png"
     content: "If I Miss Anything I Will Have Your House Bought Back!"
     bulletpoints:
-      - "Garantee Is Backed By InterNACHI®"
+      - "Guarantee Is Backed By InterNACHI®"
       - "Honored for up to 90 days after closing"
       - "InterNACHI® Will Pay The Full Purchase Price"
       - "You Are Only Responsible For Any Applicable Fees & Real Estate Commissions"
@@ -40,7 +40,7 @@ features:
     image: "/images/FIRST_TIME_HIGH.png"
     content: "As a first-time home buyer I'm sure you have lots of questions."
     bulletpoints:
-      - "You will receive a free copy of Now That You've Had a Home Inspection."
+      - "You will receive a free copy of \"Now That You've Had a Home Inspection\"."
       - "Additional time will be scheduled for any questions you may have."
       - "I will go over home maintenance, emergency shut-offs & reset procedures."
     button:
@@ -50,10 +50,10 @@ features:
 
   - title: "Honesty Is Guaranteed!"
     image: "/images/HONOR_HIGH_COLOR.png"
-    content: "Trust is a major part in choosing a home inspector. You don't have to rely on just my word, I've been backround checked by TREC and I am guaranteed honest by InterNACHI® with the Honnor Garantee."
+    content: "Trust is a major part in choosing a home inspector. You don't have to rely on just my word, I've been backround checked by TREC and I am guaranteed honest by InterNACHI® with the Honor Guarantee."
     bulletpoints:
       - "Background Checked By TREC"
-      - "Garantee Backed By InterNACHI®"
+      - "Guarantee Backed By InterNACHI®"
       - "Up to $25,000 for the cost of replacement of personal property lost"
 
     button:
@@ -61,16 +61,16 @@ features:
       label: "More Details"
       link: "https://www.nachi.org/honor.html"
 
-  - title: "Profesional Wood Destroying Inspections"
+  - title: "Wood Destroying Inspect Inspection"
     image: "/images/directory/logos/mama_bear_pest.png"
-    content: "Profesional Wood Destroying Inspections performed by Mama Bear Pest & Outdoor."
+    content: "Profesional Wood Destroying Inspection performed by Mama Bear Pest & Outdoor."
     bulletpoints:
       - "Quality WDI inspection by a local, honest & experienced pest control company."
       - "Seamlessly schedule your WDI inspection when scheduling your home inspection."
       - "Lead Inspector: John Harrington, Licence #0925441"
     button:
       enable: true
-      label: "WDI Inspection"
+      label: "More Details"
       link: "/wdi-inspection"
 
   - title: "Trusted Profesional Directory"
