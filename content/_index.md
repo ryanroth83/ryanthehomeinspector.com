@@ -61,7 +61,7 @@ features:
       label: "More Details"
       link: "https://www.nachi.org/honor.html"
 
-  - title: "Wood Destroying Inspect Inspection"
+  - title: "Wood Destroying Insect Inspection"
     image: "/images/directory/logos/mama_bear_pest.png"
     content: "Professional Wood Destroying Inspection performed by [Mama Bear Pest & Outdoor](/directory/mama_bear_pest/)."
     bulletpoints:
