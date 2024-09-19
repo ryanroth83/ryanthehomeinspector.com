@@ -8,7 +8,7 @@ profile: /images/directory/profiles/reinel_solano.webp
 description: 
 company: Floor Coverings International Houston Heights
 logo: /images/directory/logos/floor_coverings_international.svg
-directory: Contractor
+directory: Flooring
 location: Houston
 language: English
 social:

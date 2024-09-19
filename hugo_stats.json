@@ -95,12 +95,14 @@
       "fa-google",
       "fa-instagram",
       "fa-linkedin",
+      "fa-pinterest",
       "fa-search",
       "fa-solid",
       "fa-square-facebook",
       "fa-square-instagram",
       "fa-tiktok",
       "fa-yelp",
+      "fa-youtube",
       "fab",
       "fill-current",
       "fixed",
@@ -263,14 +265,16 @@
       "z-50"
     ],
     "ids": [
-      "-disclosure---michelle-is-my-wife-it-does-not-effect-either-one-of-our-professional-intarity-when-we-work-together",
       "br",
       "br-1",
       "br-2",
       "br-3",
+      "br-4",
       "chance-burroughs-cfp-crpc-cfs",
       "email",
       "hide-button",
+      "how-do-other-home-inspectors-perform-wdi-inspections",
+      "how-does-ryan-the-home-inspector-do-it",
       "message",
       "name",
       "nav-menu",
@@ -279,7 +283,11 @@
       "show-button",
       "theme-switcher",
       "trec-consumer-protection-notice",
-      "vice-president--senior-financial-advisor"
+      "vice-president--senior-financial-advisor",
+      "what-do-you-need-to-do",
+      "what-is-a-wdi-inspection",
+      "who-can-perform-wdi-inspections",
+      "who-does-the-wdi-inspection"
     ]
   }
 }

@@ -20,17 +20,15 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/contractor/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/delara_aubon/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/dena_musfy/</loc>
   </url><url>
     <loc>http://localhost:1313/credits/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/finance/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/flooring/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/insurance/</loc>
   </url><url>
@@ -42,15 +40,19 @@
   </url><url>
     <loc>http://localhost:1313/directory/luke_jander/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/maria_barbra_garcia.md/</loc>
+    <loc>http://localhost:1313/directory/mama_bear_pest/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/maria_barbra_garcia/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/matthew_bell/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/michelle_roth/</loc>
+    <loc>http://localhost:1313/directory/movers/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/realtor/</loc>
+    <loc>http://localhost:1313/directory/pest-control/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/prissy_moving/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/reena_bansal/</loc>
   </url><url>
@@ -67,5 +69,7 @@
     <loc>http://localhost:1313/directory/title-services/</loc>
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
+  </url><url>
+    <loc>http://localhost:1313/wdi-inspection/</loc>
   </url>
 </urlset>

@@ -21,5 +21,12 @@
       <guid>http://localhost:1313/trec_notice/</guid>
       <description>TREC Consumer Protection Notice Link Text Click Here For More Information </description>
     </item>
+    <item>
+      <title>WDI Inspections</title>
+      <link>http://localhost:1313/wdi-inspection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wdi-inspection/</guid>
+      <description>What is a WDI inspection? WDI stands for Wood Destroying Inspections, sometimes you may see it written as WDO for Wood Destroying Organisms.</description>
+    </item>
   </channel>
 </rss>

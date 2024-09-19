@@ -43,13 +43,6 @@
       <description>Dedicated and passionate about elevating industry standards, driving growth, and fostering meaningful connections, I strive to be a leader and innovator in all my business pursuits.</description>
     </item>
     <item>
-      <title>Dena Musfy</title>
-      <link>http://localhost:1313/directory/dena_musfy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/directory/dena_musfy/</guid>
-      <description>Dena Musfy has a decade of professional recruiting experience in two major industries.</description>
-    </item>
-    <item>
       <title>Developer Credits</title>
       <link>http://localhost:1313/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -71,10 +64,17 @@
       <description>I help individuals and business owners protect their families with comprehensive life insurance planning.</description>
     </item>
     <item>
-      <title>Maria Barbra Garcia</title>
-      <link>http://localhost:1313/directory/maria_barbra_garcia.md/</link>
+      <title>Mama Bear Pest &amp; Outdoor</title>
+      <link>http://localhost:1313/directory/mama_bear_pest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/directory/maria_barbra_garcia.md/</guid>
+      <guid>http://localhost:1313/directory/mama_bear_pest/</guid>
+      <description>Mama Bear Pest &amp;amp; Outdoor is more than just a pest control company; we’re your partners in creating a healthier, safer home environment.</description>
+    </item>
+    <item>
+      <title>Maria Barbra Garcia</title>
+      <link>http://localhost:1313/directory/maria_barbra_garcia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/directory/maria_barbra_garcia/</guid>
       <description>As an independent agent, and expert in Health and Life insurance for individuals and business, i am committed to the community of the State of Texas.</description>
     </item>
     <item>
@@ -85,11 +85,11 @@
       <description>Mortgage Lender and Mortgage Broker in Houston Texas Houston Agent Magazine Lender of the Year 2022 Local to Houston, we are a mortgage team with competitive rates and top notch customer service.</description>
     </item>
     <item>
-      <title>Michelle Roth</title>
-      <link>http://localhost:1313/directory/michelle_roth/</link>
+      <title>Prissy Movers Co, LLC</title>
+      <link>http://localhost:1313/directory/prissy_moving/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/directory/michelle_roth/</guid>
-      <description>Hi, I&amp;rsquo;m Michelle Roth, a realtor based in Houston, Texas, and the proud owner of &amp;ldquo;Texas Mama Sells Homes&amp;rdquo;.</description>
+      <guid>http://localhost:1313/directory/prissy_moving/</guid>
+      <description>Prissy Movers Co. LLC is a woman-led moving company located in Houston, Texas.</description>
     </item>
     <item>
       <title>Reena Bansal</title>
@@ -111,6 +111,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/trec_notice/</guid>
       <description>TREC Consumer Protection Notice Link Text Click Here For More Information </description>
+    </item>
+    <item>
+      <title>WDI Inspections</title>
+      <link>http://localhost:1313/wdi-inspection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wdi-inspection/</guid>
+      <description>What is a WDI inspection? WDI stands for Wood Destroying Inspections, sometimes you may see it written as WDO for Wood Destroying Organisms.</description>
     </item>
     <item>
       <title>What My Clients Are Saying About Me</title>
