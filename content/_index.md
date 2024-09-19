@@ -63,7 +63,7 @@ features:
 
   - title: "Wood Destroying Inspect Inspection"
     image: "/images/directory/logos/mama_bear_pest.png"
-    content: "Professional Wood Destroying Inspection performed by Mama Bear Pest & Outdoor."
+    content: "Professional Wood Destroying Inspection performed by [Mama Bear Pest & Outdoor](/directory/mama_bear_pest/)."
     bulletpoints:
       - "Quality WDI inspection by a local, honest & experienced pest control company."
       - "Seamlessly schedule your WDI inspection when scheduling your home inspection."
