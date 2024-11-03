@@ -4,7 +4,7 @@
   <a href="{{ .RelPermalink }}">
 
   {{ with resources.Get .Params.profile }}
-    {{ with .Fill "200x200 Top" }}
+    {{ with .Fill "300x300 Top" }}
       <img src="{{ .RelPermalink }}" class="mx-auto mb-6 rounded" width="{{ .Width }}" height="{{ .Height }}" alt="">
     {{ end }}
   {{ end }}
@@ -18,7 +18,7 @@
 <br>
     {{ with resources.Get .Params.logo }}
       {{ if not (eq .MediaType.SubType "svg") }}
-        {{ with .Fit "300x200" }}
+        {{ with .Resize "400x" }}
         <img src="{{ .RelPermalink }}" class="directory-logo">
         {{ end }}
       {{ else }}
