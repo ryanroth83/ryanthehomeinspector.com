@@ -5,9 +5,10 @@ description: "Thermostats"
 image: "/images/ryanthehomeinspector.png"
 draft: false
 ---
+
 <div style="text-align: center;">
-	<h3>Click On The Brand Of Your Thermotstat For User Manual</h3>
-	<a href="https://thermostat.guide/" target="_blank">Provided by: thermostat.guide</a>
+ <h3>Click On The Brand Of Your Thermotstat For User Manual</h3>
+ <a href="https://thermostat.guide/" target="_blank">Provided by: thermostat.guide</a>
 </div>
 
 <ul style="columns: 3;">

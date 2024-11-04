@@ -7,6 +7,10 @@ main:
     url: directory/
     weight: 2
 
+  - name: Library Of Information
+    url: library/
+    weight: 3
+
 footer:
   - name: Credits
     url: credits/

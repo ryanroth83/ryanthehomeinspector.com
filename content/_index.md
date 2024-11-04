@@ -87,4 +87,17 @@ features:
       label: "Trusted Professional Directory"
       link: "/directory"
 
+  - title: "Library Of Information"
+    image: "/images/library/library.png"
+    content: "I am working on having links to all the information you should need. This is still a work in progress, but I plan to have links to user manuals for common appliances, Explanations of how your house works, maintenance & DIY repairs."
+    bulletpoints:
+      - "User manuals for common household appliances"
+      - "Explanations of how your house works"
+      - "Home maintenance tips & guides" 
+
+
+    button:
+      enable: true
+      label: "Library Of Information"
+      link: "/library"
 ---
