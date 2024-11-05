@@ -1,12 +1,13 @@
 ---
-title: "Thermostats"
-meta_title: "Thermostats"
-description: "Thermostats"
-image: "/images/ryanthehomeinspector.png"
+title: "Thermostat User Manuals"
+meta_title: "Thermostat User Manuals"
+description: "Thermostat User Manuals"
+image: 
 draft: false
+weight: 1
 ---
 
-<div style="text-align: center;">
+<div class="libraryTitle">
  <h3>Thermotstat User Manuals</h3>
  <a href="https://thermostat.guide/" target="_blank">Provided by: thermostat.guide</a>
 </div>
@@ -403,10 +404,8 @@ draft: false
  <li><a href="https://thermostat.guide/brand/ocstat/" target="_blank">OCSTAT</a></li>
  <li><a href="https://thermostat.guide/brand/oem/" target="_blank">OEM</a></li>
  <li><a href="https://thermostat.guide/brand/oj-electronics/" target="_blank">OJ ELECTRONICS</a></li>
- <li><a href="https://thermostat.guide/brand/ojelectronics/" target="_blank">Ojelectronics</a></li>
  <li><a href="https://thermostat.guide/brand/okonoff/" target="_blank">Okonoff</a></li>
  <li><a href="https://thermostat.guide/brand/olympia/" target="_blank">Olympia</a></li>
- <li><a href="https://thermostat.guide/brand/olympia-2/" target="_blank">Olympia ‎</a></li>
  <li><a href="https://thermostat.guide/brand/omnie/" target="_blank">OMNIE</a></li>
  <li><a href="https://thermostat.guide/brand/onndo/" target="_blank">ONNDO</a></li>
  <li><a href="https://thermostat.guide/brand/oraako/" target="_blank">Oraako</a></li>
@@ -447,7 +446,7 @@ draft: false
  <li><a href="https://thermostat.guide/brand/rademacher/" target="_blank">RADEMACHER</a></li>
  <li><a href="https://thermostat.guide/brand/radio-thermostat/" target="_blank">RADIO THERMOSTAT</a></li>
  <li><a href="https://thermostat.guide/brand/radiothermostat/" target="_blank">RadioThermostat</a></li>
- <li><a href="https://thermostat.guide/brand/ranrao/" target="_blank">‎RANRAO</a></li>
+ <li><a href="https://thermostat.guide/brand/ranrao/" target="_blank">RANRAO</a></li>
  <li><a href="https://thermostat.guide/brand/raychem/" target="_blank">Raychem</a></li>
  <li><a href="https://thermostat.guide/brand/rayotec/" target="_blank">Rayotec</a></li>
  <li><a href="https://thermostat.guide/brand/reeburn/" target="_blank">Reeburn</a></li>

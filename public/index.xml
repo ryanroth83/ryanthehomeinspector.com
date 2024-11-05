@@ -8,6 +8,48 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Thermostat User Manuals</title>
+      <link>http://localhost:1313/library/thermostats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/library/thermostats/</guid>
+      <description>Thermotstat User Manuals Provided by: thermostat.guide 2GIG ABB ACMELEC Adept Technology Aeotec Afulise AICI Airtouch AIRXCEL Alarm.</description>
+    </item>
+    <item>
+      <title>Irrigation User Manuals</title>
+      <link>http://localhost:1313/library/irrigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/library/irrigation/</guid>
+      <description> Landscape Irrigation User Manuals Hunter Hydrawise Rain Bird Rachio Irritrol Orbit B-hyve K-Rain Hydro-Rain Wyze Toro Weathermatic Moen BlueSpray </description>
+    </item>
+    <item>
+      <title>HVAC Age Lookup</title>
+      <link>http://localhost:1313/library/hvac-age/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/library/hvac-age/</guid>
+      <description>HVAC Age Lookup Provided by: building-center.org AAF AAON AAONAIRE AbsolutAire ACiQ Adams Addison Adirondack-Aire ADP Advantage AEC AERO Aeroflo AeroSys Incorporated­ AITONS&#39; AIRBLOC AIRCO Airedale AirEase AirEase-Johnson Aire-Flo AirPac Airquest Air Star AirTemp Airtherm Airwell-Fedders Allied Air/Allied-Commercial AllStyle Alton Amana AMBIRAD American Best American Furnace American Radiator American Standard Ameristar Anthes Anthratube APCO Applied Air Aqua Products AQUAS AquaSnap Aqua Star Aquazone ARCO (American Radiator Company) ARCOAIRE ArcticCircle ARGO ARKLA Armstrong Armstrong Air Aspen Atherion Avenger Axeman-Anderson Aztec BARD BARTACO BASMOR BAXI BDP BEACON/MORRIS BENJAMIN Benson BERNER BIASI BLACKHEAT BLUERIDGE BORG-WARNER BOSCH Broan Brock Brute Brute II Bryan Boilers Bryant Buderus Buffalo Burnham Cadet California Heat Pump Canatal Captive-Aire Carrier Celsior Centaurus Central Electric Furnace Century Champion Champion Cooler Chromalox Chrysler Air-Temp Clare Clearfire Cleaver Brooks ClimaCool Climate Control ClimateCraft ClimateMaster ClimateWorx ColdFlow Cold Point Coleman Columbia COMBAT Comfort-Aire Comfortmaker Comfortwave Comitale/CNI Command-Aire Commercial-Pak Compu-Aire Concord Conquest Consolidated Industries COOLIT&amp;nbsp; Copeland Copper-fin Copper-fin II Co-Ray-Vac Corsair Counterflow Cox Crane Crest Crown Dadanco Daikin Data Aire Day &amp;amp; Night Dayton De Dietrich Delco-Heat Delta Desert Aire DesignLine Dettson Directflo Dornback DryAire Dual Air Ducane Dunkirk Dunham-Bush Duromatic-Airco Duromatic-Olsen DynaPac ECR ECONAR ECUA EDPAC Effinity 93 Electra Embassy Emerson EMI Empire Energy Kinetics EnergyRite Enerstor Enterprise Fawcett EnviroAir Enviromaster Essick Air Eubank Evapco Evcon EVO Fedders FHP First Co.</description>
+    </item>
+    <item>
+      <title>Water Heater Age Lookup</title>
+      <link>http://localhost:1313/library/waterheater-age/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/library/waterheater-age/</guid>
+      <description>Water Heater Age Lookup Provided by: building-center.org ABS ACE AMBASSADOR AMERICAN AMERICAN HARDWARE AMERICAN PROLINE AMERICA&#39;S BEST AMTROL A.</description>
+    </item>
+    <item>
+      <title>Appliance Age Lookup</title>
+      <link>http://localhost:1313/library/appliance-age/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/library/appliance-age/</guid>
+      <description> Appliance Age Lookup Provided by: building-center.org Admiral Amana Bosch Caloric Crosley Dacor Electrolux Fisher &amp;amp; Paykel Frigidaire Gaggenau General Electric Gibson Hotpoint Kelvinator Kenmore Kitchen Aid LG Magic Chef Marvel Maytag Modern Maid RCA Roper Samsung Speed Queen Sub Zero Tappan Thermador Whirlpool White-Westinghouse Wolf </description>
+    </item>
+    <item>
+      <title>Building Code References</title>
+      <link>http://localhost:1313/library/codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/library/codes/</guid>
+      <description>International Building Codes </description>
+    </item>
+    <item>
       <title>Andrew Graesser</title>
       <link>http://localhost:1313/directory/andrew_graesser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -71,13 +113,6 @@
       <description>We provide a variety of public accounting services including payroll preparation, tax planning and return preparation (individuals and entities) as well as monthly financial statement preparation.</description>
     </item>
     <item>
-      <title>Landscape Irrigation</title>
-      <link>http://localhost:1313/library/irrigation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/library/irrigation/</guid>
-      <description> Landscape Irrigation User Manuals Hunter Hydrawise Rain Bird Rachio Irritrol Orbit B-hyve K-Rain Hydro-Rain Wyze Toro Weathermatic Moen BlueSpray </description>
-    </item>
-    <item>
       <title>Luke Jander</title>
       <link>http://localhost:1313/directory/luke_jander/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -125,13 +160,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/directory/reinel_solano/</guid>
       <description>Floor Coverings International provides expert flooring design and installation to the Houston area!</description>
-    </item>
-    <item>
-      <title>Thermostats</title>
-      <link>http://localhost:1313/library/thermostats/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/library/thermostats/</guid>
-      <description>Thermotstat User Manuals Provided by: thermostat.guide 2GIG ABB ACMELEC Adept Technology Aeotec Afulise AICI Airtouch AIRXCEL Alarm.</description>
     </item>
     <item>
       <title>TREC Consumer Protection Notice</title>

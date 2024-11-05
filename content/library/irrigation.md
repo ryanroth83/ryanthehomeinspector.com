@@ -1,11 +1,11 @@
 ---
-title: "Landscape Irrigation"
-meta_title: "Landscape Irrigation"
-description: "Landscape Irrigation"
+title: "Irrigation User Manuals"
+meta_title: "Irrigation User Manuals"
+description: "Irrigation User Manuals"
 draft: false
+weight: 2
 ---
-
-<div style="text-align: center;">
+<div class="libraryTitle">
     <h3>Landscape Irrigation User Manuals</h3>
 </div>
 

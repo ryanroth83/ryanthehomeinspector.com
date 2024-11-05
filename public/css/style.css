@@ -3771,6 +3771,13 @@ input#nav-toggle:checked ~ #nav-menu {
 .bannerFrame {
   padding-bottom: 64px; }
 
+.libraryTitle {
+  text-align: center; }
+
+.libraryList {
+  text-transform: capitalize;
+  columns: 3; }
+
 @media (min-width: 540px) {
 
   .sm\:col-10 {
