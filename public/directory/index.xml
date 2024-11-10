@@ -29,6 +29,13 @@
       <description></description>
     </item>
     <item>
+      <title>Inspectors</title>
+      <link>http://localhost:1313/directory/inspectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/directory/inspectors/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Insurance</title>
       <link>http://localhost:1313/directory/insurance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

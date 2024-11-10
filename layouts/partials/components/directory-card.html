@@ -16,15 +16,21 @@
      {{ .Params.Description }}
     </h5>
 <br>
-    {{ with resources.Get .Params.logo }}
-      {{ if not (eq .MediaType.SubType "svg") }}
-        {{ with .Resize "400x" }}
-        <img src="{{ .RelPermalink }}" class="directory-logo">
-        {{ end }}
-      {{ else }}
-        <img src="{{ .RelPermalink }}" class="directory-logo">
-      {{ end }}
+{{ if .Params.Logo }}
+{{ with resources.Get .Params.logo }}
+  {{ if not (eq .MediaType.SubType "svg") }}
+    {{ with .Resize "300x300" }}
+    <img src="{{ .RelPermalink }}" class="directory-logo">
     {{ end }}
+  {{ else }}
+    <img src="{{ .RelPermalink }}" class="directory-logo">
+  {{ end }}
+{{ end }}
+{{ else }}
+<h4 class="mb-3">
+  {{ .Params.Company }}
+</h4>
+{{ end }}
 <br>
     <p class="mb-4">
      {{ .Summary }}
