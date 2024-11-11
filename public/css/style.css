@@ -1430,6 +1430,9 @@ a:link {
   padding-left: calc(var(--bs-gutter-x) / 2);
   margin-top: var(--bs-gutter-y);
 }
+.col {
+  flex: 1 0 0%;
+}
 .col-3 {
   flex: 0 0 auto;
   width: 25%;
@@ -3811,6 +3814,11 @@ input#nav-toggle:checked ~ #nav-menu {
   .md\:col-2 {
     flex: 0 0 auto;
     width: 16.666666666666668%;
+  }
+
+  .md\:col-3 {
+    flex: 0 0 auto;
+    width: 25%;
   }
 
   .md\:col-4 {

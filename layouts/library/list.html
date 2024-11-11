@@ -2,17 +2,15 @@
   {{ partial "page-header" . }}
   <section class="section">
     <div class="container">
-      <ul class="text-center">
+      <div class="text-center row">
         {{ range .RegularPages }}
-          <li class="m-3">
-            <a
-              href="{{ .Permalink }}"
-              class="text-dark dark:text-darkmode-dark block text-xl">
+          <div class="md:col-4">
+            <a href="{{ .Permalink }}" class="m-3 bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
               {{ .Title }}
             </a>
-          </li>
+          </div>
         {{ end }}
-      </ul>
+      </div>
     </div>
   </section>
 {{ end }}
