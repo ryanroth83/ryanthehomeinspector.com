@@ -996,7 +996,7 @@
 
 .directory-content p {
   margin: 1;
-  text-align: left; }
+  text-align: center; }
 
 .directory-content ul {
   list-style-type: style square; }

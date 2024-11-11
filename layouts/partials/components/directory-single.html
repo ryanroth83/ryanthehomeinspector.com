@@ -18,7 +18,7 @@
   {{ if .Params.Logo }}
     {{ with resources.Get .Params.logo }}
       {{ if not (eq .MediaType.SubType "svg") }}
-        {{ with .Resize "300x300" }}
+        {{ with .Resize "300x" }}
         <img src="{{ .RelPermalink }}" class="directory-logo">
         {{ end }}
       {{ else }}

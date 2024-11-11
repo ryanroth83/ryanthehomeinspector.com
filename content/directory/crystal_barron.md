@@ -5,9 +5,9 @@ email:
 phone: 713-505-1613
 website: https://www.maidushine.com/
 profile: /images/directory/profiles/crystal_barron.webp
-description: 
+description: Business Development
 company: 
-logo: /images/directory/logos/maidushine.png
+logo: /images/directory/logos/maidushine.svg
 directory: Cleaning Services
 location: Houston
 language: English
