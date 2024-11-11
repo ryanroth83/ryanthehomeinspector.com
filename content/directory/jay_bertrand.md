@@ -11,6 +11,7 @@ logo:
 directory: Inspectors
 location: Houston
 language: English
+weight: 1
 social:
   - name: facebook
     icon: fa-brands fa-square-facebook

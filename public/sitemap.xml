@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/directory/jay_bertrand/</loc>
+  </url><url>
     <loc>http://localhost:1313/library/thermostats/</loc>
   </url><url>
     <loc>http://localhost:1313/library/irrigation/</loc>
@@ -42,13 +44,9 @@
   </url><url>
     <loc>http://localhost:1313/credits/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/finance/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/flooring/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/jay_bertrand/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/inspectors/</loc>
   </url><url>
@@ -93,6 +91,8 @@
     <loc>http://localhost:1313/directory/title-services/</loc>
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/</loc>
   </url><url>
     <loc>http://localhost:1313/wdi-inspection/</loc>
   </url>
