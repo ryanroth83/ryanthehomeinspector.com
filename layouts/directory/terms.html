@@ -1,11 +1,11 @@
 {{ define "main" }}
-  {{ partial "page-header" . }}
+{{ partial "page-header" . }}
   <section class="section">
     <div class="container">
-      <div class="text-center row">
+      <div class="row md:row-cols-3 lg:row-cols-4 g-4">
           {{ range site.Taxonomies.directory.Alphabetical }}
-            <div class="md:col-4">
-              <a href="{{ .Page.Permalink }}" class="m-3 bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
+            <div>
+              <a href="{{ .Page.Permalink }}" class="text-center m-auto bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
                 {{ .Page.Title }}
               </a>
             </div>

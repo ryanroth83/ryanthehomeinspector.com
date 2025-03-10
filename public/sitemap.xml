@@ -44,6 +44,8 @@
   </url><url>
     <loc>http://localhost:1313/credits/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/finance/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/flooring/</loc>
@@ -91,8 +93,6 @@
     <loc>http://localhost:1313/directory/title-services/</loc>
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/</loc>
   </url><url>
     <loc>http://localhost:1313/wdi-inspection/</loc>
   </url>
