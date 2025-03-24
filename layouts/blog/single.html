@@ -43,7 +43,7 @@
           </div>
           <div class="row items-start justify-between">
             <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-              <h5 class="mr-3">{{ i18n "tags" }} :</h5>
+              <h5 class="mr-3">"Tags" :</h5>
               <ul>
                 {{ $tags:= .Params.tags }}
                 {{ range $i,$p:= $tags }}
@@ -75,7 +75,7 @@
       {{ $related = $related | shuffle | first 3 }}
       {{ with $related }}
         <div class="section pb-0">
-          <h2 class="h3 mb-12">{{ i18n "related_posts" }}</h2>
+          <h2 class="h3 mb-12">Related Posts</h2>
           <div class="row">
             {{ range . }}
               <div class="lg:col-4">

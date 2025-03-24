@@ -185,8 +185,8 @@
 <script>
   let indexURL = "http://localhost:1313/searchindex.json";
   let includeSectionsInSearch = ["blog","directory","library"];
-  let no_results_for = "No results for";
-  let empty_search_results_placeholder = "Type something to search..";
+  let no_results_for = "0 results for";
+  let empty_search_results_placeholder = "";
 </script>
 
 
@@ -591,12 +591,12 @@
             data-search-input
             autocomplete="off"
             aria-label="Search"
-            placeholder="Search Post ..." />
+            placeholder="" />
         </div>
         <div class="search-wrapper-body">
           <div class="search-result" data-search-result></div>
           <span class="search-result-empty">
-            Type something to search..
+            
           </span>
         </div>
         <div class="search-wrapper-footer">
@@ -670,8 +670,7 @@
   <li>
     <a
       class="text-primary dark:text-darkmode-primary"
-      href="/">
-      Home
+      href="/">"Home"
     </a>
     <span class="inlin-block mr-1">/</span>
   </li>
@@ -722,7 +721,7 @@
 
   
     <div class="mb-8">
-      <h5 class="mb-6"></h5>
+      <h5 class="mb-6">"directory"</h5>
       <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8">
         <ul class="space-y-4">
           
