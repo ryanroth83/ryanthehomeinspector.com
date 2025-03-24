@@ -8,17 +8,10 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/directory/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cleaning Services</title>
-      <link>http://localhost:1313/directory/cleaning-services/</link>
+      <title>Cleaning</title>
+      <link>http://localhost:1313/directory/cleaning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/directory/cleaning-services/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Finance</title>
-      <link>http://localhost:1313/directory/finance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/directory/finance/</guid>
+      <guid>http://localhost:1313/directory/cleaning/</guid>
       <description></description>
     </item>
     <item>
@@ -43,6 +36,13 @@
       <description></description>
     </item>
     <item>
+      <title>Masonry</title>
+      <link>http://localhost:1313/directory/masonry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/directory/masonry/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Movers</title>
       <link>http://localhost:1313/directory/movers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -57,17 +57,17 @@
       <description></description>
     </item>
     <item>
-      <title>Technology</title>
-      <link>http://localhost:1313/directory/technology/</link>
+      <title>Plumbing</title>
+      <link>http://localhost:1313/directory/plumbing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/directory/technology/</guid>
+      <guid>http://localhost:1313/directory/plumbing/</guid>
       <description></description>
     </item>
     <item>
-      <title>Title Services</title>
-      <link>http://localhost:1313/directory/title-services/</link>
+      <title>Roofing</title>
+      <link>http://localhost:1313/directory/roofing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/directory/title-services/</guid>
+      <guid>http://localhost:1313/directory/roofing/</guid>
       <description></description>
     </item>
   </channel>

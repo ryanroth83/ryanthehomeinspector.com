@@ -11,6 +11,7 @@ logo: /images/directory/logos/
 directory: 
 location: Houston
 language: English
+licence: 
 social:
   - name: linkedin
     icon: fa-brands fa-linkedin

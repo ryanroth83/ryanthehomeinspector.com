@@ -18,11 +18,17 @@
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/alans_plumbing/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/andrew_graesser/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/angel_henderson/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/authentic_masonry/</loc>
+  </url><url>
     <loc>http://localhost:1313/authors/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/beinert_roofing/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
   </url><url>
@@ -30,23 +36,17 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/chance_burroughs/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/christina_nichols/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/cleaning-services/</loc>
+    <loc>http://localhost:1313/directory/cleaning/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/crystal_barron/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/delara_aubon/</loc>
+    <loc>http://localhost:1313/directory/dees_plumbing/</loc>
   </url><url>
     <loc>http://localhost:1313/credits/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/finance/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/flooring/</loc>
   </url><url>
@@ -54,21 +54,15 @@
   </url><url>
     <loc>http://localhost:1313/directory/insurance/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/jamie-humphrey/</loc>
-  </url><url>
     <loc>http://localhost:1313/languages/</loc>
   </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>
     <loc>http://localhost:1313/locations/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/luke_jander/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/mama_bear_pest/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/maria_barbra_garcia/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/matthew_bell/</loc>
+    <loc>http://localhost:1313/directory/masonry/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/movers/</loc>
   </url><url>
@@ -76,21 +70,19 @@
   </url><url>
     <loc>http://localhost:1313/directory/pest-control/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/plumbing/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/prissy_moving/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/reena_bansal/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/reinel_solano/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/roofing/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/sections/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/technology/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/title-services/</loc>
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
   </url><url>

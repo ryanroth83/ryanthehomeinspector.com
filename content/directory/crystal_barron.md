@@ -8,7 +8,7 @@ profile: /images/directory/profiles/crystal_barron.webp
 description: Business Development
 company: 
 logo: /images/directory/logos/maidushine.svg
-directory: Cleaning Services
+directory: Cleaning
 location: Houston
 language: English
 social:

@@ -12,18 +12,12 @@ directory: Flooring
 location: Houston
 language: English
 social:
-  - name: linkedin
-    icon: fa-brands fa-linkedin
-    link: 
   - name: facebook
     icon: fa-brands fa-square-facebook
     link: https://www.facebook.com/fcihoustonheights/
   - name: instagram
     icon: fa-brands fa-instagram
-    link: 
-  - name: google
-    icon: fa-brands fa-google
-    link: 
+    link: https://www.instagram.com/floorcoverings_international/
   - name: yelp
     icon: fa-brands fa-yelp
     link: https://www.yelp.com/biz/floor-coverings-international-houston-19

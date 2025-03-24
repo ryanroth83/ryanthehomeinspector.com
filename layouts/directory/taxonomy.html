@@ -3,16 +3,15 @@
 <section class="section">
   Taxonomy
     <div class="container">
-      <div>
-          <div class="row">
-            {{ $paginator:= .Paginate .RegularPages }}
-            {{ range $paginator.Pages }}
-              <div class="md:col-4">
-                {{ partial "components/directory-card" . }}
-              </div>
-            {{ end }}
-          </div>
-          {{ partial "components/pagination.html" . }}
+      <div class="row md:row-cols-2 lg:row-cols-3 xl:row-cols-4 g-5">
+        {{ $paginator:= .Paginate .RegularPages }}
+        {{ range $paginator.Pages }}
+        <div class="row">
+          {{ partial "components/directory-card" . }}
+        </div>
+        {{ end }}
+      </div>
+      {{ partial "components/pagination.html" . }}
     </div>
   </section>
 {{ end }}
