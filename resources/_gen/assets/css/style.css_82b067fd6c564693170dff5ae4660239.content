@@ -1146,7 +1146,7 @@ body {
 }
 :is(.dark body) {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 228 226 / var(--tw-bg-opacity));
+  background-color: rgb(28 28 28 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(180 175 182 / var(--tw-text-opacity));
 }
@@ -2238,7 +2238,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 :is(.dark .header) {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 228 226 / var(--tw-bg-opacity));
+  background-color: rgb(28 28 28 / var(--tw-bg-opacity));
 }
 .navbar {
   position: relative;
@@ -2733,7 +2733,7 @@ input#nav-toggle:checked ~ #nav-menu {
   --tw-gradient-from: #222222 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(34 34 34 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #E5E4E2 var(--tw-gradient-to-position);
+  --tw-gradient-to: #1c1c1c var(--tw-gradient-to-position);
 }
 .rounded {
   border-radius: 6px;
@@ -3630,7 +3630,7 @@ input#nav-toggle:checked ~ #nav-menu {
 
 :is(.dark .search-wrapper .search-wrapper-content) {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 228 226 / var(--tw-bg-opacity));
+  background-color: rgb(28 28 28 / var(--tw-bg-opacity));
 }
 
 .search-wrapper input:focus {
@@ -3683,7 +3683,7 @@ input#nav-toggle:checked ~ #nav-menu {
   --tw-border-opacity: 1;
   border-color: rgb(6 101 162 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(229 228 226 / var(--tw-bg-opacity));
+  background-color: rgb(28 28 28 / var(--tw-bg-opacity));
 }
   :is(.dark .search-wrapper .search-result-item .search-title) {
   --tw-text-opacity: 1;
@@ -3906,8 +3906,8 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 :is(.dark .dark\:from-darkmode-body) {
-  --tw-gradient-from: #E5E4E2 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(229 228 226 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #1c1c1c var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(28 28 28 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
