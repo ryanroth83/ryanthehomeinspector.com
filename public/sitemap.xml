@@ -18,6 +18,8 @@
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/cheney_poorman/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/alans_plumbing/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/andrew_graesser/</loc>
@@ -31,6 +33,8 @@
     <loc>http://localhost:1313/directory/beinert_roofing/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/test/</loc>
   </url><url>
     <loc>http://localhost:1313/book-inspection/</loc>
   </url><url>

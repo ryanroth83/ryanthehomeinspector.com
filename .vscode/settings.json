@@ -9,5 +9,6 @@
         "latex",
         "plaintext",
         "markdown"
-    ]
+    ],
+    "workbench.editor.enablePreviewFromCodeNavigation": true
 }
