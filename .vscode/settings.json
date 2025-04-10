@@ -10,5 +10,7 @@
         "plaintext",
         "markdown"
     ],
-    "workbench.editor.enablePreviewFromCodeNavigation": true
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "editor.defaultColorDecorators": true
+
 }
