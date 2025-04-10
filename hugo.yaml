@@ -85,5 +85,5 @@ outputFormats:
 taxonomies:
   category: categories
   tag: tags
-  directory: directory
+  trusted-professional: trusted-professionals
   library: library

@@ -23,10 +23,10 @@
       {{ with resources.Get .Params.logo }}
         {{ if not (eq .MediaType.SubType "svg") }}
           {{ with .Resize "300x" }}
-            <img src="{{ .RelPermalink }}" class="directory-logo">
+            <img src="{{ .RelPermalink }}" class="trusted-professionals-logo">
           {{ end }}
         {{ else }}
-          <img src="{{ .RelPermalink }}" class="directory-logo">
+          <img src="{{ .RelPermalink }}" class="trusted-professionals-logo">
         {{ end }}
       {{ end }} 
     {{ else }}

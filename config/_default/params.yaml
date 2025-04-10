@@ -13,14 +13,14 @@ mainSections:
   - directory
   - library
 contact_form_action: '#'
-google_tag_manager: ''
+google_tag_manager:
 google_adsense: '868-929-5905'
-custom_script: ''
+custom_script:
 copyright: 'Ryan The Home Inspector<br><br>A Division of:'
 copyright_logo: '/logos/rar_of_texas.svg'
 preloader:
   enable: false
-  preloader: ''
+  preloader:
 navigation_button:
   enable: true
   label: Book Inspection Now
@@ -43,11 +43,11 @@ metadata:
   author: Ryan Roth
   image: images/og-image.png
 site_verification:
-  google: ''
-  bing: ''
-  baidu: ''
-  facebook: ''
-  mastodon: ''
+  google:
+  bing:
+  baidu:
+  facebook:
+  mastodon:
 cookies:
   enable: false
   expire_days: 60

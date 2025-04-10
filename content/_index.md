@@ -62,8 +62,8 @@ features:
       link: "https://www.nachi.org/honor.html"
 
   - title: "Wood Destroying Insect Inspection"
-    image: "/images/directory/logos/mama_bear_pest.png"
-    content: "Professional Wood Destroying Inspection performed by [Mama Bear Pest & Outdoor](/directory/mama_bear_pest/)."
+    image: "/images/trusted-professionals/logos/mama_bear_pest.png"
+    content: "Professional Wood Destroying Inspection performed by [Mama Bear Pest & Outdoor](/trusted-professionals/mama_bear_pest/)."
     bulletpoints:
       - "Quality WDI inspection by a local, honest & experienced pest control company."
       - "Seamlessly schedule your WDI inspection when scheduling your home inspection."
@@ -74,7 +74,7 @@ features:
       link: "/wdi-inspection"
 
   - title: "Trusted Professional Directory"
-    image: "/images/directory/directory.png"
+    image: "/images/trusted-professionals/trusted-professionals.png"
     content: "Directory of trusted professionals available to anyone, created for the benefit of my clients. I maintain this directory at no cost and expect nothing in return other than honest and quality services with open communication and willingness to correct any issue on the behalf of the client in a timely manner."
     bulletpoints:
       - "I have a trusted relationship with everyone listed in this directory."
@@ -85,7 +85,7 @@ features:
     button:
       enable: true
       label: "Trusted Professional Directory"
-      link: "/directory"
+      link: "/trusted-professionals"
 
   - title: "Library Of Information"
     image: "/images/library/library.png"

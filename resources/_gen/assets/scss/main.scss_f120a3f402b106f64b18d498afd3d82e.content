@@ -977,7 +977,7 @@
 .contact-link {
   @apply text-primary dark:text-darkmode-primary; }
 
-.directory-logo {
+.trusted-professionals-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -994,11 +994,11 @@
 .taglist li:after {
   content: ", "; }
 
-.directory-content p {
+.trusted-professionals-content p {
   margin: 1;
   text-align: center; }
 
-.directory-content ul {
+.trusted-professionals-content ul {
   list-style-type: style square; }
 
 .devRow {

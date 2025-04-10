@@ -1,25 +1,35 @@
 ---
 title: Prissy Movers Co, LLC
-name: Natasha Mapp
-email: contact@prissymoversco.com
-phone: (346) 324-1003
-website: https://prissymoversco.com/
-profile: /images/directory/profiles/natasha_mapp.png
-description: 
 company: Prissy Movers Co, LLC
-logo: /images/directory/logos/prissy-movers-logo_gray.png
-directory: Movers
-location: Houston
-language: English
+category: Movers
+description: null
+phone:
+  office: (346) 324-1003
+  cell: ''
+  fax: ''
+  whatsapp: ''
+email: contact@prissymoversco.com
+website: https://prissymoversco.com/
+address:
+  street: ''
+  suite: ''
+  city: Houston
+  state: TX
+  zip: ''
+logo: /images/trusted-professionals/logos/prissy-movers-logo_gray.png
+profile: /images/trusted-professionals/profiles/natasha_mapp.png
 social:
-  - name: facebook
-    icon: fa-brands fa-square-facebook
-    link: https://www.facebook.com/profile.php?id=100091736444501
-  - name: instagram
-    icon: fa-brands fa-instagram
-    link: https://www.instagram.com/prissymoverscollc/
+- name: facebook
+  icon: fa-brands fa-square-facebook
+  link: https://www.facebook.com/profile.php?id=100091736444501
+- name: instagram
+  icon: fa-brands fa-instagram
+  link: https://www.instagram.com/prissymoverscollc/
+trusted_by: ''
+notes: 'License: , Language: English'
+weight: 1
+directory: movers
 ---
-
 Prissy Movers Co. LLC is a woman-led moving company located in Houston, Texas. With a focus on exceptional customer service and attention to detail, we offer a wide range of moving services to meet your needs. Whether you’re planning a residential or commercial move, need labor-only assistance, require storage facilities, or seek packing and unpacking services, Prissy Movers is here to help.
 ###### <br>
 Our founder, inspired by her own challenging moving experience, established Prissy Movers with the goal of providing unparalleled service to every customer. With over 25 years of customer service expertise, including working with luxury companies like Audi and Herb Chambers Collision, Nastaha understands the importance of delivering excellence at every step, especially in a male-dominated industry. She has even spent the last few years training under Michael Gionis of Main Street Movers out of Berkeley Heights, New Jersey.

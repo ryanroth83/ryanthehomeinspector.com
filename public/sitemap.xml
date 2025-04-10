@@ -2,7 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/directory/jay_bertrand/</loc>
+    <loc>http://localhost:1313/trusted-professionals/cheney_poorman/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/alans_plumbing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/andrew_graesser/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/angel_henderson/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/authentic_masonry/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/beinert_roofing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/crystal_barron/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/dees_plumbing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/jay_bertrand/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/mama_bear_pest/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/prissy_moving/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/reinel_solano/</loc>
   </url><url>
     <loc>http://localhost:1313/library/thermostats/</loc>
   </url><url>
@@ -18,65 +40,21 @@
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/cheney_poorman/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/alans_plumbing/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/andrew_graesser/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/angel_henderson/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/authentic_masonry/</loc>
-  </url><url>
     <loc>http://localhost:1313/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/beinert_roofing/</loc>
-  </url><url>
     <loc>http://localhost:1313/blog/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/test/</loc>
   </url><url>
     <loc>http://localhost:1313/book-inspection/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/cleaning/</loc>
-  </url><url>
     <loc>http://localhost:1313/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/crystal_barron/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/dees_plumbing/</loc>
   </url><url>
     <loc>http://localhost:1313/credits/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/flooring/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/inspectors/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/insurance/</loc>
-  </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/mama_bear_pest/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/masonry/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/movers/</loc>
-  </url><url>
     <loc>http://localhost:1313/pages/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/pest-control/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/plumbing/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/prissy_moving/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/reinel_solano/</loc>
-  </url><url>
-    <loc>http://localhost:1313/directory/roofing/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
@@ -85,6 +63,8 @@
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trusted-professionals/</loc>
   </url><url>
     <loc>http://localhost:1313/wdi-inspection/</loc>
   </url>

@@ -6,7 +6,7 @@
         {{ $paginator:= .Paginate .RegularPages }}
         {{ range $paginator.Pages }}
         <div class="row">
-          {{ partial "components/directory-card" . }}
+          {{ partial "components/trusted-professionals-card" . }}
         </div>
         {{ end }}
       </div>

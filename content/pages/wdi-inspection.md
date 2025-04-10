@@ -29,4 +29,4 @@ Just check the box to schedule the WDI inspection when you schedule your home in
 
 ### Who does the WDI inspection?
 
-[Mama Bear Pest & Outdoor](/directory/mama_bear_pest/), a family-owned company located in Katy, TX.
+[Mama Bear Pest & Outdoor](/trusted-professionals/mama_bear_pest/), a family-owned company located in Katy, TX.

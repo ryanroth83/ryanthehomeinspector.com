@@ -1,29 +1,42 @@
 ---
-title: "Andrew Graesser"
-name: "Andrew Graesser"
-email: "andrew.graesser.e3t5@statefarm.com"
-phone: "281-822-8850"
+title: Andrew Graesser
+company: State Farm
+category: Insurance
+description: Property & Casualty Insurance
+phone:
+  office: 281-822-8850
+  cell: ''
+  fax: ''
+  whatsapp: ''
+email: andrew.graesser.e3t5@statefarm.com
 website: https://andrewgraessersf.com
-profile: "/images/directory/profiles/andrew_graesser.webp"
-description: "Property & Casualty Insurance"
-company: "State Farm"
-logo: "/images/directory/logos/state_farm_logo.svg"
-directory: Insurance
-location: ["Houston" , "Harris County"]
-language: ["English", "Spanish"]
+address:
+  street: ''
+  suite: ''
+  city:
+  - Houston
+  - Harris County
+  state: TX
+  zip: ''
+logo: /images/trusted-professionals/logos/state_farm_logo.svg
+profile: /images/trusted-professionals/profiles/andrew_graesser.webp
 social:
-  - name: facebook
-    icon: fa-brands fa-square-facebook
-    link: https://www.facebook.com/646418445483227
-  - name: linkedin
-    icon: fa-brands fa-linkedin
-    link: https://www.linkedin.com/in/andrew-graesser-79230647
-  - name: yelp
-    icon: fa-brands fa-yelp
-    link: https://www.yelp.com/biz/andrew-graesser-state-farm-insurance-agent-houston
-  - name: google
-    icon: fa-brands fa-google
-    link: https://g.page/r/Ca6QatKfIIIKEBM/review
+- name: facebook
+  icon: fa-brands fa-square-facebook
+  link: https://www.facebook.com/646418445483227
+- name: linkedin
+  icon: fa-brands fa-linkedin
+  link: https://www.linkedin.com/in/andrew-graesser-79230647
+- name: yelp
+  icon: fa-brands fa-yelp
+  link: https://www.yelp.com/biz/andrew-graesser-state-farm-insurance-agent-houston
+- name: google
+  icon: fa-brands fa-google
+  link: https://g.page/r/Ca6QatKfIIIKEBM/review
+trusted_by: ''
+notes: 'License: , Language: [''English'', ''Spanish'']'
+weight: 1
+directory: insurance
 ---
 At Andrew Graesser State Farm, we believe the protection you have should match the things you want to protect. Although property is critical to insure, most customers agree that protecting their family’s future is most important. Call, text or stop by to get your Life Insurance plan started today.
 ###### <br>
