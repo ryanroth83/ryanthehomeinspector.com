@@ -1,8 +1,9 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
-<section class="section">
+  <section class="section">
     <div class="container">
       {{ partial "components/directory-single" . }}
+      {{ partial "directory/directory-icons.html" . }}
     </div>
   </section>
 {{ end }}

@@ -1,0 +1,44 @@
+facebook:
+  icon: fab fa-facebook
+linkedin:
+  icon: fab fa-linkedin
+instagram:
+  icon: fab fa-instagram
+tiktok:
+  icon: fab fa-tiktok
+yelp:
+  icon: fab fa-yelp
+google:
+  icon: fab fa-google
+nextdoor:
+  icon: fab fa-nextdoor
+youtube:
+  icon: fab fa-youtube
+pinterest:
+  icon: fab fa-pinterest
+tumblr:
+  icon: fab fa-tumblr
+snapchat:
+  icon: fab fa-snapchat
+whatsapp:
+  icon: fab fa-whatsapp
+threads:
+  icon: fab fa-threads
+email:
+  icon: fas fa-envelope
+website:
+  icon: fas fa-globe
+phone:
+  icon: fas fa-phone
+residential:
+  icon: fas fa-home
+commercial:
+  icon: fas fa-building
+english:
+  icon: fas fa-flag-usa
+spanish:
+  icon: fas fa-flag
+licensed:
+  icon: fas fa-id-badge
+trusted:
+  icon: fas fa-thumbs-up

@@ -1,0 +1,13 @@
+main:
+- name: facebook
+  icon: fab fa-facebook
+  link: https://www.facebook.com/ryanthehomeinspector/
+- name: instagram
+  icon: fab fa-instagram
+  link: https://www.instagram.com/ryanthehomeinspector/
+- name: tiktok
+  icon: fab fa-tiktok
+  link: https://www.tiktok.com/@ryanthehomeinspector/
+- name: linkedin
+  icon: fab fa-linkedin
+  link: https://www.linkedin.com/in/ryan-roth-3996262b1/

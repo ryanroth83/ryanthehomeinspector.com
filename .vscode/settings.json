@@ -9,5 +9,6 @@
         "latex",
         "plaintext",
         "markdown"
-    ]
+    ],
+    "CodeGPT.apiKey": "OpenAI"
 }

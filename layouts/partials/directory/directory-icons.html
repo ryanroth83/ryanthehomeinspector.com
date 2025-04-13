@@ -1,0 +1,65 @@
+{{ $icons := index site.Data "directory-icons" }}
+
+<div class="directory-icons">
+
+  {{ range .Params.social }}
+    {{ $entry := . }}
+    {{ $icon := index $icons $entry.name }}
+    {{ if $icon }}
+      <a href="{{ $entry.link }}" target="_blank" rel="noopener" title="{{ $entry.name }}">
+        <i class="{{ $icon.icon }}"></i>
+      </a>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Params.email }}
+    {{ $icon := index $icons "email" }}
+    <a href="mailto:{{ . }}" title="Email">
+      <i class="{{ $icon.icon }}"></i>
+    </a>
+  {{ end }}
+
+  {{ with .Params.website }}
+    {{ $icon := index $icons "website" }}
+    <a href="{{ . }}" target="_blank" title="Website">
+      <i class="{{ $icon.icon }}"></i>
+    </a>
+  {{ end }}
+
+  {{ range .Params.client_types }}
+    {{ $icon := index $icons . }}
+    {{ if $icon }}
+      <span title="{{ . }}">
+        <i class="{{ $icon.icon }}"></i>
+      </span>
+    {{ end }}
+  {{ end }}
+
+  {{ $langs := .Params.language }}
+  {{ if $langs }}
+    {{ if not (reflect.IsSlice $langs) }}
+      {{ $langs = slice $langs }}
+    {{ end }}
+    {{ range $langs }}
+      {{ $icon := index $icons . | default (dict "icon" "fas fa-globe") }}
+      <span title="{{ . }}">
+        <i class="{{ $icon.icon }}"></i>
+      </span>
+    {{ end }}
+  {{ end }}
+
+  {{ if .Params.trusted_by }}
+    {{ $icon := index $icons "trusted" }}
+    <span title="Trusted">
+      <i class="{{ $icon.icon }}"></i>
+    </span>
+  {{ end }}
+
+  {{ if .Params.license_number }}
+    {{ $icon := index $icons "licensed" }}
+    <span title="Licensed">
+      <i class="{{ $icon.icon }}"></i>
+    </span>
+  {{ end }}
+
+</div>
