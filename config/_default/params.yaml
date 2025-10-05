@@ -100,3 +100,14 @@ plugins:
       lazy: true
     - link: plugins/youtube-lite.js
       lazy: true
+social:
+  - name: facebook
+    icon: facebook
+    link: "https://facebook.com/ryanthehomeinspector"
+  - name: instagram
+    icon: instagram
+    link: "https://instagram.com/ryanthehomeinspector"
+
+author:
+  name: "Ryan The Home Inspector"
+  email: "ryan@raroftexas.com"

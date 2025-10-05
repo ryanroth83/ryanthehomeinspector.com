@@ -32,7 +32,7 @@
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
   </url><url>
-    <loc>http://localhost:1313/book-inspection/</loc>
+    <loc>http://localhost:1313/pages/book-inspection/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
@@ -80,12 +80,14 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
+    <loc>http://localhost:1313/ryanade/</loc>
+  </url><url>
     <loc>http://localhost:1313/sections/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/trec_notice/</loc>
+    <loc>http://localhost:1313/pages/trec_notice/</loc>
   </url><url>
-    <loc>http://localhost:1313/wdi-inspection/</loc>
+    <loc>http://localhost:1313/pages/wdi-inspection/</loc>
   </url>
 </urlset>

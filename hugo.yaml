@@ -1,15 +1,15 @@
 baseURL: https://ryanthehomeinspector.com
 title: Ryan The Home Inspector
 timeZone: America/Chicago
-paginate: 6
+pagination:
+  pagerSize: 6
 summaryLength: 10
 googleAnalytics: G-MEASUREMENT_ID
 disqusShortname: themefisher-template
 disableLanguages: []
 hasCJKLanguage: false
 permalinks:
-  page:
-    pages: /:slugorfilename/
+  page: "/:slugorcontentbasename/"
 
 module:
   mounts:
