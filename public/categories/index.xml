@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Ryan The Home Inspector</title>
-    <link>https://ryanthehomeinspector.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Ryan The Home Inspector</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>ryan@raroftexas.com (Ryan The Home Inspector)</managingEditor>
-    <webMaster>ryan@raroftexas.com (Ryan The Home Inspector)</webMaster>
-    <atom:link href="https://ryanthehomeinspector.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</managingEditor>
+    <webMaster>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</webMaster>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

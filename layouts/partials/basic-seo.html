@@ -1,0 +1,10 @@
+{{/* Minimal meta for search engines */}}
+{{ $title := .Title | default site.Title }}
+<title>{{ $title }}</title>
+{{ hugo.Generator }}
+
+{{ with .Params.description | default site.Params.metadata.description }}
+  <meta name="description" content="{{ . }}" />
+{{ end }}
+
+<link rel="canonical" href="{{ .Permalink }}" />

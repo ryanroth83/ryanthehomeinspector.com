@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contact on Ryan The Home Inspector</title>
-    <link>https://ryanthehomeinspector.com/contact/</link>
+    <link>http://localhost:1313/contact/</link>
     <description>Recent content in Contact on Ryan The Home Inspector</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>ryan@raroftexas.com (Ryan The Home Inspector)</managingEditor>
-    <webMaster>ryan@raroftexas.com (Ryan The Home Inspector)</webMaster>
-    <atom:link href="https://ryanthehomeinspector.com/contact/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</managingEditor>
+    <webMaster>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</webMaster>
+    <atom:link href="http://localhost:1313/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
