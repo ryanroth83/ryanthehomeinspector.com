@@ -81,6 +81,7 @@
       "dark:hover:text-darkmode-primary",
       "dark:opacity-0",
       "dark:opacity-100",
+      "dark:prose-invert",
       "dark:text-darkmode-dark",
       "dark:text-darkmode-light",
       "dark:text-darkmode-primary",

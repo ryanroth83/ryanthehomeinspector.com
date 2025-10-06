@@ -2,8 +2,8 @@
   {{ partial "page-header" . }}
 
   <main class="container mx-auto px-4 py-8">
-    <article class="prose max-w-none">
-
+<article class="prose max-w-none dark:prose-invert">
+  
       {{/* Load logo image as a Page Resource */}}
       {{ with .Resources.GetMatch .Params.logo }}
         {{ $logo := .Fit "220x220 webp" }}
