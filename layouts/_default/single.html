@@ -1,16 +1,19 @@
 {{ define "main" }}
-  {{ partial "page-header" . }}
+  <main class="container mx-auto px-4 py-8">
+    <section class="prose max-w-none">
+      <h1>{{ .Title | default .Section | title }}</h1>
 
+      {{ with .Content }}
+        <div class="mb-8">{{ . }}</div>
+      {{ end }}
 
-  <section class="section-sm">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="lg:col-10">
-          <div class="content">
-            {{ .Content }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <ul>
+        {{ range .RegularPages }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  </main>
 {{ end }}

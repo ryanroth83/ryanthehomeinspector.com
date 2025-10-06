@@ -1,10 +1,6 @@
 ---
 title: "Book Inspection"
-# meta title
-meta_title: ""
-# meta description
 description: "Book Inspection"
-# save as draft
 draft: false
 ---
 

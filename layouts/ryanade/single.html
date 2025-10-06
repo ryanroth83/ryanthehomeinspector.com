@@ -1,0 +1,47 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <main class="container mx-auto px-4 py-8">
+    <article class="prose max-w-none">
+
+      {{/* Load logo image as a Page Resource */}}
+      {{ with .Resources.GetMatch .Params.logo }}
+        {{ $logo := .Fit "220x220 webp" }}
+        <img src="{{ $logo.RelPermalink }}" alt="{{ $.Title }}" 
+             class="float-right ml-4 mb-4" width="{{ $logo.Width }}" height="{{ $logo.Height }}" />
+      {{ end }}
+
+      <h2 class="mt-0">{{ .Title }}</h2>
+
+      {{/* Meta info */}}
+      <div class="not-prose grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4 text-sm opacity-80">
+        {{ with .Params.serves }}<div><strong>Serves:</strong> {{ . }}</div>{{ end }}
+        {{ with .Params.yields }}<div><strong>Yields:</strong> {{ . }}</div>{{ end }}
+        {{ with .Params.total_time }}<div><strong>Total Time:</strong> {{ . }}</div>{{ end }}
+        {{ with .Params.prep_time }}<div><strong>Prep Time:</strong> {{ . }}</div>{{ end }}
+        {{ with .Params.cook_time }}<div><strong>Cook Time:</strong> {{ . }}</div>{{ end }}
+      </div>
+
+      {{ with .Params.ingredients }}
+        <h3>Ingredients</h3>
+        <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+      {{ end }}
+
+      {{ with .Params.steps }}
+        <h3>Instructions</h3>
+        <ol>{{ range . }}<li>{{ . }}</li>{{ end }}</ol>
+      {{ end }}
+
+      {{ with .Params.notes }}
+        <h3>Notes</h3>
+        <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+      {{ end }}
+
+      {{ if .Content }}
+        <hr />
+        {{ .Content }}
+      {{ end }}
+
+    </article>
+  </main>
+{{ end }}

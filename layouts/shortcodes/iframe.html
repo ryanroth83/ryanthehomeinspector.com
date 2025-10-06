@@ -1,1 +1,25 @@
-<iframe src="{{ .Get 0 }}" frameborder="0" width="100%" height="500"></iframe>
+{{- $src := .Get "src" | default (.Get 0) -}}
+{{- if not $src -}}{{- errorf "iframe shortcode: 'src' is required (page: %q)" .Page.Path -}}{{- end -}}
+{{- $title := .Get "title" | default "Embedded content" -}}
+{{- $width := .Get "width" | default "100%" -}}
+{{- $height := .Get "height" | default "700" -}}
+{{- $class := .Get "class" -}}
+{{- $style := .Get "style" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $allow := .Get "allow" | default "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -}}
+{{- $referrer := .Get "referrerpolicy" | default "no-referrer-when-downgrade" -}}
+{{- $sandbox := .Get "sandbox" -}}
+{{- $allowfs := .Get "allowfullscreen" | default "true" -}}
+<div class="iframe-embed{{ with $class }} {{ . }}{{ end }}"{{ with $style }} style="{{ . | safeHTMLAttr }}"{{ end }}>
+  <iframe
+    src="{{ $src | safeURL }}"
+    title="{{ $title }}"
+    width="{{ $width }}"
+    height="{{ $height }}"
+    loading="{{ $loading }}"
+    referrerpolicy="{{ $referrer }}"
+    {{ with $allow }}allow="{{ . | safeHTMLAttr }}"{{ end }}
+    {{ with $sandbox }}sandbox="{{ . | safeHTMLAttr }}"{{ end }}
+    {{ if eq (lower $allowfs) "true" }}allowfullscreen{{ end }}>
+  </iframe>
+</div>

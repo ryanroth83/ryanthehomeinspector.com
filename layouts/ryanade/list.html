@@ -1,0 +1,33 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <main class="container mx-auto px-4 py-8">
+    <section class="prose max-w-none">
+      {{ with .Content }}<div class="mb-8">{{ . }}</div>{{ end }}
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {{ range .Pages.ByTitle }}
+          {{ $p := . }}
+
+          {{/* Load logo from front matter as Page Resource */}}
+          {{ $logo := "" }}
+          {{ with $p.Resources.GetMatch $p.Params.logo }}
+            {{ $resized := .Fit "440x440 webp" }}
+            {{ $logo = $resized.RelPermalink }}
+          {{ end }}
+
+          <a href="{{ $p.RelPermalink }}" class="block no-underline border rounded-xl p-4 hover:shadow">
+            {{ if $logo }}
+              <img src="{{ $logo }}" alt="{{ $p.Title }} logo"
+                   class="w-full h-40 object-contain rounded-lg mb-3" />
+            {{ end }}
+            <h3 class="m-0">{{ $p.Title }}</h3>
+            {{ with $p.Params.yields }}
+              <p class="m-0 text-sm opacity-80">{{ . }}</p>
+            {{ end }}
+          </a>
+        {{ end }}
+      </div>
+    </section>
+  </main>
+{{ end }}
