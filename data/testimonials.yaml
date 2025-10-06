@@ -1,0 +1,191 @@
+- name: Andrew
+  role: Maintenance Inspection
+  location: Katy, TX
+  rating: 5
+  text: >
+    I highly recommend Ryan Roth for your inspection needs! He is extremely knowledgeable
+    and thorough and will be honest about the property of inspection, which is exactly
+    what I look for in an inspector. I asked Ryan to complete a property inspection
+    for my home in Katy so I would know where to focus my efforts with any maintenance
+    items or potential risks upcoming. He has a great understanding of all home systems
+    and was able to recognize several things that I needed to get done to prevent
+    future issues down the road which more than paid for the cost of the inspection
+    itself. Ryan is very transparent in his pricing and a good communicator from
+    start to finish.
+  avatar: "/images/testimonials/andrew-g.webp"
+
+- name: "Allen & Priya"
+  role: New Constuction Inspection
+  location: Richmond, TX
+  rating: 5
+  text: >
+    Ryan is the best inspector we ever had! He’s so detailed and very knowledgeable
+    about his field. His inspection report and comments were very thorough and clear.
+    He genuinely cares about his customers, their time, and that they’re getting quality
+    service. He even spent time with us after the inspection, walking us through
+    items we were not familiar with as first-time homebuyers. He continued to advise us
+    beyond the inspection, solely to teach us things about being homeowners and what
+    to watch out for. He also gave us tips on house upkeeping/maintenance and how
+    to avoid expensive costs for the future. He provides great pictures with arrows/circles
+    and meticulous explanations in every report. I cannot emphasize what a genuine
+    and intelligent person he is. HIGHLY HIGHLY recommend!
+  avatar: "/images/testimonials/allen-priya.jpeg"
+
+- name: Breann
+  role: Real Estate Agent
+  location: Houston, TX
+  rating: 5
+  text: >
+    My buyer was on a deadline and Ryan made it happen same day. He was thorough
+    and efficient. When my client got the report, we were thrilled with the level
+    of detail. I will definitely be referring future clients to him!
+  avatar: "/images/testimonials/breann-l.jpg"
+
+- name: Andrew
+  role: Maintenance Inspection
+  location: Katy, TX
+  rating: 5
+  text: >
+    I highly recommend Ryan Roth for your inspection needs! He is extremely knowledgeable
+    and thorough and will be honest about the property of inspection, which is exactly
+    what I look for in an inspector. I asked Ryan to complete a property inspection
+    for my home in Katy so I would know where to focus my efforts with any maintenance
+    items or potential risks upcoming. He has a great understanding of all home systems
+    and was able to recognize several things that I needed to get done to prevent
+    future issues down the road which more than paid for the cost of the inspection
+    itself. Ryan is very transparent in his pricing and a good communicator from
+    start to finish.
+  avatar: "/images/reviews/andrew-g.webp"
+
+- name: Allen
+  role: New Construction Inspection
+  location: Richmond, TX
+  rating: 5
+  text: >
+    Ryan is the best inspector we ever had! He’s so detailed and very knowledgeable
+    about his field. His inspection report and comments were very thorough and clear.
+    He genuinely cares about his customers, their time, and that they’re getting quality
+    service. He even spent time with us after the inspection, walking us through
+    items we were not familiar with as first-time homebuyers. He continued to advise us
+    beyond the inspection, solely to teach us things about being homeowners and what
+    to watch out for. He also gave us tips on house upkeeping/maintenance and how
+    to avoid expensive costs for the future. He provides great pictures with arrows/circles
+    and meticulous explanations in every report. I cannot emphasize what a genuine
+    and intelligent person he is. HIGHLY HIGHLY recommend!
+  avatar: "/images/reviews/allen-priya.jpeg"
+
+- name: Sean
+  role: Homebuyer
+  location: Houston, TX
+  rating: 5
+  text: >
+    Ryan did a great job with the inspection. His report was clear and straight to the point
+    about the issues and recommendations. He took the time to explain everything and showed
+    where my builder needed to make changes. After the inspection, he followed up and made sure
+    I was comfortable with everything.
+  avatar: "/images/reviews/avatar.png"
+
+- name: Logan
+  role: Agent
+  location: Houston, TX
+  rating: 5
+  text: >
+    I called Ryan to help with a vacant listing where the glass had shattered on a sliding door.
+    Ryan was quick to help and got over to the house in less than 30 minutes to assess what needed
+    to be done. He's reliable and efficient with his work. I highly recommend using Ryan!
+  avatar: "/images/reviews/avatar.png"
+
+- name: Ahmed
+  role: Homebuyer
+  location: Houston, TX
+  rating: 5
+  text: >
+    I had a wonderful experience with Ryan. He was punctual, professional, and extremely thorough.
+    He took the time to explain everything in detail and answered all my questions clearly.
+    Highly recommend!
+  avatar: "/images/reviews/avatar.png"
+
+- name: Taleen
+  role: Homebuyer
+  location: Houston, TX
+  rating: 5
+  text: >
+    Ryan was great to work with. He completed a thorough inspection and highlighted all the issues.
+    He provided recommendations and continued to follow up with us until everything was completed.
+    Very friendly and professional. I’m glad I chose him!
+  avatar: "/images/reviews/avatar.png"
+
+- name: Alicia
+  role: Agent
+  location: Houston, TX
+  rating: 5
+  text: >
+    Ryan was excellent! He provided exceptional service for my client’s home inspection.
+    From start to finish, he was professional, very thorough and incredibly knowledgeable.
+    Not only did he deliver a detailed report, but he also took the time to explain it all.
+  avatar: "/images/reviews/avatar.png"
+
+- name: Evelyn
+  role: Homebuyer
+  location: Houston, TX
+  rating: 5
+  text: >
+    Ryan was awesome! He did a thorough job inspecting the home I was looking at.
+    He took his time going over everything from things that needed to be fixed
+    to maintenance items. He answered all my questions clearly.
+  avatar: "/images/reviews/avatar.png"
+
+- name: Stacy
+  role: Agent
+  location: Houston, TX
+  rating: 5
+  text: >
+    I had the pleasure of working with Ryan as the inspector for one of my clients—a first-time
+    homebuyer. I truly appreciated his professionalism and dedication throughout the process.
+  avatar: "/images/reviews/avatar.png"
+
+- name: Holly
+  role: Homebuyer
+  location: Houston, TX
+  rating: 5
+  text: >
+    I had a great experience with Ryan for our new construction inspection. Ryan was extremely
+    professional and timely, and he uncovered several potentially costly defects that we
+    wouldn't have noticed on our own. Highly recommend!
+  avatar: "/images/reviews/avatar.png"
+
+- name: Marina
+  role: Homebuyer
+  location: Houston, TX
+  rating: 5
+  text: >
+    Ryan was detailed in his inspection and provided the report in a timely manner.
+    He was a pleasure to work with.
+  avatar: "/images/reviews/avatar.png"
+
+- name: Oralia
+  role: Homebuyer
+  location: Houston, TX
+  rating: 5
+  text: >
+    Ryan did my home inspection this week. He covered everything thoroughly and walked us
+    through the items so we could visualize what he was putting in the report. Very comprehensive.
+  avatar: "/images/reviews/avatar.png"
+
+- name: Alka
+  role: Homeowner
+  location: Houston, TX
+  rating: 5
+  text: >
+    Ryan is the best inspector we ever had! He’s so detailed and picked up on errors
+    the other inspectors completely overlooked. He was very thorough and patient with us,
+    explaining everything clearly. Wonderful experience.
+  avatar: "/images/reviews/avatar.png"
+
+- name: Al
+  role: Homebuyer
+  location: Houston, TX
+  rating: 5
+  text: >
+    Complete and very informative. Highly recommend Ryan for any inspection needs.
+  avatar: "/images/reviews/avatar.png"

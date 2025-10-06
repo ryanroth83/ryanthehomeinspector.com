@@ -1,0 +1,127 @@
+{{- /* Testimonials — single row, buttons only, stable ID, no Pipes
+   Data: data/testimonials.yaml
+   Images: use absolute (/images/...) or http(s) URLs; fallback served from /static
+   Notes:
+     - No use of `now` (prevents rebuild loops).
+     - Shuffles items to vary the first card on each build.
+*/ -}}
+
+{{- $limit := 12 -}}
+{{- with .Limit }}{{ $limit = . }}{{ end -}}
+
+{{- $shuffle := true -}}
+{{- with .Shuffle }}{{ $shuffle = . }}{{ end -}}
+
+{{- $items := site.Data.testimonials | default (slice) -}}
+{{- if $shuffle }}{{ $items = shuffle $items }}{{ end -}}
+{{- if gt (len $items) $limit }}{{ $items = first $limit $items }}{{ end -}}
+
+{{- $fallback := "/images/testimonials/avatar.png" -}}
+
+{{/* Stable uid based on page path; no time-based IDs that cause rebuild loops */}}
+{{- $pageKey := "" -}}
+{{- with .Page }}{{ $pageKey = .RelPermalink }}{{ end -}}
+{{- if eq $pageKey "" }}{{ $pageKey = "home" }}{{ end -}}
+{{- $uid := printf "t%s" (substr (md5 $pageKey) 0 8) -}}
+
+<section class="prose max-w-none dark:prose-invert">
+  <div class="relative">
+    <!-- Prev/Next buttons -->
+    <button type="button"
+      class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 items-center justify-center rounded-full bg-neutral-900/70 text-white shadow hover:bg-neutral-900 focus:outline-none"
+      aria-label="Previous testimonial"
+      data-prev="{{ $uid }}">‹</button>
+
+    <button type="button"
+      class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 items-center justify-center rounded-full bg-neutral-900/70 text-white shadow hover:bg-neutral-900 focus:outline-none"
+      aria-label="Next testimonial"
+      data-next="{{ $uid }}">›</button>
+
+    <!-- Viewport (no free scroll) -->
+    <div id="viewport-{{ $uid }}" class="overflow-hidden">
+      <!-- Track laid out horizontally -->
+      <div id="track-{{ $uid }}" class="flex gap-6 will-change-transform"
+           style="transform: translateX(0); transition: transform 300ms ease;">
+        {{- range $items }}
+          {{- $name := .name | default "Reviewer" -}}
+          {{- $av   := .avatar | default "" -}}
+          {{- $src  := $fallback -}}
+          {{- if $av }}
+            {{- if or (hasPrefix $av "http") (hasPrefix $av "/") -}}
+              {{- $src = $av -}}
+            {{- end -}}
+          {{- end -}}
+
+          <article class="shrink-0 w-[20rem] md:w-[22rem] rounded-2xl border border-neutral-800/40 bg-neutral-800/30 p-5 shadow-sm">
+            <div class="text-5xl leading-none select-none mb-3">“</div>
+            <p class="m-0">{{ .text }}</p>
+
+            <div class="mt-4 flex items-center gap-3">
+              <img src="{{ $src | safeURL }}" alt="{{ $name }}" loading="lazy" decoding="async"
+                   class="h-10 w-10 rounded-full object-cover" />
+              <div class="text-sm">
+                <div class="font-semibold">{{ $name }}</div>
+                <div class="opacity-80">
+                  {{ with .role }}{{ . }}{{ end }}{{ if and .role .location }}, {{ end }}{{ with .location }}{{ . }}{{ end }}
+                  {{ with .date }} · {{ . }}{{ end }}
+                </div>
+                {{- with .rating -}}
+                  {{- $r := int . -}}
+                  {{- if and (ge $r 1) (le $r 5) -}}
+                    <div aria-label="Rating" class="mt-1 text-amber-400">
+                      {{- range seq $r }}★{{ end -}}
+                    </div>
+                  {{- end -}}
+                {{- end }}
+              </div>
+            </div>
+          </article>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  const uid = "{{ $uid }}";
+  const viewport = document.getElementById("viewport-" + uid);
+  const track = document.getElementById("track-" + uid);
+  if (!viewport || !track) return;
+
+  // Prevent multiple bindings on hot reload
+  if (track.dataset.bound === "1") return;
+  track.dataset.bound = "1";
+
+  const cards = Array.from(track.children);
+  if (!cards.length) return;
+
+  // All cards have fixed CSS width; measure first card including gap
+  function cardStep() {
+    const first = cards[0];
+    const style = window.getComputedStyle(first);
+    const width = first.getBoundingClientRect().width;
+    const gap = parseFloat(window.getComputedStyle(track).gap || "0");
+    return width + gap;
+  }
+
+  let index = 0;
+  function clamp(i){ return Math.max(0, Math.min(i, cards.length - 1)); }
+  function update(){
+    const step = cardStep();
+    const x = -index * step;
+    track.style.transform = `translateX(${x}px)`;
+  }
+
+  const prev = document.querySelector('[data-prev="'+uid+'"]');
+  const next = document.querySelector('[data-next="'+uid+'"]');
+  if (prev) prev.addEventListener('click', ()=>{ index = clamp(index - 1); update(); });
+  if (next) next.addEventListener('click', ()=>{ index = clamp(index + 1); update(); });
+
+  // Recompute on resize so steps stay accurate
+  window.addEventListener('resize', update, { passive: true });
+
+  // Initialize
+  update();
+})();
+</script>
