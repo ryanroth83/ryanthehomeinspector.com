@@ -1,15 +1,18 @@
 main:
-  - name: Home
-    url: /
+  - name: Directory
+    url: directory/
     weight: 1
 
-  - name: Trusted Profesional Directory
-    url: directory/
+  - name: Library
+    url: library/
     weight: 2
 
-  - name: Library Of Information
-    url: library/
+  - name: More
     weight: 3
+
+  - name: Ryanade
+    parent: More
+    url: ryanade/
 
 footer:
   - name: Credits

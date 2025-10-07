@@ -56,6 +56,8 @@
   </url><url>
     <loc>http://localhost:1313/languages/</loc>
   </url><url>
+    <loc>http://localhost:1313/ryanade/lemon-lime/</loc>
+  </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>
     <loc>http://localhost:1313/locations/</loc>
@@ -79,8 +81,6 @@
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/ryanade/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ryanade/lemon-lime/</loc>
   </url><url>
     <loc>http://localhost:1313/sections/</loc>
   </url><url>

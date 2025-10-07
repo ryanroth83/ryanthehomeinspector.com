@@ -1,10 +1,10 @@
 favicon: '/images/RTHI_Logo.png'
-logo:
+logo: 
 logo_darkmode: 
 logo_width: 160px
 logo_height: 32px
 logo_webp: true
-logo_text: Ryan The Home Inspector
+logo_text: Ryan The Home Inspector™
 index_logo: '/images/RTHI_Logo.png'
 navbar_fixed: true
 theme_switcher: true
@@ -16,7 +16,7 @@ contact_form_action: '#'
 google_tag_manager: ''
 google_adsense: '868-929-5905'
 custom_script: ''
-copyright: 'Ryan The Home Inspector<br><br>A Division of:'
+copyright: 'Ryan The Home Inspector™<br><br>A Division of:'
 copyright_logo: '/logos/rar_of_texas.svg'
 preloader:
   enable: false
@@ -39,7 +39,7 @@ search:
 metadata:
   keywords:
     - Home Inspections
-  description: Ryan The Home Inspector
+  description: Ryan The Home Inspector™
   author: Ryan Roth
   image: images/og-image.png
 site_verification:
@@ -109,5 +109,5 @@ social:
     link: "https://instagram.com/ryanthehomeinspector"
 
 author:
-  name: "Ryan The Home Inspector"
+  name: "Ryan The Home Inspector™"
   email: "ryan@ryanthehomeinspector.com"

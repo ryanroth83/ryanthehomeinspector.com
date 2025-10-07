@@ -6,12 +6,10 @@
   
       {{/* Load logo image as a Page Resource */}}
       {{ with .Resources.GetMatch .Params.logo }}
-        {{ $logo := .Fit "220x220 webp" }}
+        {{ $logo := .Fit "400x400 webp" }}
         <img src="{{ $logo.RelPermalink }}" alt="{{ $.Title }}" 
              class="float-right ml-4 mb-4" width="{{ $logo.Width }}" height="{{ $logo.Height }}" />
       {{ end }}
-
-      <h2 class="mt-0">{{ .Title }}</h2>
 
       {{/* Meta info */}}
       <div class="not-prose grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4 text-sm opacity-80">

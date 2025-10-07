@@ -1,15 +1,16 @@
 ---
-title: "Ryanade – Lemon/Lime"
+title: "Lemon-Lime Ryanade™"
+slug: "lemon-lime"
 flavor: "lemon-lime"
 url: "/ryanade/lemon-lime/"
 draft: false
 logo: "logo.png"
 
 serves: 16
-yields: "1 gallon (16 servings)"
-total_time: "5 minutes"
+yields: "1 gallon"
+total_time: "10 minutes"
 prep_time: "5 minutes"
-cook_time: "0 minutes"
+cook_time: "5 minutes"
 
 ingredients:
   - "1 gallon water"
@@ -29,5 +30,6 @@ steps:
 
 notes:
   - "Sodium citrate smooths flavor and reduces salty edge."
-  - "If using baking soda instead, use half the amount."
+  - "May use baking soda instead at half the amount; gives a slightly alkaline/soft-water feel"
+  - "If omitting, more lemonade-like taste; saltiness more noticeable on the first sip"
 ---
