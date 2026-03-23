@@ -1,26 +1,71 @@
-<div style="border: 1px solid #ccc; padding: 20px; border-radius: 5px; max-width: 400px; margin: 20px 0;">
-    <h3 style="margin-top: 0;"><strong>Price Estimator</strong></h3>
-    <p>Enter the total square footage of the property to see the estimated inspection fee.</p>
+<div style="border: 1px solid #ccc; padding: 25px; border-radius: 8px; max-width: 500px; background-color: #f9f9f9; color: #333;">
+    <h3 style="margin-top: 0; color: #000;"><strong>Inspection Price Estimator</strong></h3>
     
-    <label for="sqft">Square Footage:</label>
-    <input type="number" id="sqft" placeholder="e.g. 2500" style="width: 100%; padding: 8px; margin: 10px 0; border: 1px solid #ddd;">
-    
-    <button onclick="calculatePrice()" style="padding: 10px 15px; cursor: pointer; background-color: #333; color: #fff; border: none; border-radius: 3px;">Calculate Estimate</button>
-    
-    <p id="result" style="margin-top: 20px; font-weight: bold; font-size: 1.2em; min-height: 1.5em;"></p>
+    <label style="display: block; font-weight: bold; margin-bottom: 5px;">Primary Inspection Type:</label>
+    <select id="baseType" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+        <option value="340">TREC Professional Inspection ($340)</option>
+        <option value="140">Pre-Listing Inspection ($140)</option>
+        <option value="160">Phase 1: Foundation ($160)</option>
+        <option value="200">Phase 2: Pre-Drywall ($200)</option>
+        <option value="265">Phase 3: Final Inspection ($265)</option>
+        <option value="180">Warranty Inspection ($180)</option>
+    </select>
+
+    <label style="display: block; font-weight: bold; margin-bottom: 5px;">Property Square Footage:</label>
+    <input type="number" id="sqft" placeholder="e.g. 2500" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+
+    <label style="display: block; font-weight: bold; margin-bottom: 10px;">Ancillary Services:</label>
+    <div style="margin-bottom: 15px; line-height: 1.8;">
+        <label><input type="checkbox" class="ancillary" value="125"> WDI (Termite) Inspection (+$125)</label><br>
+        <label><input type="checkbox" class="ancillary" value="125"> Sewer Scope (+$125)</label><br>
+        <label><input type="checkbox" class="ancillary" value="125"> Pool/Spa Inspection (+$125)</label><br>
+        <label><input type="checkbox" class="ancillary" value="125"> Foundation Level Report (+$125)</label>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+        <label style="display: block; font-weight: bold; margin-bottom: 5px;">Travel Distance (Miles):</label>
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <input type="number" id="miles" placeholder="Miles" style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=18427+Southwest+Freeway+Sugar+Land+TX+77479" target="_blank" style="font-size: 0.85em; color: #007bff; text-decoration: none;">Check Distance →</a>
+        </div>
+        <p style="font-size: 0.8em; color: #777; margin-top: 5px;">Distance from 18427 Southwest Fwy, Sugar Land, TX.</p>
+    </div>
+
+    <button onclick="calculateTotal()" style="width: 100%; padding: 12px; background-color: #000; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 1.1em;">Calculate Estimate</button>
+
+    <div id="totalDisplay" style="margin-top: 25px; padding: 15px; background: #fff; border: 2px dashed #000; text-align: center; display: none;">
+        <span style="font-size: 1.2em; font-weight: bold;">Estimated Total: </span>
+        <span id="finalPrice" style="font-size: 1.8em; color: #d9534f; font-weight: bold;">$0.00</span>
+    </div>
 </div>
 
 <script>
-function calculatePrice() {
-    const sqft = document.getElementById('sqft').value;
-    const baseFee = 340;
-    const rate = 0.07;
+function calculateTotal() {
+    let total = parseFloat(document.getElementById('baseType').value);
+
+    // Sqft logic ($0.07/sqft)
+    const sqft = parseFloat(document.getElementById('sqft').value) || 0;
+    total += (sqft * 0.07);
+
+    // Ancillaries
+    const checkboxes = document.querySelectorAll('.ancillary');
+    checkboxes.forEach(cb => {
+        if (cb.checked) total += parseFloat(cb.value);
+    });
+
+    // Travel Surcharge logic
+    const miles = parseFloat(document.getElementById('miles').value) || 0;
+    let travelFee = 0;
+    if (miles > 60) travelFee = 50;
+    else if (miles > 40) travelFee = 25;
+    else if (miles > 30) travelFee = 10;
     
-    if (sqft > 0) {
-        const total = baseFee + (sqft * rate);
-        document.getElementById('result').innerText = "Estimated Fee: $" + total.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
-    } else {
-        document.getElementById('result').innerText = "Please enter a valid square footage.";
-    }
+    total += travelFee;
+
+    const display = document.getElementById('totalDisplay');
+    const priceSpan = document.getElementById('finalPrice');
+    
+    priceSpan.innerText = "$" + total.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    display.style.display = 'block';
 }
 </script>
