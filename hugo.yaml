@@ -2,3 +2,8 @@ baseURL: https://ryanthehomeinspector.com/
 languageCode: en-us
 title: Ryan The Home Inspector
 theme: hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

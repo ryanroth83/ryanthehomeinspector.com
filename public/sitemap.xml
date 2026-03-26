@@ -2,14 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/directory/jay_bertrand/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/thermostats/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/irrigation/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/hvac-age/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/waterheater-age/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/appliance-age/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/codes/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/</loc>
     <lastmod>2026-03-26T16:58:18-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-26T16:58:10-05:00</lastmod>
+    <lastmod>2026-03-26T16:58:18-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/directory/alans_plumbing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/andrew_graesser/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/angel_henderson/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/authentic_masonry/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/beinert_roofing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book-inspection/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/crystal_barron/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/dees_plumbing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ryanade/lemon-lime/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/mama_bear_pest/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pricing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/prissy_moving/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/reinel_solano/</loc>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ryanade/</loc>
+  </url><url>
+    <loc>http://localhost:1313/sections/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/trec_notice/</loc>
+  </url><url>
+    <loc>http://localhost:1313/wdi-inspection/</loc>
   </url>
 </urlset>
