@@ -1,0 +1,7 @@
+{{- $limit := cond (isset .Params "limit") (int (.Get "limit")) 6 -}}
+{{- $cols  := cond (isset .Params "cols")  (int (.Get "cols"))  2 -}}
+{{- $shuffle := true -}}
+{{- if (isset .Params "shuffle") -}}
+  {{- $shuffle = ne (lower (.Get "shuffle")) "false" -}}
+{{- end -}}
+{{- partial "components/testimonials.html" (dict "Limit" $limit "Cols" $cols "Shuffle" $shuffle) -}}

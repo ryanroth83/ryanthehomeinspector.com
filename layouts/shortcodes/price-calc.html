@@ -1,0 +1,93 @@
+<div style="border: 1px solid #ccc; padding: 25px; border-radius: 8px; max-width: 550px; background-color: #ffffff; color: #333; font-family: sans-serif; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 20px 0;">
+    <h3 style="margin-top: 0; border-bottom: 2px solid #000; padding-bottom: 10px;"><strong>Inspection Fee Estimator</strong></h3>
+    
+    <label style="display: block; font-weight: bold; margin: 15px 0 5px;">Primary Service:</label>
+    <select id="baseType" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #bbb; border-radius: 4px; font-size: 1rem;">
+        <option value="340" data-name="TREC Professional">TREC Professional ($340 + 7¢/sqft)</option>
+        <option value="140" data-name="Pre-Listing">Pre-Listing ($140 + 7¢/sqft)</option>
+        <option value="160" data-name="Phase 1: Foundation">Phase 1: Foundation ($160 + 7¢/sqft)</option>
+        <option value="200" data-name="Phase 2: Pre-Drywall">Phase 2: Pre-Drywall ($200 + 7¢/sqft)</option>
+        <option value="265" data-name="Phase 3: Final">Phase 3: Final ($265 + 7¢/sqft)</option>
+        <option value="180" data-name="Warranty Inspection">Warranty Inspection ($180 + 7¢/sqft)</option>
+    </select>
+
+    <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+        <div style="flex: 1;">
+            <label style="display: block; font-weight: bold; margin-bottom: 5px;">Square Footage:</label>
+            <input type="number" id="sqft" placeholder="e.g. 2500" style="width: 100%; padding: 12px; border: 1px solid #bbb; border-radius: 4px;">
+        </div>
+        <div style="flex: 1;">
+            <label style="display: block; font-weight: bold; margin-bottom: 5px;">Distance (Miles):</label>
+            <input type="number" id="miles" placeholder="From 77479" style="width: 100%; padding: 12px; border: 1px solid #bbb; border-radius: 4px;">
+        </div>
+    </div>
+
+    <div style="text-align: right; margin-bottom: 20px;">
+        <a href="https://www.google.com/maps/dir//18427+Southwest+Fwy,+Sugar+Land,+TX+77479" target="_blank" style="font-size: 0.8em; color: #007bff; text-decoration: none;">📍 Click here to check distance from Sugar Land Water Tower</a>
+    </div>
+
+    <label style="display: block; font-weight: bold; margin-bottom: 10px;">Ancillary Services (+$125 ea):</label>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 25px; background: #f9f9f9; padding: 15px; border-radius: 4px;">
+        <label><input type="checkbox" class="ancillary" value="125" data-name="WDI/Termite"> WDI/Termite</label>
+        <label><input type="checkbox" class="ancillary" value="125" data-name="Sewer Scope"> Sewer Scope</label>
+        <label><input type="checkbox" class="ancillary" value="125" data-name="Pool/Spa"> Pool/Spa</label>
+        <label><input type="checkbox" class="ancillary" value="125" data-name="Foundation Levels"> Foundation Levels</label>
+    </div>
+
+    <button onclick="calculateTotal()" style="width: 100%; padding: 15px; background-color: #000; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 1.1em; text-transform: uppercase;">Calculate Estimate</button>
+
+    <div id="totalDisplay" style="margin-top: 25px; padding: 20px; background: #e9ecef; border-radius: 4px; text-align: center; display: none;">
+        <p style="margin: 0; font-size: 0.9em; color: #444;">Total Estimated Fee</p>
+        <span id="finalPrice" style="font-size: 2.2em; color: #000; font-weight: bold;">$0.00</span>
+        
+        <div style="margin-top: 15px; border-top: 1px solid #ccc; padding-top: 15px;">
+            <p style="font-size: 0.85em; margin-bottom: 10px;">Ready to proceed?</p>
+            <button onclick="sendEmailQuote()" style="background-color: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">📧 Email Me This Quote</button>
+        </div>
+    </div>
+</div>
+
+<script>
+let currentEstimate = 0;
+let details = "";
+
+function calculateTotal() {
+    const baseSelect = document.getElementById('baseType');
+    const baseFee = parseFloat(baseSelect.value);
+    const serviceName = baseSelect.options[baseSelect.selectedIndex].getAttribute('data-name');
+    
+    const sqft = parseFloat(document.getElementById('sqft').value) || 0;
+    const sqftFee = sqft * 0.07;
+
+    let ancillaryTotal = 0;
+    let selectedAncillaries = [];
+    document.querySelectorAll('.ancillary').forEach(cb => {
+        if (cb.checked) {
+            ancillaryTotal += parseFloat(cb.value);
+            selectedAncillaries.push(cb.getAttribute('data-name'));
+        }
+    });
+
+    const miles = parseFloat(document.getElementById('miles').value) || 0;
+    let travelFee = 0;
+    if (miles > 60) travelFee = 50;
+    else if (miles > 40) travelFee = 25;
+    else if (miles > 30) travelFee = 10;
+    
+    currentEstimate = baseFee + sqftFee + ancillaryTotal + travelFee;
+    
+    // Build summary for email
+    details = `Service: ${serviceName}\nSqFt: ${sqft}\nMiles: ${miles}\nAdd-ons: ${selectedAncillaries.join(', ') || 'None'}\nTotal: $${currentEstimate.toFixed(2)}`;
+
+    const display = document.getElementById('totalDisplay');
+    const priceSpan = document.getElementById('finalPrice');
+    priceSpan.innerText = "$" + currentEstimate.toLocaleString(undefined, {minimumFractionDigits: 2});
+    display.style.display = 'block';
+}
+
+function sendEmailQuote() {
+    const subject = encodeURIComponent("Home Inspection Quote Request");
+    const body = encodeURIComponent("Hello Ryan,\n\nI generated this estimate on your website:\n\n" + details + "\n\nPlease contact me regarding a formal quote.\n\nAddress of property:\nPhone Number:");
+    window.location.href = `mailto:ryan@ryanthehomeinspector.com?subject=${subject}&body=${body}`;
+}
+</script>
