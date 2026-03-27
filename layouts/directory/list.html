@@ -1,17 +1,19 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
-<section class="section">
+  <section class="section">
     <div class="container">
-      <div>
-          <div class="row">
-            {{ $paginator:= .Paginate .RegularPages }}
-            {{ range $paginator.Pages }}
-              <div class="md:col-4">
-                {{ partial "components/directory-card" . }}
-              </div>
-            {{ end }}
+      <div class="flex flex-wrap justify-center gap-8">
+        {{ $paginator := .Paginate .RegularPages }}
+        {{ range $paginator.Pages }}
+          <div style="flex: 0 0 400px; height: 500px;" class="mb-4">
+            {{ partial "components/directory-card" . }}
           </div>
-          {{ partial "components/pagination.html" . }}
+        {{ end }}
+      </div>
+      
+      <div class="mt-12 text-center">
+        {{ partial "components/pagination.html" . }}
+      </div>
     </div>
   </section>
 {{ end }}

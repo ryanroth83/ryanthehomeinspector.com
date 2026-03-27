@@ -1,18 +1,19 @@
 main:
-  - name: Directory
+  - name: Professional Directory
     url: directory/
     weight: 1
 
-  - name: Library
+  - name: Information Library
     url: library/
     weight: 2
 
-  - name: More
-    weight: 3
+  #- name: More
+  #  weight: 3
 
-  - name: Ryanade
-    parent: More
-    url: ryanade/
+
+  #- name: Ryanade
+  #  parent: More
+  #  url: ryanade/
 
 footer:
   - name: Credits

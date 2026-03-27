@@ -1,5 +1,4 @@
 ---
-title: "Directory of Trusted Professionals"
+title: " Professional Directory"
 slug: "directory"
-metatitle: "Directory of Trusted Professionals – Ryan The Home Inspector"
 ---

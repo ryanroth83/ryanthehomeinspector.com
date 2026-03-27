@@ -1,5 +1,4 @@
 ---
-title: "Library of Information"
+title: "Information Library"
 slug: "library"
-metatitle: "Library of Information – Ryan The Home Inspector"
 ---

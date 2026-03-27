@@ -1,61 +1,55 @@
-<div
-  class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 text-center">
+<div class="bg-theme-light dark:bg-darkmode-theme-light rounded-xl text-center shadow-lg border border-transparent hover:border-primary transition-all relative group overflow-hidden" style="width: 400px; height: 500px;">  
+  
+  <a href="{{ .RelPermalink }}" class="absolute inset-0 z-10" aria-label="View Full Profile"></a>
 
-  <a href="{{ .RelPermalink }}">
+  <div class="absolute top-0 left-0 right-0 p-5 pb-0 z-20">
+    <div class="w-full flex items-center justify-center bg-white rounded-lg p-4 shadow-inner" style="height: 160px; margin-top: -5px;">
+      {{ if .Params.Logo }}
+        {{ with resources.Get .Params.logo }}
+          <img src="{{ .RelPermalink }}" alt="Logo" class="max-h-full max-w-full object-contain mx-auto">
+        {{ end }}
+      {{ else if .Params.profile }}
+        {{ with resources.Get .Params.profile }}
+          {{ with .Fill "150x150 Top" }}
+            <img src="{{ .RelPermalink }}" class="mx-auto rounded-full shadow-sm" width="120" height="120">
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
 
-  {{ with resources.Get .Params.profile }}
-    {{ with .Fill "200x200 Top" }}
-      <img src="{{ .RelPermalink }}" class="mx-auto mb-6 rounded" width="{{ .Width }}" height="{{ .Height }}" alt="">
-    {{ end }}
-  {{ end }}
+  <div class="absolute inset-x-0 top-[180px] bottom-[160px] flex items-center justify-center">
+    <div class="px-6 w-full">
+      <h3 class="text-2xl font-black text-dark dark:text-white mb-2 leading-tight">
+        {{ .Params.Company | default .Params.Name }}
+      </h3>
+      
+      <div class="text-[11px] font-extrabold uppercase tracking-widest text-primary px-3 leading-normal">
+        {{ .Params.Description }}
+      </div>
+    </div>
+  </div>
 
-    <h4 class="mb-3">
-      {{ .Params.Name }}
-    </h4>
-    <h5>
-     {{ .Params.Description }}
-    </h5>
-<br>
-{{ if .Params.Logo }}
-{{ with resources.Get .Params.logo }}
-  {{ if not (eq .MediaType.SubType "svg") }}
-    {{ with .Resize "300x" }}
-    <img src="{{ .RelPermalink }}" class="directory-logo">
-    {{ end }}
-  {{ else }}
-    <img src="{{ .RelPermalink }}" class="directory-logo">
-  {{ end }}
-{{ end }}
-{{ else }}
-<h4 class="mb-3">
-  {{ .Params.Company }}
-</h4>
-{{ end }}
-<br>
-    <p class="mb-4">
-     {{ .Summary }}
-    </p>
-  </a>
+  <div class="absolute bottom-0 left-0 right-0 p-5 pt-0 z-30">
+    <div class="border-t border-border pt-4">
+      <div class="text-base font-black space-y-1 mb-4 text-dark dark:text-white">
+        <a href="tel:{{ .Params.Phone }}" class="hover:text-primary transition-colors">{{ .Params.Phone }}</a><br>
+        <a href="mailto:{{ .Params.Email }}" class="block truncate hover:text-primary">{{ .Params.Email }}</a>
+      </div>
+      
+      <ul class="flex justify-center gap-3">
+        {{ range .Params.social }}
+          <li class="inline-block">
+            <a href="{{ .link | safeURL }}" target="_blank" class="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg hover:bg-primary transition-all">
+               <i class="{{ .icon }} text-primary group-hover:text-white text-lg"></i>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
 
-  <p class="contact-link">
-    <a href="tel:{{ .Params.Phone }}">{{ .Params.Phone }}</a>
-    <br>
-    <a href="mailto:{{ .Params.Email }}">{{ .Params.Email }}</a>
-    <br>
-    <a href="{{ .Params.Website }}" target="_blank">
-      {{ .Params.Website }}</a>
-    <br>
-    <br>
-  </p>
-  <br>
-  <ul class="social-icons">
-    {{ range .Params.social }}
-      <li>
-        <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
-          <span class="sr-only">{{ .title }}</span>
-          <i class="{{ .icon }}"></i>
-        </a>
-      </li>
-    {{ end }}
-  </ul>
+      <p class="mt-4 text-[10px] font-bold uppercase tracking-widest text-light group-hover:text-primary transition-colors">
+        View Full Profile →
+      </p>
+    </div>
+  </div>
 </div>

@@ -6,13 +6,14 @@ phone: (281) 499-1628
 fax: (281) 499-1629
 website: https://www.deesplumbing.com/
 profile: 
-description: 
+description: Plumbing
+summary: Local employee owned and operated since 1958.
 company: Dee's Plumbing, Inc.
-logo: 
+logo: /images/directory/logos/dees_plumbing.png
 directory: Plumbing
 location: Stafford
 language: English
-licence: 
+license: 
 social:
   - name: facebook
     icon: fa-brands fa-square-facebook
