@@ -10,6 +10,13 @@
     <webMaster>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</webMaster>
     <atom:link href="http://localhost:1313/sections/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid></guid>
+      <description></description>
+    </item>
+    <item>
       <title>What My Clients Are Saying About Me</title>
       <link></link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
