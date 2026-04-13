@@ -7,7 +7,7 @@
         
         {{ range .Params.sections }}
           {{ if .enable }}
-            {{ $sectionColor := .color }}
+            {{ $sectionColor := .color | default "#3b82f6" }}
             
             <div class="mb-12">
               <h2 class="text-3xl font-bold mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-4">
@@ -16,7 +16,7 @@
               
               <div class="space-y-4">
                 {{ range .items }}
-                  {{ $finalColor := .color | default $sectionColor | default "#3b82f6" }}
+                  {{ $finalColor := .color | default $sectionColor }}
                   
                   <div class="bg-white dark:bg-neutral-900 p-6 md:p-8 rounded border border-neutral-200 dark:border-neutral-800 transition hover:shadow-lg">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-3">
@@ -28,6 +28,12 @@
                         {{ .price }}
                       </p>
                     </div>
+
+                    {{ if .calculator.enable }}
+                      <div class="my-6">
+                        {{ partial "price-slider.html" (dict "context" . "base" .calculator.base_fee "rate" .calculator.sqft_rate) }}
+                      </div>
+                    {{ end }}
                     
                     {{ if .description }}
                       <p class="text-base text-neutral-600 dark:text-neutral-400 max-w-3xl mb-0">{{ .description }}</p>
@@ -41,7 +47,6 @@
                               <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="w-20 h-auto max-h-20 object-contain rounded">
                             </div>
                           {{ end }}
-                          
                           <div>
                             <p class="text-xs font-bold uppercase tracking-wider mb-1" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
                               Verified Partner / Performed by:
@@ -69,7 +74,6 @@
         <div class="text-center mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
           <a href="{{ .Params.btn_link }}" class="btn btn-primary px-10 py-4 text-xl font-bold">{{ .Params.btn_label }}</a>
         </div>
-
       </div>
     </div>
   </section>
