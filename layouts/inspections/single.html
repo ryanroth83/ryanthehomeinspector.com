@@ -1,6 +1,9 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
+  {{ $btnLink := .Params.btn_link }}
+  {{ $btnLabel := .Params.btn_label }}
+
   <section class="section">
     <div class="container">
       <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 md:p-12">
@@ -9,61 +12,61 @@
           {{ if .enable }}
             {{ $sectionColor := .color | default "#3b82f6" }}
             
-            <div class="mb-12">
-              <h2 class="text-3xl font-bold mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-4">
+            <div class="mb-16">
+              <h2 class="text-3xl font-bold mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-4">
                 {{ .title }}
               </h2>
               
-              <div class="space-y-4">
+              <div class="grid grid-cols-1 gap-8">
                 {{ range .items }}
                   {{ $finalColor := .color | default $sectionColor }}
                   
-                  <div class="bg-white dark:bg-neutral-900 p-6 md:p-8 rounded border border-neutral-200 dark:border-neutral-800 transition hover:shadow-lg">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-3">
-                      <h3 class="text-2xl font-bold text-neutral-900 dark:text-white">
-                        {{ .label }} 
-                        {{ if .details }}<span class="text-lg font-medium text-neutral-500">{{ .details }}</span>{{ end }}
-                      </h3>
-                      <p class="text-3xl font-extrabold whitespace-nowrap" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
-                        {{ .price }}
-                      </p>
+                  <div class="bg-white dark:bg-neutral-900 p-6 md:p-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 shadow-sm transition-all hover:shadow-md">
+                    
+                    <div class="flex justify-between items-start mb-4">
+                      <div class="flex-grow">
+                        <h3 class="text-2xl font-bold text-neutral-900 dark:text-white tracking-tight">
+                          {{ .label }} 
+                          {{ if .details }}<span class="text-lg font-medium text-neutral-500"> {{ .details }}</span>{{ end }}
+                        </h3>
+                      </div>
+                      
+                      {{ if not .slider.enable }}
+                        <div class="text-right">
+                          <p class="text-4xl font-black leading-none" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
+                            {{ .price }}
+                          </p>
+                          <p class="text-[9px] font-bold uppercase tracking-widest text-neutral-400 mt-1">Flat Fee</p>
+                        </div>
+                      {{ end }}
                     </div>
 
-                    {{ if .calculator.enable }}
-                      <div class="my-6">
-                        {{ partial "price-slider.html" (dict "context" . "base" .calculator.base_fee "rate" .calculator.sqft_rate) }}
-                      </div>
-                    {{ end }}
-                    
                     {{ if .description }}
-                      <p class="text-base text-neutral-600 dark:text-neutral-400 max-w-3xl mb-0">{{ .description }}</p>
+                      <p class="text-base text-neutral-500 dark:text-neutral-400 max-w-3xl mb-6">
+                        {{ .description }}
+                      </p>
+                    {{ end }}
+
+                    {{ if .slider.enable }}
+                      <div class="bg-neutral-50 dark:bg-neutral-800/50 p-6 md:p-8 rounded-xl border border-neutral-100 dark:border-neutral-700 mb-6">
+                        {{ partial "price-slider.html" (dict "context" . "base" .slider.base_fee "rate" .slider.sqft_rate "color" $finalColor) }}
+                      </div>
                     {{ end }}
 
                     {{ if .partner }}
                       {{ with .partner }}
-                        <div class="w-full flex items-center gap-6 border-t border-neutral-200 dark:border-neutral-800 pt-5 mt-5">
+                        <a href="{{ .link | default "#" }}" target="_blank" rel="noopener" class="block pt-6 mt-6 border-t border-neutral-100 dark:border-neutral-800 flex items-center gap-6 no-underline hover:opacity-80 transition-opacity">
                           {{ if .logo }}
-                            <div class="shrink-0">
-                              <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="w-20 h-auto max-h-20 object-contain rounded">
-                            </div>
+                            <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="w-16 h-auto object-contain">
                           {{ end }}
                           <div>
-                            <p class="text-xs font-bold uppercase tracking-wider mb-1" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
-                              Verified Partner / Performed by:
-                            </p>
-                            <h4 class="text-xl font-bold text-neutral-800 dark:text-white">
-                              {{ if .link }}
-                                <a href="{{ .link | safeURL }}" target="_blank" rel="noopener noreferrer" class="hover:opacity-75 transition">
-                                  {{ .name }}
-                                </a>
-                              {{ else }}
-                                {{ .name }}
-                              {{ end }}
-                            </h4>
+                            <p class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Verified Partner / Performed By:</p>
+                            <h4 class="text-lg font-bold" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>{{ .name }}</h4>
                           </div>
-                        </div>
+                        </a>
                       {{ end }}
                     {{ end }}
+
                   </div>
                 {{ end }}
               </div>
@@ -71,9 +74,12 @@
           {{ end }}
         {{ end }}
 
-        <div class="text-center mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
-          <a href="{{ .Params.btn_link }}" class="btn btn-primary px-10 py-4 text-xl font-bold">{{ .Params.btn_label }}</a>
+        <div class="text-center mt-12">
+          <a href="{{ $btnLink }}" class="btn btn-primary px-12 py-4 text-xl font-bold rounded-full shadow-lg">
+            {{ $btnLabel }}
+          </a>
         </div>
+
       </div>
     </div>
   </section>

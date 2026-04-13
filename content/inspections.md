@@ -10,15 +10,13 @@ sections:
     enable: true
     items:
       - label: "TREC Inspection"
-        price: "$340 + $0.07/sq.ft."
-        calculator:
+        slider:
           enable: true
           base_fee: 340
           sqft_rate: 0.07
         description: "A comprehensive evaluation of the home's visible and accessible systems following TREC Standards of Practice."
       - label: "Pre-Listing"
-        price: "$140 + $0.07/sq.ft."
-        calculator:
+        slider:
           enable: true
           base_fee: 140
           sqft_rate: 0.07
@@ -30,32 +28,28 @@ sections:
     items:
       - label: "Phase 1"
         details: "(Pre-Foundation)"
-        price: "$160 + $0.07/sq.ft."
-        calculator:
+        slider:
           enable: true
           base_fee: 160
           sqft_rate: 0.07
         description: "Inspection of formwork, rebar, and plumbing rough-ins before the concrete slab is poured."
       - label: "Phase 2"
         details: "(Pre-Drywall)"
-        price: "$200 + $0.07/sq.ft."
-        calculator:
+        slider:
           enable: true
           base_fee: 200
           sqft_rate: 0.07
         description: "Evaluation of framing, electrical, plumbing, and mechanical systems while the 'bones' of the house are still exposed."
       - label: "Phase 3"
         details: "(Final Inspection)"
-        price: "$265 + $0.07/sq.ft."
-        calculator:
+        slider:
           enable: true
           base_fee: 265
           sqft_rate: 0.07
         description: "A full TREC standard inspection performed at a discounted rate when following a Phase 2 evaluation."
       - label: "Warranty"
         details: "(11-Month)"
-        price: "$180 + $0.07/sq.ft."
-        calculator:
+        slider:
           enable: true
           base_fee: 180
           sqft_rate: 0.07

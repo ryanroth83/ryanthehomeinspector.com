@@ -1,18 +1,29 @@
 {{ $id := .context.label | urlize }}
-<div class="price-slider-container bg-neutral-50 dark:bg-neutral-800/50 p-6 rounded-lg border border-neutral-200 dark:border-neutral-700">
-  <div class="space-y-4">
-    <div class="flex justify-between items-center">
-      <label class="text-sm font-bold text-neutral-600 dark:text-neutral-400">Estimate for {{ .context.label }}:</label>
-      <span id="display-{{ $id }}" class="font-mono font-bold text-primary">2,500 sq.ft.</span>
+<div class="w-full">
+  
+  <div class="flex justify-between items-center mb-6 w-full">
+    
+    <div class="flex flex-col gap-1">
+      <span class="text-lg font-bold" {{ printf "style='color: %s;'" .color | safeHTMLAttr }}>
+        {{ printf "$%v + $%v/sq.ft." .base .rate }}
+      </span>
+      <span id="display-{{ $id }}" class="text-base font-medium text-neutral-500">
+        2,500 sq.ft.
+      </span>
+    </div>
+
+    <div class="text-right flex justify-end">
+      <span id="total-{{ $id }}" class="text-4xl md:text-5xl font-black leading-none tracking-tight inline-block" {{ printf "style='color: %s;'" .color | safeHTMLAttr }}>
+        $0.00
+      </span>
     </div>
     
+  </div>
+  
+  <div class="w-full flex">
     <input type="range" id="slider-{{ $id }}" min="500" max="6000" step="50" value="2500" 
-      class="w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer accent-primary">
-    
-    <div class="text-right">
-      <span class="text-xs uppercase text-neutral-400 block">Estimated Cost</span>
-      <span id="total-{{ $id }}" class="text-2xl font-black text-neutral-900 dark:text-white">$0.00</span>
-    </div>
+      class="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer block"
+      {{ printf "style='accent-color: %s;'" .color | safeHTMLAttr }}>
   </div>
 </div>
 
