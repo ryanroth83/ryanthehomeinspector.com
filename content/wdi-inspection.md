@@ -3,10 +3,15 @@ title: "WDI Inspections"
 # meta title
 meta_title: ""
 # meta description
-description: "Wood Destroying Inspects Inspection"
+description: "Professional Wood Destroying Inspection performed by Mama Bear Pest & Outdoor"
 # save as draft
 draft: false
+image: "/images/directory/logos/mama_bear_pest.png"
 ---
+- "Quality WDI inspection by a local, honest & experienced pest control company."
+- "Seamlessly schedule your WDI inspection when scheduling your home inspection."
+- "Lead Inspector: John Harrington, License #0925441"
+
 ### What is a WDI inspection?
 
 WDI stands for Wood Destroying Inspections, sometimes you may see it written as WDO for Wood Destroying Organisms. Basically is an inspection for termites and other critters that destroy wood.

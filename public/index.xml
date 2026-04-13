@@ -59,13 +59,6 @@
       <description>&lt;h4 id=&#34;trec-documents&#34;&gt;TREC Documents&lt;/h4&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.trec.texas.gov/online-sops/&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;Texas Inspectors Standards of Practice (SOP)&lt;/a&gt;&#xA; &lt;a href=&#34;https://www.trec.texas.gov/sites/default/files/pdf-forms/SOP%20%28printable%20booklet%29.pdf&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;(printable)&lt;/a&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link></link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid></guid>
-      <description></description>
-    </item>
-    <item>
       <title>Alan’s Plumbing</title>
       <link>http://localhost:1313/directory/alans_plumbing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
@@ -126,7 +119,7 @@
       <link>http://localhost:1313/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
       <guid>http://localhost:1313/credits/</guid>
-      <description>&lt;div class=&#34;text-light dark:text-darkmode-light container text-center&#34;&gt;&#xA;    Site Created By:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://github.com/ryanroth83&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Ryan Roth&lt;/b&gt;&lt;/a&gt;&#xA;    &lt;br&gt;&#xA;    Powered By:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Hugo&lt;/b&gt;&lt;/a&gt; &#xA;    &lt;br&gt;&#xA;    Theme:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://github.com/zeon-studio/hugoplate&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Hugoplate&lt;/b&gt;&lt;/a&gt;&#xA;    &lt;br&gt;&#xA;    Hosted With:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Github&lt;/b&gt;&lt;/a&gt;&#xA;    &lt;br&gt;&#xA;    Served Using:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://pages.cloudflare.com/&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Cloudflare Pages&lt;/b&gt;&lt;/a&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;br&gt;&#xA;  &lt;br&gt;&#xA;  &lt;br&gt;&#xA;  &lt;div class=&#34;devRow&#34;&gt;&#xA;      &lt;div class=&#34;devColumn&#34;&gt;&#xA;          &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&#xA;            &lt;img src=&#34;http://localhost:1313/logos/hugo-logo.svg&#34; alt=&#34;Hugo&#34; style=&#34;width:90%&#34;&gt;&#xA;          &lt;/a&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;devColumn&#34;&gt;&#xA;          &lt;a href=&#34;https://cloudflare.com/&#34; target=&#34;_blank&#34;&gt;&#xA;            &lt;img src=&#34;http://localhost:1313/logos/Cloudflare_Logo.svg&#34; alt=&#34;Cloudflare&#34; style=&#34;width:90%&#34;&gt;&#xA;          &lt;/a&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;devColumn&#34;&gt;&#xA;          &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;&#xA;            &lt;img src=&#34;http://localhost:1313/logos/GitHub_logo.svg&#34; alt=&#34;Github&#34; style=&#34;width:90%&#34;&gt;&#xA;          &lt;/a&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+      <description>&lt;div class=&#34;text-light dark:text-darkmode-light container text-center&#34;&gt;&#xA;    Site Created By:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://github.com/ryanroth83&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Ryan Roth&lt;/b&gt;&lt;/a&gt;&#xA;    &lt;br&gt;&#xA;    Powered By:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Hugo&lt;/b&gt;&lt;/a&gt; &#xA;    &lt;br&gt;&#xA;    Theme:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://github.com/zeon-studio/hugoplate&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Hugoplate&lt;/b&gt;&lt;/a&gt;&#xA;    &lt;br&gt;&#xA;    Hosted With:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Github&lt;/b&gt;&lt;/a&gt;&#xA;    &lt;br&gt;&#xA;    Served Using:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://pages.cloudflare.com/&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Cloudflare Pages&lt;/b&gt;&lt;/a&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;br&gt;&#xA;  &lt;br&gt;&#xA;  &lt;br&gt;&#xA;  &lt;div class=&#34;devRow&#34;&gt;&#xA;      &lt;div class=&#34;devColumn&#34;&gt;&#xA;          &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&#xA;            &lt;img src=&#34;http://localhost:1313/logos/hugo-logo.svg&#34; alt=&#34;Hugo&#34; style=&#34;width:90%&#34;&gt;&#xA;          &lt;/a&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;devColumn&#34;&gt;&#xA;          &lt;a href=&#34;https://cloudflare.com/&#34; target=&#34;_blank&#34;&gt;&#xA;            &lt;img src=&#34;http://localhost:1313/logos/Cloudflare_Logo.svg&#34; alt=&#34;Cloudflare&#34; style=&#34;width:90%&#34;&gt;&#xA;          &lt;/a&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;devColumn&#34;&gt;&#xA;          &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;&#xA;            &lt;img src=&#34;http://localhost:1313/logos/GitHub_logo.svg&#34; alt=&#34;Github&#34; style=&#34;width:90%&#34;&gt;&#xA;          &lt;/a&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;!-- Notes for future credits&#xA;&#xA;Image Links:&#xA;https://pixabay.com/vectors/books-literature-pile-study-2022464/&#xA;https://pixabay.com/vectors/book-phone-telephone-communication-159880/&#xA;&#xA;&#xA;&#xA;&#xA;--&gt;</description>
     </item>
     <item>
       <title>Lemon-Lime Ryanade™</title>
@@ -164,6 +157,13 @@
       <description>&lt;p&gt;Floor Coverings International provides expert flooring design and installation to the Houston area! We offer a wide variety of quality flooring products, from carpet, porcelain and ceramic tile, hardwood, luxury vinyl, to eco-friendly bamboo.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Residential Inspections</title>
+      <link>http://localhost:1313/inspections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/inspections/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>TREC Consumer Protection Notice</title>
       <link>http://localhost:1313/trec_notice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
@@ -175,10 +175,17 @@
       <link>http://localhost:1313/wdi-inspection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
       <guid>http://localhost:1313/wdi-inspection/</guid>
-      <description>&lt;h3 id=&#34;what-is-a-wdi-inspection&#34;&gt;What is a WDI inspection?&lt;/h3&gt;&#xA;&lt;p&gt;WDI stands for Wood Destroying Inspections, sometimes you may see it written as WDO for Wood Destroying Organisms. Basically is an inspection for termites and other critters that destroy wood.&lt;/p&gt;</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Quality WDI inspection by a local, honest &amp;amp; experienced pest control company.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Seamlessly schedule your WDI inspection when scheduling your home inspection.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Lead Inspector: John Harrington, License #0925441&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-is-a-wdi-inspection&#34;&gt;What is a WDI inspection?&lt;/h3&gt;&#xA;&lt;p&gt;WDI stands for Wood Destroying Inspections, sometimes you may see it written as WDO for Wood Destroying Organisms. Basically is an inspection for termites and other critters that destroy wood.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What My Clients Are Saying About Me</title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid></guid>
+      <description></description>
+    </item>
+    <item>
+      <title>What My Clients Say</title>
       <link></link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
       <guid></guid>

@@ -12,6 +12,21 @@ banner:
 # Features
 features:
 
+  - title: "Home Inspection Services"
+    image: "/images/inspections/inspections.png"
+    content: "Honest & Unbiased Home Inspections"
+    bulletpoints:
+      - "**TREC Inspections:** Existing & Inventory New Homes"
+      - "**Phase Inspections:** Verifying New Construction Builds"
+      - "**Pre-listing Inspections:** Know What To Expect When Selling"
+      - "**Maintenance Inspection:** Inspect Your Current Home"
+      - "**WDI Reports:** By Mama Bear Pest Control"
+      - "**Additional Services:** Sewer Scope, Pool/Spa, Foundation Level Reports & More..."
+    button:
+      enable: true
+      label: "Details & Pricing"
+      link: "/inspections"
+
   - title: "Buy Back Guarantee"
     image: "/images/BUY_BACK_HIGH.png"
     content: "If I Miss Anything I Will Have Your House Bought Back!"
@@ -60,18 +75,6 @@ features:
       enable: true
       label: "More Details"
       link: "https://www.nachi.org/honor.html"
-
-  - title: "Wood Destroying Insect Inspection"
-    image: "/images/directory/logos/mama_bear_pest.png"
-    content: "Professional Wood Destroying Inspection performed by [Mama Bear Pest & Outdoor](/directory/mama_bear_pest/)."
-    bulletpoints:
-      - "Quality WDI inspection by a local, honest & experienced pest control company."
-      - "Seamlessly schedule your WDI inspection when scheduling your home inspection."
-      - "Lead Inspector: John Harrington, License #0925441"
-    button:
-      enable: true
-      label: "More Details"
-      link: "/wdi-inspection"
 
   - title: "Trusted Professional Directory"
     image: "/images/directory/directory.png"

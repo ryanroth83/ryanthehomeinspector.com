@@ -1,0 +1,76 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 md:p-12">
+        
+        {{ range .Params.sections }}
+          {{ if .enable }}
+            {{ $sectionColor := .color }}
+            
+            <div class="mb-12">
+              <h2 class="text-3xl font-bold mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-4">
+                {{ .title }}
+              </h2>
+              
+              <div class="space-y-4">
+                {{ range .items }}
+                  {{ $finalColor := .color | default $sectionColor | default "#3b82f6" }}
+                  
+                  <div class="bg-white dark:bg-neutral-900 p-6 md:p-8 rounded border border-neutral-200 dark:border-neutral-800 transition hover:shadow-lg">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-3">
+                      <h3 class="text-2xl font-bold text-neutral-900 dark:text-white">
+                        {{ .label }} 
+                        {{ if .details }}<span class="text-lg font-medium text-neutral-500">{{ .details }}</span>{{ end }}
+                      </h3>
+                      <p class="text-3xl font-extrabold whitespace-nowrap" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
+                        {{ .price }}
+                      </p>
+                    </div>
+                    
+                    {{ if .description }}
+                      <p class="text-base text-neutral-600 dark:text-neutral-400 max-w-3xl mb-0">{{ .description }}</p>
+                    {{ end }}
+
+                    {{ if .partner }}
+                      {{ with .partner }}
+                        <div class="w-full flex items-center gap-6 border-t border-neutral-200 dark:border-neutral-800 pt-5 mt-5">
+                          {{ if .logo }}
+                            <div class="shrink-0">
+                              <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="w-20 h-auto max-h-20 object-contain rounded">
+                            </div>
+                          {{ end }}
+                          
+                          <div>
+                            <p class="text-xs font-bold uppercase tracking-wider mb-1" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
+                              Verified Partner / Performed by:
+                            </p>
+                            <h4 class="text-xl font-bold text-neutral-800 dark:text-white">
+                              {{ if .link }}
+                                <a href="{{ .link | safeURL }}" target="_blank" rel="noopener noreferrer" class="hover:opacity-75 transition">
+                                  {{ .name }}
+                                </a>
+                              {{ else }}
+                                {{ .name }}
+                              {{ end }}
+                            </h4>
+                          </div>
+                        </div>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+
+        <div class="text-center mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
+          <a href="{{ .Params.btn_link }}" class="btn btn-primary px-10 py-4 text-xl font-bold">{{ .Params.btn_label }}</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+{{ end }}
