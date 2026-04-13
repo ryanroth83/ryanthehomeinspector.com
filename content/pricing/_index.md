@@ -1,12 +1,13 @@
 ---
-title: "Residential Inspections"
-description: "Inspection Details & Pricing"
+title: "Inspection Pricing"
+slug: "Pricing"
+description: "Inspection Pricing & Details"
 draft: false
 btn_label: "Book Inspection"
 btn_link: "/book-inspection"
 
 sections:
-  - title: "Standard Inspections"
+  - title: "Resale Inspections:"
     enable: true
     items:
       - label: "TREC Inspection"

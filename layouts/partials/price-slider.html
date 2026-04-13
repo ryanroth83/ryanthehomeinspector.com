@@ -2,13 +2,12 @@
 <div class="w-full">
   
   <div class="flex justify-between items-center mb-6 w-full">
-    
     <div class="flex flex-col gap-1">
       <span class="text-lg font-bold" {{ printf "style='color: %s;'" .color | safeHTMLAttr }}>
         {{ printf "$%v + $%v/sq.ft." .base .rate }}
       </span>
       <span id="display-{{ $id }}" class="text-base font-medium text-neutral-500">
-        2,500 sq.ft.
+        1,700 sq.ft.
       </span>
     </div>
 
@@ -17,11 +16,10 @@
         $0.00
       </span>
     </div>
-    
   </div>
   
   <div class="w-full flex">
-    <input type="range" id="slider-{{ $id }}" min="500" max="6000" step="50" value="2500" 
+    <input type="range" id="slider-{{ $id }}" min="500" max="6000" step="50" value="1700" 
       class="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer block"
       {{ printf "style='accent-color: %s;'" .color | safeHTMLAttr }}>
   </div>

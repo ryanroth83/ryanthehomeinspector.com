@@ -6,6 +6,10 @@ main:
   - name: Information Library
     url: library/
     weight: 2
+  
+  - name: Inspection Pricing
+    url: pricing/
+    weight: 3
 
   #- name: More
   #  weight: 3

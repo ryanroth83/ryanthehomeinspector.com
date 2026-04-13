@@ -52,6 +52,8 @@
   </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>
+    <loc>http://localhost:1313/pricing/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/inspectors/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/insurance/</loc>
@@ -72,13 +74,9 @@
   </url><url>
     <loc>http://localhost:1313/directory/plumbing/</loc>
   </url><url>
-    <loc>http://localhost:1313/pricing/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/prissy_moving/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/reinel_solano/</loc>
-  </url><url>
-    <loc>http://localhost:1313/inspections/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/roofing/</loc>
   </url><url>
