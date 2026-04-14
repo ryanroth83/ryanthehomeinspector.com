@@ -19,7 +19,7 @@ sections:
       - label: "Pre-Listing Inspection"
         slider:
           enable: true
-          base_fee: 140
+          base_fee: 240
           sqft_rate: 0.07
 
         description: "A strategic assessment for sellers to identify and address repair items before putting the home on the market."
