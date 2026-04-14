@@ -2,17 +2,19 @@ main:
   - name: Professional Directory
     url: directory/
     weight: 1
+    pin: true
 
   - name: Information Library
     url: library/
     weight: 2
+    pin: true
   
   - name: Inspection Pricing
     url: pricing/
     weight: 3
 
-  #- name: More
-  #  weight: 3
+#- name: More
+#  weight: 3
 
 
   #- name: Ryanade
