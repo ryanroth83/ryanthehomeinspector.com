@@ -1,25 +1,29 @@
 {{ $id := .context.label | urlize }}
 <div class="w-full">
   
-  <div class="flex justify-between items-center mb-6 w-full">
-    <div class="flex flex-col gap-1">
-      <span class="text-lg font-bold" {{ printf "style='color: %s;'" .color | safeHTMLAttr }}>
-        {{ printf "$%v + $%v/sq.ft." .base .rate }}
-      </span>
-      <span id="display-{{ $id }}" class="text-base font-medium text-neutral-500">
+  <div class="mb-4 text-center">
+    <p class="text-2xl md:text-3xl" {{ printf "style='color: %s;'" .color | safeHTMLAttr }}>
+      {{ printf "$%v + $%v/sq.ft." .base .rate }}
+    </p>
+  </div>
+
+  <div class="flex flex-row items-baseline justify-between mb-6 w-full gap-2">
+    
+    <div class="flex-shrink-0">
+      <span id="display-{{ $id }}" class="price-display-brand text-neutral-500">
         1,700 sq.ft.
       </span>
     </div>
 
-    <div class="text-right flex justify-end">
-      <span id="total-{{ $id }}" class="text-4xl md:text-5xl font-black leading-none tracking-tight inline-block" {{ printf "style='color: %s;'" .color | safeHTMLAttr }}>
-        $0.00
+    <div class="text-right flex-shrink-0">
+      <span id="total-{{ $id }}" class="price-display-brand" {{ printf "style='color: %s;'" .color | safeHTMLAttr }}>
+        $0
       </span>
     </div>
   </div>
   
   <div class="w-full flex">
-    <input type="range" id="slider-{{ $id }}" min="500" max="6000" step="50" value="1700" 
+    <input type="range" id="slider-{{ $id }}" min="500" max="6000" step="100" value="1700" 
       class="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer block"
       {{ printf "style='accent-color: %s;'" .color | safeHTMLAttr }}>
   </div>
@@ -31,14 +35,21 @@
     const display = document.getElementById('display-{{ $id }}');
     const total = document.getElementById('total-{{ $id }}');
 
-    const base = {{ .base }};
-    const rate = {{ .rate }};
+    const base = parseFloat("{{ .base }}") || 0;
+    const rate = parseFloat("{{ .rate }}") || 0;
 
     function update() {
       const val = parseInt(slider.value);
       display.textContent = val.toLocaleString() + " sq.ft.";
+      
+      // Calculation results in whole numbers due to 100-step slider
       const cost = base + (val * rate);
-      total.textContent = "$" + cost.toLocaleString(undefined, {minimumFractionDigits: 2});
+      
+      // Output as whole dollar
+      total.textContent = "$" + cost.toLocaleString(undefined, {
+        minimumFractionDigits: 0, 
+        maximumFractionDigits: 0
+      });
     }
 
     slider.addEventListener('input', update);

@@ -16,7 +16,7 @@ sections:
           base_fee: 340
           sqft_rate: 0.07
         description: "A comprehensive evaluation of the home's visible and accessible systems following TREC Standards of Practice."
-      - label: "Pre-Listing"
+      - label: "Pre-Listing Inspection"
         slider:
           enable: true
           base_fee: 140
@@ -27,28 +27,28 @@ sections:
   - title: "New Construction Phases"
     enable: true
     items:
-      - label: "Phase 1"
+      - label: "Phase 1 Inspection"
         details: "(Pre-Foundation)"
         slider:
           enable: true
           base_fee: 160
           sqft_rate: 0.07
         description: "Inspection of formwork, rebar, and plumbing rough-ins before the concrete slab is poured."
-      - label: "Phase 2"
+      - label: "Phase 2 Inspection"
         details: "(Pre-Drywall)"
         slider:
           enable: true
           base_fee: 200
           sqft_rate: 0.07
         description: "Evaluation of framing, electrical, plumbing, and mechanical systems while the 'bones' of the house are still exposed."
-      - label: "Phase 3"
-        details: "(Final Inspection)"
+      - label: "Phase 3 Inspection"
+        details: "(Final)"
         slider:
           enable: true
           base_fee: 265
           sqft_rate: 0.07
         description: "A full TREC standard inspection performed at a discounted rate when following a Phase 2 evaluation."
-      - label: "Warranty"
+      - label: "Warranty Inspection"
         details: "(11-Month)"
         slider:
           enable: true

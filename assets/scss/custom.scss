@@ -90,3 +90,8 @@ content: ", ";
 }
 
 .float-right { float: right; }
+
+/* The single master control for all prices on the site */
+.price-display-brand {
+  @apply text-3xl md:text-4xl font-black leading-none tracking-tight whitespace-nowrap;
+}

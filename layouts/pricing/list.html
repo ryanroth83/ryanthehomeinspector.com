@@ -32,11 +32,11 @@
                       </div>
                       
                       {{ if not .slider.enable }}
-                        <div class="text-right">
-                          <p class="text-4xl font-black leading-none" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
+                        <div class="text-right flex-shrink-0">
+                          <p class="price-display-brand" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
                             {{ .price }}
                           </p>
-                          <p class="text-[9px] font-bold uppercase tracking-widest text-neutral-400 mt-1">Flat Fee</p>
+                          <p class="text-[9px] font-bold uppercase tracking-widest text-neutral-400 mt-1 text-center">Flat Fee</p>
                         </div>
                       {{ end }}
                     </div>
@@ -73,6 +73,7 @@
             </div>
           {{ end }}
         {{ end }}
+        
         <div class="text-center mt-12">
           <a class="btn btn-primary" href="{{ $btnLink }}">{{ $btnLabel }}<i class="fa fa-arrow-right pl-2"></i></a>
         </div>
