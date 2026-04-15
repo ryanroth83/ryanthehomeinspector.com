@@ -241,11 +241,14 @@
 
 
     
-    <header class="header sticky top-0 z-30">
-  <nav class="navbar container flex flex-nowrap items-center">
+    <header
+  class="header sticky top-0 z-30">
+  <nav class="navbar container">
     
-    <div class="flex-shrink-0 mr-8">
+    <div class="order-0">
+      
       <a class="navbar-brand block" href="/">
+        
         
 
 
@@ -275,28 +278,99 @@
 
       </a>
     </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Menu Open</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Menu Close</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
 
-    <ul id="nav-menu" class="navbar-nav hidden lg:flex items-center ml-auto space-x-6 xl:space-x-10 flex-nowrap whitespace-nowrap">
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
       
       
         
-        <li class="nav-item">
-          <a class="nav-link " href="/directory/">Professional Directory</a>
-        </li>
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/directory/"
+              >Professional Directory</a
+            >
+          </li>
+        
       
         
-        <li class="nav-item">
-          <a class="nav-link " href="/library/">Information Library</a>
-        </li>
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/library/"
+              >Information Library</a
+            >
+          </li>
+        
       
         
-        <li class="nav-item">
-          <a class="nav-link " href="/pricing/">Inspection Pricing</a>
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/pricing/"
+              >Inspection Pricing</a
+            >
+          </li>
+        
+      
+      
+        <li class="mt-4 inline-block lg:hidden">
+          <a
+            class="btn btn-outline-primary btn-sm"
+            href="/book-inspection"
+            >
+            Book Inspection Now
+          </a>
         </li>
       
     </ul>
 
-    <div class="flex items-center ml-6 flex-shrink-0">
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+      
+        
+          <button
+            aria-label="search"
+            class="border-border text-text-dark hover:text-primary
+            dark:border-darkmode-border mr-5 inline-block border-r pr-5
+            text-xl dark:text-white cursor-pointer dark:hover:text-darkmode-primary
+            "
+            data-target="search-modal">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        
+      
+
       
 
 
@@ -310,7 +384,7 @@
       
 
 
-  <div class="theme-switcher mr-4">
+  <div class="theme-switcher mr-5">
     <input id="theme-switcher" data-theme-switcher type="checkbox" />
     <label for="theme-switcher">
       <span class="sr-only">theme switcher</span>
@@ -374,16 +448,16 @@
 
 
 
+
       
-        <a href="/book-inspection" class="btn btn-outline-primary btn-sm hidden lg:inline-block">
+      
+        <a
+          href="/book-inspection"
+          class="btn btn-outline-primary btn-sm hidden lg:inline-block"
+          >
           Book Inspection Now
         </a>
       
-
-      <input id="nav-toggle" type="checkbox" class="hidden" />
-      <label for="nav-toggle" class="cursor-pointer flex items-center lg:hidden ml-4 text-dark dark:text-white">
-        <svg class="h-6 fill-current" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path></svg>
-      </label>
     </div>
   </nav>
 </header>
