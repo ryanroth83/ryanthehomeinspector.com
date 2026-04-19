@@ -1,17 +1,26 @@
 main:
-  - name: Professional Directory
+  - name: Directory
     url: directory/
     weight: 1
     pin: true
 
-  - name: Information Library
+  - name: Library
     url: library/
     weight: 2
     pin: true
   
-  - name: Inspection Pricing
-    url: pricing/
+  - name: Pricing
     weight: 3
+
+  - name: Inspection Rates
+    url: pricing
+    parent: Pricing
+    weight: 1
+
+  - name: Service Area
+    url: pricing/area
+    parent: Pricing
+    weight: 2
 
 #- name: More
 #  weight: 3
