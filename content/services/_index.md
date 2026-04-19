@@ -1,14 +1,14 @@
 ---
-title: "Services Offered"
-description: "Services Pricing & Details"
+title: "Inspection Services"
+description: "Inspection Services Pricing & Details"
 slug: "services"
 draft: false
 btn_label: "Book Inspection"
 btn_link: "/book-inspection"
-layout: "pricing"
+layout: "inspections"
 
 sections:
-  - title: "Resale Inspections:"
+  - title: "Home Inspections:"
     enable: true
     items:
       - label: "TREC Inspection"
@@ -25,7 +25,7 @@ sections:
 
         description: "A strategic assessment for sellers to identify and address repair items before putting the home on the market."
 
-  - title: "New Construction Phases"
+  - title: "New Construction Phases:"
     enable: true
     items:
       - label: "Phase 1 Inspection"

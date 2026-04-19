@@ -3,44 +3,43 @@
 }
 
 .directory-logo {
-display: block;
-margin-left: auto;
-margin-right: auto;
-max-width: 40vw;
-max-height: 15vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40vw;
+  max-height: 15vh;
 }
 
 .taglist {
-display: inline;
-list-style: none;
+  display: inline;
+  list-style: none;
 }
 
 .taglist li {
-display: inline;
+  display: inline;
 }
 
 .taglist li:after {
-content: ", ";
+  content: ", ";
 }
 
 .directory-content p {
   margin: 1;
   text-align: center;
-  }
+}
 
 .directory-content ul {
   list-style-type: style square;
-
-  }
+}
   
 .devRow {
-    display: flex;
-  }
+  display: flex;
+}
   
 .devColumn {
-    flex: 33.33%;
-    padding: 5px;
-  }
+  flex: 33.33%;
+  padding: 5px;
+}
 
 .devCompanies {
   flex: 60%;
@@ -48,9 +47,9 @@ content: ", ";
 }
 
 .devText {
-    text-align: center;
-    margin-bottom: 0;
-  }
+  text-align: center;
+  margin-bottom: 0;
+}
 
 .copyright {
   padding-bottom: none;
@@ -98,9 +97,10 @@ content: ", ";
 
 // Global typography cleanup
 p {
-  @apply mb-6 leading-relaxed text-lg;
+  // Use text-base on mobile to prevent text from feeling "crowded"
+  @apply mb-6 leading-relaxed text-base md:text-lg;
   &:last-child {
-    @apply mb-0; // Prevents double-padding at the bottom of sections
+    @apply mb-0;
   }
 }
 
@@ -112,36 +112,54 @@ img, figure {
 .main-content-fluid {
   @apply mx-auto w-full transition-all duration-300 ease-in-out;
   
-  // 1. Minimum "Safety" Padding (mobile)
-  padding-left: 5%;
-  padding-right: 5%;
+  // FIXED: Reduced mobile padding to 1rem (16px) to maximize screen use
+  padding-left: 1rem;
+  padding-right: 1rem;
   
-  // 2. Vertical Breathing Room
   padding-top: 2rem;
   padding-bottom: 4rem;
-
-  // 3. Smooth Desktop Expansion
-  // Instead of snapping, we let it breathe up to 1280px
   max-width: 1360px; 
 
   @screen lg {
     padding-top: 4rem;
     padding-bottom: 8rem;
-    // On big screens, give it more consistent side gutters
     padding-left: 7%;
     padding-right: 7%;
   }
 }
 
-// Apply the same logic to your header so they expand together
 .navbar {
   @apply mx-auto w-full flex items-center justify-between transition-all duration-300;
   max-width: 1360px;
-  padding-left: 5%;
-  padding-right: 5%;
+  
+  // FIXED: Reduced mobile padding to match content
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   @screen lg {
     padding-left: 7%;
     padding-right: 7%;
+  }
+}
+
+/* Specific Fix for TREC Inspection Slider Overlap */
+.slider-result-row {
+  @apply flex items-end justify-between;
+
+  // When screen is small, stack the Sq.Ft and Price vertically
+  @media (max-width: 640px) {
+    @apply flex-col items-center text-center;
+    
+    // Target the price span specifically to give it breathing room
+    .slider-price {
+      @apply mt-2 block w-full text-2xl;
+    }
+  }
+}
+
+/* Removes the gray background card on small screens to save space */
+@media (max-width: 640px) {
+  .slider-price-row {
+    @apply bg-transparent dark:bg-transparent p-0 border-none shadow-none;
   }
 }

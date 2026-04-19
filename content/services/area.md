@@ -1,6 +1,7 @@
 ---
-title: "Service Area & Travel Fees"
+title: "Service Area"
 layout: "area"
+slug: "area"
 
 hub:
   name: "Sugar Land Water Tower"

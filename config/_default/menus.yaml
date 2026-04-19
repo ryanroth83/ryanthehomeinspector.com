@@ -12,8 +12,8 @@ main:
   - name: Services
     weight: 3
 
-  - name: Inspection Rates
-    url: services
+  - name: Inspection Services
+    url: services/
     parent: Services
     weight: 1
 
