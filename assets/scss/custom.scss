@@ -95,3 +95,53 @@ content: ", ";
 .price-display-brand {
   @apply text-3xl md:text-4xl font-black leading-none tracking-tight whitespace-nowrap;
 }
+
+// Global typography cleanup
+p {
+  @apply mb-6 leading-relaxed text-lg;
+  &:last-child {
+    @apply mb-0; // Prevents double-padding at the bottom of sections
+  }
+}
+
+// Ensure images and figures have "smooth" spacing too
+img, figure {
+  @apply my-8 rounded-lg shadow-sm;
+}
+
+.main-content-fluid {
+  @apply mx-auto w-full transition-all duration-300 ease-in-out;
+  
+  // 1. Minimum "Safety" Padding (mobile)
+  padding-left: 5%;
+  padding-right: 5%;
+  
+  // 2. Vertical Breathing Room
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  // 3. Smooth Desktop Expansion
+  // Instead of snapping, we let it breathe up to 1280px
+  max-width: 1360px; 
+
+  @screen lg {
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+    // On big screens, give it more consistent side gutters
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+// Apply the same logic to your header so they expand together
+.navbar {
+  @apply mx-auto w-full flex items-center justify-between transition-all duration-300;
+  max-width: 1360px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  @screen lg {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
