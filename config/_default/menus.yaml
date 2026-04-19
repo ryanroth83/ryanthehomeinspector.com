@@ -13,12 +13,12 @@ main:
     weight: 3
 
   - name: Inspection Rates
-    url: pricing
+    url: services
     parent: Services
     weight: 1
 
   - name: Service Area
-    url: pricing/area
+    url: services/area
     parent: Services
     weight: 2
 

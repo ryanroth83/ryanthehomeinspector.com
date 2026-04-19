@@ -1,7 +1,7 @@
 ---
-title: "Inspection Pricing"
-slug: "Pricing"
-description: "Inspection Pricing & Details"
+title: "Services Offered"
+description: "Services Pricing & Details"
+slug: "services"
 draft: false
 btn_label: "Book Inspection"
 btn_link: "/book-inspection"
@@ -79,3 +79,6 @@ sections:
           logo: "/images/directory/logos/mama_bear_pest.png"
           link: "https://mamabearpest.com/"
 ---
+Rates include all fees. Properties outside our [standard area]({{< ref "/services/area" >}}) may have travel costs. Tax is not required. Credit card payments add 3%.
+
+[Check your area here]({{< ref "/services/area" >}}).
