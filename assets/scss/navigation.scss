@@ -28,15 +28,14 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .navbar-nav {
-  @apply text-center lg:text-left;
+  @apply flex items-center;
+  /* This prevents the links from ever dropping to a second row */
+  white-space: nowrap; 
 }
 
-// .nav-item {
-//   @apply mx-3;
-// }
-
 .nav-link {
-  @apply text-dark hover:text-primary dark:text-darkmode-dark block p-3 font-semibold transition lg:px-2 lg:py-3;
+  /* Reduce padding slightly on desktop to give more breathing room */
+  @apply xl:px-3; 
 }
 
 .nav-dropdown {
@@ -52,7 +51,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-list {
-  @apply bg-body dark:bg-darkmode-body z-10 min-w-[180px] rounded p-4 shadow hidden lg:invisible lg:absolute lg:block lg:opacity-0;
+  @apply bg-body dark:bg-darkmode-body z-10 min-w-[180px] rounded p-4 shadow hidden xl:invisible xl:absolute xl:block xl:opacity-0;
 }
 
 .nav-dropdown-item {
@@ -68,7 +67,7 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply inline-flex;
 
   label {
-    @apply bg-border relative inline-block h-4 w-6 cursor-pointer rounded-2xl lg:w-10;
+    @apply bg-border relative inline-block h-4 w-6 cursor-pointer rounded-2xl xl:w-10;
   }
 
   input {
@@ -81,7 +80,7 @@ input#nav-toggle:checked ~ #nav-menu {
 
   input:checked + label {
     span {
-      @apply lg:left-4;
+      @apply xl:left-4;
     }
   }
 }
