@@ -86,6 +86,8 @@
   </url><url>
     <loc>http://localhost:1313/sections/</loc>
   </url><url>
+    <loc>http://localhost:1313/pricing/area/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>

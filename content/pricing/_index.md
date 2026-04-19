@@ -5,6 +5,7 @@ description: "Inspection Pricing & Details"
 draft: false
 btn_label: "Book Inspection"
 btn_link: "/book-inspection"
+layout: "pricing"
 
 sections:
   - title: "Resale Inspections:"
