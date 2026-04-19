@@ -9,17 +9,17 @@ main:
     weight: 2
     pin: true
   
-  - name: Pricing
+  - name: Services
     weight: 3
 
   - name: Inspection Rates
     url: pricing
-    parent: Pricing
+    parent: Services
     weight: 1
 
   - name: Service Area
     url: pricing/area
-    parent: Pricing
+    parent: Services
     weight: 2
 
 #- name: More
