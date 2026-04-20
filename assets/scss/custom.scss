@@ -55,11 +55,16 @@
   padding-bottom: none;
 }
 
+/* Master Control for the Footer Logo */
 .copyrightLogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 4rem;
+  // Overrides the global img styles below
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  @apply my-0; 
 }
 
 .indexLogo {
@@ -97,25 +102,21 @@
 
 // Global typography cleanup
 p {
-  // Use text-base on mobile to prevent text from feeling "crowded"
   @apply mb-6 leading-relaxed text-base md:text-lg;
   &:last-child {
     @apply mb-0;
   }
 }
 
-// Ensure images and figures have "smooth" spacing too
-img, figure {
+// Global Image Styles (Excluding specific UI elements)
+img:not(.copyrightLogo), figure {
   @apply my-8 rounded-lg shadow-sm;
 }
 
 .main-content-fluid {
   @apply mx-auto w-full transition-all duration-300 ease-in-out;
-  
-  // FIXED: Reduced mobile padding to 1rem (16px) to maximize screen use
   padding-left: 1rem;
   padding-right: 1rem;
-  
   padding-top: 2rem;
   padding-bottom: 4rem;
   max-width: 1360px; 
@@ -131,8 +132,6 @@ img, figure {
 .navbar {
   @apply mx-auto w-full flex items-center justify-between transition-all duration-300;
   max-width: 1360px;
-  
-  // FIXED: Reduced mobile padding to match content
   padding-left: 1rem;
   padding-right: 1rem;
 
@@ -142,24 +141,33 @@ img, figure {
   }
 }
 
-/* Specific Fix for TREC Inspection Slider Overlap */
+/* Fix for TREC Inspection Slider Overlap */
 .slider-result-row {
   @apply flex items-end justify-between;
 
-  // When screen is small, stack the Sq.Ft and Price vertically
   @media (max-width: 640px) {
     @apply flex-col items-center text-center;
     
-    // Target the price span specifically to give it breathing room
     .slider-price {
       @apply mt-2 block w-full text-2xl;
     }
   }
 }
 
-/* Removes the gray background card on small screens to save space */
+/* Mobile Slider background cleanup */
 @media (max-width: 640px) {
   .slider-price-row {
     @apply bg-transparent dark:bg-transparent p-0 border-none shadow-none;
   }
+}
+
+/* Force Leaflet tiles to be visible and clear of UI overlaps */
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  z-index: 1; 
+}
+
+#service-map {
+  background: #f8f9fa; /* Gives you a light gray background while tiles load */
 }

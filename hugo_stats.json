@@ -230,6 +230,7 @@
       "mb-6",
       "mb-8",
       "mb:md-0",
+      "md:aspect-video",
       "md:bg-yellow-200",
       "md:block",
       "md:col-10",

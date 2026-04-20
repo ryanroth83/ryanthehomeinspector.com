@@ -1,0 +1,85 @@
+<div class="w-full">
+  <h3 class="text-center mb-6">{{ .Params.map_title | default "Service Area Map" }}</h3>
+  
+  <div class="relative w-full aspect-square md:aspect-video overflow-hidden rounded-2xl shadow-xl border border-neutral-200 dark:border-neutral-800">
+    <div id="service-map" class="absolute inset-0" style="min-height: 400px;"></div>
+  </div>
+
+  <p class="text-center mt-4 text-xs text-neutral-400 italic">
+    {{ .Params.map_description | default "Map is centered at our primary hub." }}
+  </p>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const hub = {
+      lat: {{ .Params.hub.lat }},
+      lng: {{ .Params.hub.lng }},
+      name: "{{ .Params.hub.name }}"
+    };
+    
+    const zones = [
+      {{ range .Params.zones }}
+      { 
+        radius: {{ .distance | safeJS }}, 
+        price: {{ .price | safeJS }}, 
+        color: "{{ .color | safeJS }}", 
+        label: "{{ .label | safeJS }}" 
+      },
+      {{ end }}
+    ];
+
+    // Uses the new default_zoom param from front matter
+    var map = L.map('service-map', {
+      center: [hub.lat, hub.lng],
+      zoom: {{ .Params.default_zoom | default 10 }},
+      scrollWheelZoom: false,
+      attributionControl: false,
+      zoomSnap: 0.1
+    });
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png').addTo(map);
+
+    zones.sort((a, b) => b.radius - a.radius).forEach(z => {
+      const circle = L.circle([hub.lat, hub.lng], {
+        color: z.color,
+        fillColor: z.color,
+        fillOpacity: 0.15,
+        weight: 2,
+        radius: z.radius * 1609.34
+      }).addTo(map);
+
+      const popupContent = `<strong>${z.label}</strong><br>Radius: ${z.radius} miles<br>Fee: ${z.price === 0 ? 'FREE' : '$' + z.price}`;
+      circle.bindPopup(popupContent);
+      
+      circle.on('mouseover', function () {
+        this.setStyle({ fillOpacity: 0.4 });
+        this.openPopup();
+      });
+      circle.on('mouseout', function () {
+        this.setStyle({ fillOpacity: 0.15 });
+        this.closePopup();
+      });
+    });
+
+    L.marker([hub.lat, hub.lng]).addTo(map).bindPopup(`<b>${hub.name}</b>`);
+
+    setTimeout(() => {
+      map.invalidateSize();
+      // If you want it to ALWAYS respect your manual zoom level, 
+      // comment out the setMapBounds() line below.
+      setMapBounds(); 
+    }, 400);
+
+    function setMapBounds() {
+      if (zones.length > 0) {
+        const maxDist = Math.max(...zones.map(z => z.radius));
+        const outerBuffer = maxDist * 1609.34 * 1.2;
+        map.fitBounds(L.circle([hub.lat, hub.lng], { radius: outerBuffer }).getBounds());
+      }
+    }
+  });
+</script>

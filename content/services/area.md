@@ -3,6 +3,10 @@ title: "Service Area"
 layout: "area"
 slug: "area"
 
+map_title: "Service Area Map"
+map_description: "Hover or tap the rings for zone details. Map is centered at the Sugar Land Hub."
+default_zoom: 8
+
 hub:
   name: "Sugar Land Water Tower"
   lat: 29.5895
@@ -17,13 +21,13 @@ zones:
   - distance: 30
     price: 10
     color: "#3498db" # Blue
-    label: "Extended Local"
+    label: "Extended Service Area"
   - distance: 40
     price: 25
     color: "#f1c40f" # Yellow
-    label: "Regional Zone"
-  - distance: 60
-    price: 50
-    color: "#e67e22" # Orange
-    label: "Extended Coverage"
+    label: "Regional Service Area"
+#  - distance: 60
+#    price: 50
+#    color: "#e67e22" # Orange
+#    label: "Extended Coverage"
 ---
