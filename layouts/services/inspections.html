@@ -16,14 +16,14 @@
                 {{ .title }}
               </h2>
               
-              <div class="grid grid-cols-1 gap-8">
+              <div class="grid grid-cols-1 gap-6">
                 {{ range .items }}
                   {{ $finalColor := .color | default $sectionColor }}
                   
-                  <div class="bg-white dark:bg-neutral-900 p-6 md:p-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 shadow-sm transition-all hover:shadow-md">
+                  <div class="bg-white dark:bg-neutral-900 p-6 md:p-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 shadow-sm transition-shadow hover:shadow-md">
                     
-                    <div class="flex justify-between items-start mb-4">
-                      <div class="flex-grow">
+                    <div class="flex flex-col md:flex-row justify-between items-center md:items-start mb-2 gap-2">
+                      <div class="text-center md:text-left">
                         <h3 class="text-2xl font-bold text-neutral-900 dark:text-white tracking-tight">
                           {{ .label }} 
                           {{ if .details }}<span class="text-lg font-medium text-neutral-500"> {{ .details }}</span>{{ end }}
@@ -31,40 +31,28 @@
                       </div>
                       
                       {{ if not .slider.enable }}
-                        <div class="text-right flex-shrink-0 flex flex-col items-center">
-                          <div class="price-display-brand leading-none" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
+                        <div class="text-center md:text-right flex-shrink-0 flex flex-col items-center md:items-end">
+                          <div class="text-3xl font-bold leading-none" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>
                             {{ .price }}
                           </div>
-                            <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-400 mt-0">Flat Fee</span>
+                          <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-400 mt-1">Flat Fee</span>
                         </div>
                       {{ end }}
                     </div>
 
                     {{ if .description }}
-                      <p class="text-base text-neutral-500 dark:text-neutral-400 max-w-3xl mb-6">
+                      <p class="text-base text-neutral-500 dark:text-neutral-400 max-w-3xl mb-4 text-center md:text-left">
                         {{ .description }}
                       </p>
                     {{ end }}
 
-                    {{ if .slider.enable }}
-                      <div class="bg-neutral-50 dark:bg-neutral-800/50 p-6 md:p-8 rounded-xl border border-neutral-100 dark:border-neutral-700 mb-6 w-full">
-                        {{ partial "price-slider.html" (dict "context" . "base" .slider.base_fee "rate" .slider.sqft_rate "color" $finalColor) }}
-                      </div>
+                    {{ if .partner }}
+                      {{ partial "services/partner-info.html" (dict "partner" .partner "color" $finalColor) }}
                     {{ end }}
 
-                    {{ if .partner }}
-                      {{ with .partner }}
-                        <a href="{{ .link | default "#" }}" target="_blank" rel="noopener" class="block pt-6 mt-6 border-t border-neutral-100 dark:border-neutral-800 flex items-center gap-6 no-underline hover:opacity-80 transition-opacity">
-                          {{ if .logo }}
-                            <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="w-16 h-auto object-contain">
-                          {{ end }}
-                          <div>
-                            <p class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Verified Partner / Performed By:</p>
-                            <h4 class="text-lg font-bold" {{ printf "style='color: %s;'" $finalColor | safeHTMLAttr }}>{{ .name }}</h4>
-                          </div>
-                        </a>
-                      {{ end }}
-                    {{ end }}
+                    <div class="w-full">
+                      {{ partial "services/price-slider.html" (dict "item" . "color" $finalColor) }}
+                    </div>
 
                   </div>
                 {{ end }}
@@ -74,12 +62,14 @@
         {{ end }}
 
         {{ with .Content }}
-           <div class="mb-8">{{ . }}</div>
+           <div class="mb-8 content">{{ . }}</div>
         {{ end }}
         
+        {{ if $btnLink }}
         <div class="text-center mt-12">
           <a class="btn btn-primary" href="{{ $btnLink }}">{{ $btnLabel }}<i class="fa fa-arrow-right pl-2"></i></a>
         </div>
+        {{ end }}
       </div>
     </div>
   </section>

@@ -1,0 +1,54 @@
+{{ $item := .item }}
+{{ $id := $item.label | urlize }}
+{{ $color := .color }}
+{{ $unitLabel := $item.slider.unit_label | default "sq.ft." }}
+
+<div class="w-full">
+  {{ if $item.slider.enable }}
+    <div class="mb-2 text-center">
+      <p class="text-xl md:text-2xl font-bold" {{ printf "style='color: %s;'" $color | safeHTMLAttr }}>
+        ${{ $item.slider.base }} + ${{ $item.slider.rate }}/{{ $unitLabel }}
+      </p>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center md:items-baseline justify-center md:justify-between mb-4 w-full gap-1 md:gap-4">
+      <div class="flex-shrink-0">
+        <span id="display-{{ $id }}" class="text-2xl md:text-3xl font-semibold text-neutral-500">
+          {{ $item.slider.initial | default 1700 }} {{ $unitLabel }}
+        </span>
+      </div>
+      <div class="text-center md:text-right flex-shrink-0">
+        <span id="total-{{ $id }}" class="text-3xl font-bold leading-none" {{ printf "style='color: %s;'" $color | safeHTMLAttr }}>
+          $0
+        </span>
+      </div>
+    </div>
+    
+    <input type="range" id="slider-{{ $id }}" 
+      min="{{ $item.slider.min | default 500 }}" 
+      max="{{ $item.slider.max | default 6000 }}" 
+      step="{{ $item.slider.step | default 100 }}" 
+      value="{{ $item.slider.initial | default 1700 }}" 
+      class="w-full h-3 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer block"
+      {{ printf "style='accent-color: %s;'" $color | safeHTMLAttr }}>
+
+    <script>
+      (function() {
+        const slider = document.getElementById('slider-{{ $id }}');
+        const display = document.getElementById('display-{{ $id }}');
+        const total = document.getElementById('total-{{ $id }}');
+        const base = parseFloat("{{ $item.slider.base }}") || 0;
+        const rate = parseFloat("{{ $item.slider.rate }}") || 0; 
+
+        function update() {
+          const val = parseInt(slider.value);
+          display.textContent = val.toLocaleString() + " " + "{{ $unitLabel }}";
+          const cost = Math.round(base + (val * rate));
+          total.textContent = "$" + cost.toLocaleString();
+        }
+        slider.addEventListener('input', update);
+        update();
+      })();
+    </script>
+  {{ end }}
+</div>

@@ -1,0 +1,30 @@
+{{ $partner := .partner }}
+{{ if $partner.enable }}
+  {{ $imgWidth := $partner.img_size | default 64 }}
+  {{/* Priority: partner color -> card color -> neutral gray */}}
+  {{ $displayColor := $partner.color | default .color | default "#737373" }}
+
+  <div class="mb-2 mt-1 md:mb-4 md:mt-2">
+    {{ if $partner.link }}<a href="{{ $partner.link }}" target="_blank" rel="noopener" class="no-underline group">{{ end }}
+      <div class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
+        {{ if $partner.logo }}
+          {{ $logo := resources.Get $partner.logo }}
+          {{ if $logo }}
+            {{ $scaled := $logo.Resize "320x webp" }}
+            <img src="{{ $scaled.RelPermalink }}" alt="Partner Logo" 
+                 style="width: {{ $imgWidth }}px; height: auto;" 
+                 class="object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+          {{ end }}
+        {{ end }}
+        <div class="text-center md:text-left">
+          <p class="text-xs uppercase tracking-[0.2em] font-bold mb-0" {{ printf "style='color: %s;'" $displayColor | safeHTMLAttr }}>
+            {{ $partner.label | default "Verified Partner" }}
+          </p>
+          <p class="text-base text-neutral-500 italic font-medium group-hover:text-primary transition-colors leading-snug">
+            {{ $partner.info }}
+          </p>
+        </div>
+      </div>
+    {{ if $partner.link }}</a>{{ end }}
+  </div>
+{{ end }}
