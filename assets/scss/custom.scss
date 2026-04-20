@@ -171,3 +171,20 @@ img:not(.copyrightLogo), figure {
 #service-map {
   background: #f8f9fa; /* Gives you a light gray background while tiles load */
 }
+
+// Targets the row containing [sqft] and [total price]
+.slider-result-container {
+  @apply flex items-center justify-center;
+
+  @media (max-width: 480px) {
+    @apply flex-col space-y-2; // Stacks them vertically with a small gap
+  }
+}
+
+.slider-price-total {
+  @apply leading-none font-bold text-primary;
+  
+  @media (max-width: 480px) {
+    @apply text-3xl; // Makes the price prominent once it drops to its own line
+  }
+}
