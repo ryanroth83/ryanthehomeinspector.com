@@ -3,15 +3,10 @@
 
 <section class="section">
   <div class="container max-w-4xl">
-    
-    <div class="text-center mb-12">
-      <h1 class="font-bold mb-2">{{ .Title }}</h1>
-      <p class="text-neutral-500 italic">Travel fees calculated from <strong>{{ .Params.hub.name }}.</strong></p>
-    </div>
-
     <div class="bg-white dark:bg-darkmode-theme-light shadow-lg rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden mb-16">
       <div class="p-8">
-        <h2 class="text-2xl font-bold mb-6 text-center lg:text-left">Travel Surcharge Schedule</h2>
+        <h2 class="text-2xl font-bold mb-6 text-center lg:text-left">{{ .Params.hub.title }}</h2>
+        <p class="text-neutral-500 italic text-center">Fees calculated from <strong>{{ .Params.hub.name }}.</strong></p>
         <div class="space-y-6">
           {{ range .Params.zones }}
           <div class="flex justify-between items-center group">
@@ -27,17 +22,17 @@
             </div>
           </div>
           {{ end }}
-        </div>
-      </div>
+        
       
-      <div class="bg-neutral-50 dark:bg-neutral-900/50 p-6 border-t border-neutral-100 dark:border-neutral-800 text-center">
+      <div class="text-center">
         <a href="https://www.google.com/maps/dir/?api=1&destination={{ .Params.hub.lat }},{{ .Params.hub.lng }}" 
            target="_blank" class="btn btn-primary btn-sm">
            Calculate Distance
         </a>
       </div>
     </div>
-
+  </div>
+</div>
     {{ partial "interactive-map.html" . }}
 
   </div>

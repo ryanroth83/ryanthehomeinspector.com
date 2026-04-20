@@ -11,6 +11,7 @@ hub:
   name: "Sugar Land Water Tower"
   lat: 29.5895
   lng: -95.6425
+  title: "Travel Surcharges"
   description: "18427 Southwest Fwy, Sugar Land, TX 77479"
 
 zones:
