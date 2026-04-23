@@ -1,25 +1,26 @@
 {{- $src := .Get "src" | default (.Get 0) -}}
-{{- if not $src -}}{{- errorf "iframe shortcode: 'src' is required (page: %q)" .Page.Path -}}{{- end -}}
-{{- $title := .Get "title" | default "Embedded content" -}}
-{{- $width := .Get "width" | default "100%" -}}
-{{- $height := .Get "height" | default "700" -}}
-{{- $class := .Get "class" -}}
-{{- $style := .Get "style" -}}
-{{- $loading := .Get "loading" | default "lazy" -}}
-{{- $allow := .Get "allow" | default "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -}}
-{{- $referrer := .Get "referrerpolicy" | default "no-referrer-when-downgrade" -}}
-{{- $sandbox := .Get "sandbox" -}}
-{{- $allowfs := .Get "allowfullscreen" | default "true" -}}
-<div class="iframe-embed{{ with $class }} {{ . }}{{ end }}"{{ with $style }} style="{{ . | safeHTMLAttr }}"{{ end }}>
+{{- $id := .Get "id" | default "scheduler-frame" -}}
+
+<div class="iframe-container" style="width: 100%; overflow: hidden;">
   <iframe
+    id="{{ $id }}"
     src="{{ $src | safeURL }}"
-    title="{{ $title }}"
-    width="{{ $width }}"
-    height="{{ $height }}"
-    loading="{{ $loading }}"
-    referrerpolicy="{{ $referrer }}"
-    {{ with $allow }}allow="{{ . | safeHTMLAttr }}"{{ end }}
-    {{ with $sandbox }}sandbox="{{ . | safeHTMLAttr }}"{{ end }}
-    {{ if eq (lower $allowfs) "true" }}allowfullscreen{{ end }}>
+    style="width: 1px; min-width: 100%; border: none;"
+    scrolling="no">
   </iframe>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.id.js"></script>
+<script>
+  iFrameResize({
+    log: false,
+    checkOrigin: false,
+    // 'max' or 'grow' are often more reliable for multi-step schedulers
+    heightCalculationMethod: 'max', 
+    interval: 32, // Forces the frame to check for height changes every 32ms
+    onInit: function(iframe) {
+        // Forces a redraw on load
+        iframe.iFrameResizer.resize();
+    }
+  }, '#{{ $id }}');
+</script>

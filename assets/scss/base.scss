@@ -1,9 +1,10 @@
 html {
-  @apply text-base;
+  @apply text-base overflow-x-hidden; /* Added overflow-x-hidden */
 }
 
 body {
-  @apply bg-body font-primary text-text dark:bg-darkmode-body dark:text-darkmode-text font-normal leading-relaxed;
+  @apply bg-body font-primary text-text dark:bg-darkmode-body dark:text-darkmode-text font-normal leading-relaxed overflow-x-hidden; /* Added overflow-x-hidden */
+  position: relative; /* Added to keep everything anchored correctly */
 }
 
 h1,
