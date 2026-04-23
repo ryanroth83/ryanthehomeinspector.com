@@ -5,6 +5,7 @@ layout: "inspections"
 slug: inspections
 btn_link: "/contact"
 btn_label: "Schedule Your Inspection"
+aliases: ["/pricing", "/prices", "/cost"]
 
 sections:
   - title: "Home Inspections"

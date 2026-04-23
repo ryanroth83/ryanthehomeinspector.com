@@ -5,7 +5,8 @@
 
   <section class="section">
     <div class="container">
-      <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 md:p-12 w-full">
+      
+      <div class="md:bg-theme-light md:dark:bg-darkmode-theme-light md:rounded md:p-12 p-0 w-full">
         
         {{ range .Params.sections }}
           {{ if .enable }}
@@ -26,7 +27,11 @@
                       <div class="text-center md:text-left">
                         <h3 class="text-2xl font-bold text-neutral-900 dark:text-white tracking-tight">
                           {{ .label }} 
-                          {{ if .details }}<span class="text-lg font-medium text-neutral-500"> {{ .details }}</span>{{ end }}
+                          {{ if .details }}
+                            <span class="block md:inline text-lg font-medium text-neutral-500">
+                              {{ .details }}
+                            </span>
+                          {{ end }}
                         </h3>
                       </div>
                       
@@ -62,11 +67,11 @@
         {{ end }}
 
         {{ with .Content }}
-           <div class="mb-8 content">{{ . }}</div>
+           <div class="mb-8 content text-center md:text-left">{{ . }}</div>
         {{ end }}
         
         {{ if $btnLink }}
-        <div class="text-center mt-12">
+        <div class="text-center mt-12 mb-8">
           <a class="btn btn-primary" href="{{ $btnLink }}">{{ $btnLabel }}<i class="fa fa-arrow-right pl-2"></i></a>
         </div>
         {{ end }}
