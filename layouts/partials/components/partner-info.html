@@ -17,9 +17,11 @@
           {{ end }}
         {{ end }}
         <div class="text-center md:text-left">
-          <p class="text-xs uppercase tracking-[0.2em] font-bold mb-0" {{ printf "style='color: %s;'" $displayColor | safeHTMLAttr }}>
+          <p class="text-lg md:text-xl uppercase tracking-[0.1em] font-bold mb-1 leading-tight" 
+             {{ printf "style='color: %s;'" $displayColor | safeHTMLAttr }}>
             {{ $partner.label | default "Verified Partner" }}
           </p>
+
           <p class="text-base text-neutral-500 italic font-medium group-hover:text-primary transition-colors leading-snug">
             {{ $partner.info }}
           </p>

@@ -3,8 +3,9 @@ title: "Inspections Services"
 description: "Inspection Services Pricing & Details"
 layout: "inspections"
 slug: inspections
-btn_link: "/contact"
+btn_link: "/book-inspection/"
 btn_label: "Schedule Your Inspection"
+btn_new: false
 aliases: ["/pricing", "/prices", "/cost"]
 
 sections:

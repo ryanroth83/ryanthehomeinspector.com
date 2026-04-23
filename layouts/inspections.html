@@ -2,6 +2,7 @@
   {{ partial "page-header" . }}
   {{ $btnLink := .Params.btn_link }}
   {{ $btnLabel := .Params.btn_label }}
+  {{ $btnNew := .Params.btn_new }}
 
   <section class="section">
     <div class="container">
@@ -52,11 +53,11 @@
                     {{ end }}
 
                     {{ if .partner }}
-                      {{ partial "services/partner-info.html" (dict "partner" .partner "color" $finalColor) }}
+                      {{ partial "components/partner-info.html" (dict "partner" .partner "color" $finalColor) }}
                     {{ end }}
 
                     <div class="w-full">
-                      {{ partial "services/price-slider.html" (dict "item" . "color" $finalColor) }}
+                      {{ partial "components/price-slider.html" (dict "item" . "color" $finalColor) }}
                     </div>
 
                   </div>
@@ -72,7 +73,15 @@
         
         {{ if $btnLink }}
         <div class="text-center mt-12 mb-8">
-          <a class="btn btn-primary" href="{{ $btnLink }}">{{ $btnLabel }}<i class="fa fa-arrow-right pl-2"></i></a>
+          <a class="btn btn-primary" href="{{ $btnLink }}"
+       {{ if $btnNew }} target="_blank" rel="noopener" {{ end }}>
+        {{ $btnLabel }}
+      {{ if $btnNew }}
+        <i class="fa fa-arrow-right pl-2"></i>
+      {{ end }}
+    </a>
+
+
         </div>
         {{ end }}
       </div>

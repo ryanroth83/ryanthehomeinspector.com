@@ -12,7 +12,7 @@ banner:
     enable: true
     label: "Pricing & Details"
     link: "/inspections"
-
+      
 # Features
 features:
 
@@ -30,7 +30,8 @@ features:
       enable: true
       label: "Details & Pricing"
       link: "/inspections/"
-
+      new: false
+      
   - title: "Buy Back Guarantee"
     image: "/images/BUY_BACK_HIGH.png"
     content: "If I Miss Anything I Will Have Your House Bought Back!"
@@ -43,7 +44,8 @@ features:
       enable: true
       label: "More Details"
       link: "https://www.nachi.org/buy.htmL"
-
+      new: true
+      
   - title: "Qualified To Inspect Your House"
     image: "/images/interNACHI-CPI.png"
     content: "Not only am I licensed by TREC to perform home inspections in the state of Texas, I am also a Certified Professional Inspector (CPI) by InterNACHI®."
@@ -54,7 +56,8 @@ features:
       enable: true
       label: "interNACHI Certifications"
       link: "https://www.nachi.org/certified-inspectors/ryan-roth-trec-25791-164888"
-
+      new: true
+      
   - title: "First-Time Home Buyer-Friendly!"
     image: "/images/FIRST_TIME_HIGH.png"
     content: "As a first-time home buyer I'm sure you have lots of questions."
@@ -66,7 +69,8 @@ features:
       enable: true
       label: "More Details"
       link: "https://www.nachi.org/first-time-home-buyer-friendly.htm"
-
+      new: true
+      
   - title: "Honesty Is Guaranteed!"
     image: "/images/HONOR_HIGH_COLOR.png"
     content: "Trust is a major part in choosing a home inspector. You don't have to rely on just my word, I've been background checked by TREC and I am guaranteed honest by InterNACHI® with the Honor Guarantee."
@@ -79,7 +83,8 @@ features:
       enable: true
       label: "More Details"
       link: "https://www.nachi.org/honor.html"
-
+      new: true
+      
   - title: "Trusted Professional Directory"
     image: "/images/directory/directory.png"
     content: "Directory of trusted professionals available to anyone, created for the benefit of my clients. I maintain this directory at no cost and expect nothing in return other than honest and quality services with open communication and willingness to correct any issue on the behalf of the client in a timely manner."
@@ -93,7 +98,8 @@ features:
       enable: true
       label: "Trusted Professional Directory"
       link: "/directory"
-
+      new: false
+      
   - title: "Library Of Information"
     image: "/images/library/library.png"
     content: "I am working on having links to all the information you should need. This is still a work in progress, but I plan to have links to user manuals for common appliances, Explanations of how your house works, maintenance & DIY repairs."
@@ -101,10 +107,9 @@ features:
       - "User manuals for common household appliances"
       - "Explanations of how your house works"
       - "Home maintenance tips & guides" 
-
-
     button:
       enable: true
       label: "Library Of Information"
       link: "/library"
+      new: false
 ---
