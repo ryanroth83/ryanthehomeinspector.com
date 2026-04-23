@@ -8,6 +8,10 @@ banner:
     enable: true
     label: "Book Inspection"
     link: "/book-inspection"
+  button2:
+    enable: true
+    label: "Pricing & Details"
+    link: "/inspections"
 
 # Features
 features:
