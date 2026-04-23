@@ -151,9 +151,9 @@
     </item>
     <item>
       <title>Service Area</title>
-      <link>http://localhost:1313/services/area/</link>
+      <link>http://localhost:1313/inspections/service-area/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid>http://localhost:1313/services/area/</guid>
+      <guid>http://localhost:1313/inspections/service-area/</guid>
       <description></description>
     </item>
     <item>

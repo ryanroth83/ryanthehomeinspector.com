@@ -1,7 +1,10 @@
 ---
 title: "Service Area"
-layout: "area"
-slug: "area"
+layout: "service-area"
+slug: "service-area"
+alias:
+  - "area"
+  - "locations"
 
 map_title: "Service Area Map"
 map_description: "Hover or tap the rings for zone details. Map is centered at the Sugar Land Hub."

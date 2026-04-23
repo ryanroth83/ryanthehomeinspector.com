@@ -25,7 +25,7 @@ features:
     button:
       enable: true
       label: "Details & Pricing"
-      link: "/services/"
+      link: "/inspections/"
 
   - title: "Buy Back Guarantee"
     image: "/images/BUY_BACK_HIGH.png"

@@ -52,7 +52,7 @@
   </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>
-    <loc>http://localhost:1313/services/</loc>
+    <loc>http://localhost:1313/inspections/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/inspectors/</loc>
   </url><url>
@@ -86,7 +86,7 @@
   </url><url>
     <loc>http://localhost:1313/sections/</loc>
   </url><url>
-    <loc>http://localhost:1313/services/area/</loc>
+    <loc>http://localhost:1313/inspections/service-area/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
