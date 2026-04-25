@@ -188,3 +188,31 @@ img:not(.copyrightLogo), figure {
     @apply text-3xl; // Makes the price prominent once it drops to its own line
   }
 }
+
+/* Library List Enhancements */
+.library-grid {
+  column-gap: 3rem;
+  column-width: 250px; // Automatically adjusts column count based on screen size
+  
+  .letter-group {
+    break-inside: avoid; // Prevents a group from splitting across columns
+    margin-bottom: 2.5rem;
+    
+    .letter-label {
+      @apply text-2xl font-bold text-primary border-b-2 border-neutral-100 dark:border-neutral-800 mb-4 pb-1;
+      display: block;
+      letter-spacing: 0.05em;
+    }
+    
+    ul {
+      @apply list-none p-0 m-0;
+      li {
+        @apply mb-2;
+        a {
+          @apply text-base text-neutral-600 dark:text-neutral-400 hover:text-primary transition-colors;
+          display: block;
+        }
+      }
+    }
+  }
+}

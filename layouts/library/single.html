@@ -1,14 +1,103 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
-<section class="section-sm">
+
+  {{ $buttonColor := .Params.button_color | default "#3b82f6" }}
+  {{ $commonColor := .Params.common_color | default "#f59e0b" }}
+  {{/* Global check for new tab preference */}}
+  {{ $globalNewTab := .Params.new_tab | default false }}
+
+  <section class="section-sm">
     <div class="container">
+      
       <div class="row justify-center">
-        <div class="lg:col-10">
-          <div class="content">
-            {{ .Content }}
+        <div class="lg:col-10 text-center">
+          <div class="content mb-12">
+            {{/* Apply global new tab setting to links inside the markdown content */}}
+            {{ if $globalNewTab }}
+              {{ .Content | replaceRE "<a href=" "<a target=\"_blank\" rel=\"noopener\" href=" | safeHTML }}
+            {{ else }}
+              {{ .Content }}
+            {{ end }}
           </div>
         </div>
       </div>
+
+      {{ if .Params.brands }}
+      <div class="library-container" style="column-width: 260px; column-count: 3; column-gap: 2rem; column-fill: balance; display: block; width: 100%;">
+        
+        {{ $sortedBrands := sort .Params.brands "name" "asc" }}
+        {{ $.Scratch.Set "lastLetter" "" }}
+        
+        {{ range $sortedBrands }}
+          {{ $currentLetter := substr .name 0 1 | upper }}
+          
+          {{ if ne $currentLetter ($.Scratch.Get "lastLetter") }}
+            {{ if ne ($.Scratch.Get "lastLetter") "" }}
+                </div>
+              </div>
+            {{ end }}
+            
+            <div class="letter-card p-5 rounded-2xl border border-neutral-100 bg-neutral-50/50 dark:bg-neutral-800/30 dark:border-neutral-700 shadow-sm mb-6" 
+                 style="display: inline-block; width: 100%; break-inside: avoid-column; -webkit-column-break-inside: avoid;">
+              
+              <div class="mb-4">
+                <span class="text-3xl font-bold border-b-4 inline-block pb-1" 
+                      style='color: {{ $buttonColor | safeCSS }}; border-color: {{ $buttonColor | safeCSS }};'>
+                  {{ $currentLetter }}
+                </span>
+              </div>
+              
+              <div class="flex flex-col gap-2">
+            {{ $.Scratch.Set "lastLetter" $currentLetter }}
+          {{ end }}
+
+          {{/* Check for individual override, otherwise fall back to global parameter */}}
+          {{ $openInNewTab := $globalNewTab }}
+          {{ if isset . "new_tab" }}
+            {{ $openInNewTab = .new_tab }}
+          {{ end }}
+
+          <a href="{{ .link }}" 
+             {{ if $openInNewTab }} target="_blank" rel="noopener" {{ end }}
+             class="flex items-center justify-between min-h-[50px] px-4 py-2 rounded-xl border border-transparent bg-white dark:bg-neutral-900 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
+             style='--hover-col: {{ if .common }}{{ $commonColor | safeCSS }}{{ else }}{{ $buttonColor | safeCSS }}{{ end }};'
+             onmouseover="this.style.borderColor='var(--hover-col)'"
+             onmouseout="this.style.borderColor='transparent'">
+            
+            <div class="flex items-center overflow-hidden mr-2">
+              <span class="text-[14px] leading-tight font-medium truncate"
+                    style='color: {{ if .common }}{{ $commonColor | safeCSS }}{{ else }}{{ $buttonColor | safeCSS }}{{ end }};'>
+                {{ .name }}
+              </span>
+            </div>
+
+            {{ if .logo }}
+            <div class="w-7 h-7 flex-shrink-0 bg-neutral-50 dark:bg-neutral-800 rounded-lg flex items-center justify-center border border-neutral-100 dark:border-neutral-700">
+              <img src="/images/library/{{ .logo }}" alt="{{ .name }}" class="max-w-full max-h-full p-1">
+            </div>
+            {{ end }}
+          </a>
+        {{ end }}
+        
+        </div>
+      </div>
+      </div>
+      {{ end }}
+
+      {{ if .Params.provider_name }}
+      <div class="flex justify-center mt-16 pb-8">
+        <div class="flex items-center">
+          <span class="text-[10px] uppercase tracking-widest text-neutral-400 font-bold mr-2">Data Source:</span>
+          <a href="{{ .Params.provider_link | safeURL }}" target="_blank" 
+             class="text-sm font-bold transition-all hover:opacity-75 flex items-center border-b border-transparent hover:border-current"
+             style="color: {{ $buttonColor | safeCSS }};">
+            {{ .Params.provider_name }}
+            <i class="fas fa-external-link-alt ml-2 text-[10px] opacity-50"></i>
+          </a>
+        </div>
+      </div>
+      {{ end }}
+
     </div>
   </section>
 {{ end }}
