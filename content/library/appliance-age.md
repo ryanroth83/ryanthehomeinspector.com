@@ -1,10 +1,9 @@
 ---
 title: "Appliance Age Lookup"
 meta_title: "Appliance Age Lookup"
-description: "by serial number"
+description: "provided by: building-center.org"
 category: "Age Lookup"
-icon: "fas fa-book-reader" 
-logo: ""
+icon: "oven-svgrepo-com.svg"
 draft: false
 weight: 13
 new_tab: true

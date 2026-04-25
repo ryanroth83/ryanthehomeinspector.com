@@ -1,47 +1,75 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
   <section class="section">
-    <div class="container max-w-2xl mx-auto">
-      {{ range (sort (.RegularPages.GroupByParam "category") ".Pages.ByWeight").Reverse }}
-        <div class="mb-12 p-6 bg-neutral-900/30 border border-neutral-800 rounded-3xl shadow-sm">
-          <div class="mb-8">
-            <h2 class="text-2xl font-bold text-white uppercase tracking-tight inline-block">
-              {{ .Key }}
-              <div class="h-1.5 w-full bg-blue-500 mt-2 rounded-full"></div>
-            </h2>
-          </div>
+    <div class="container max-w-7xl mx-auto px-4">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(450px,1fr))] gap-8 items-start">
+        
+        {{ range (sort (.RegularPages.GroupByParam "category") ".Pages.ByWeight").Reverse }}
+          
+          {{ $firstPage := index .Pages 0 }}
+          {{ $widthStyle := $firstPage.Params.full_width | default "none" }}
+          
+          <div class="p-8 bg-neutral-900/30 border border-neutral-800 rounded-3xl shadow-sm h-full flex flex-col 
+            {{ if eq $widthStyle "force" }} lg:col-span-full 
+            {{ else if eq $widthStyle "allow" }} lg:col-span-1 xl:col-span-full 
+            {{ end }}">
+            
+            <div class="mb-8">
+              <h2 class="text-2xl font-bold text-white uppercase tracking-tight inline-block">
+                {{ .Key }}
+                <div class="h-1.5 w-full bg-blue-500 mt-2 rounded-full"></div>
+              </h2>
+            </div>
 
-          <div class="space-y-4">
-            {{ range .Pages.ByWeight }}
-              {{ $buttonColor := .Params.button_color | default "#3b82f6" }}
-              <a href="{{ .Permalink }}" 
-                 class="group flex items-center justify-between p-5 bg-neutral-950/50 border border-neutral-800 rounded-2xl transition-all duration-300 hover:border-blue-500 hover:bg-neutral-800 h-[100px]">
-                
-                <div class="flex items-center gap-5">
-                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 border border-neutral-700 transition-colors group-hover:border-blue-500">
-                    <i class="{{ .Params.icon | default "fa fa-book-open" }} text-xl transition-colors group-hover:text-blue-400" style="color: {{ $buttonColor | safeCSS }};"></i>
+            <div class="flex flex-col gap-4 w-full">
+              {{ range .Pages.ByWeight }}
+                {{ $buttonColor := .Params.button_color | default "#3b82f6" }}
+                {{ $iconName := .Params.icon }}
+
+                <a href="{{ .Permalink }}" 
+                   class="group flex items-center justify-between p-5 bg-neutral-950/50 border border-neutral-800 rounded-2xl transition-all duration-300 hover:bg-neutral-800 hover:border-blue-500 h-[100px] min-w-0">
+                  
+                  <div class="flex items-center gap-5 pr-8 overflow-hidden">
+                    <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-neutral-800 border border-neutral-700 transition-all duration-300 group-hover:border-blue-500 overflow-hidden relative">
+                      
+                      {{ $svgPath := printf "images/library/%s" $iconName }}
+                      {{ $svg := resources.Get $svgPath }}
+
+                      {{ if $svg }}
+                        <span class="block w-7 h-7" style="color: {{ $buttonColor | safeCSS }};">
+                          {{ $content := $svg.Content }}
+                          {{ $content = $content | replaceRE `(?i)(width|height)="[^"]*"` "" }}
+                          {{ $content = $content | replaceRE `(?i)(fill|stroke)="[^"]*"` "" }}
+                          {{ $content = $content | replaceRE `<svg` `<svg class="w-full h-full" fill="currentColor" stroke="currentColor"` }}
+                          {{ $content | safeHTML }}
+                        </span>
+                      {{ else }}
+                        <i class="{{ $iconName | default "fa fa-book-open" }} text-xl transition-colors group-hover:text-blue-400" style="color: {{ $buttonColor | safeCSS }};"></i>
+                      {{ end }}
+                    </div>
+
+                    <div class="flex flex-col justify-center min-w-0">
+                      <h3 class="text-lg font-bold text-white transition-colors group-hover:text-blue-500 leading-tight whitespace-nowrap">
+                        {{ .Title }}
+                      </h3>
+                      {{ if .Description }}
+                        <p class="text-xs text-neutral-500 italic mt-1 whitespace-nowrap opacity-80">
+                          {{ .Description }}
+                        </p>
+                      {{ end }}
+                    </div>
                   </div>
 
-                  <div class="flex flex-col justify-center">
-                    <h3 class="text-xl font-bold text-white transition-colors group-hover:text-blue-500 leading-tight">
-                      {{ .Title }}
-                    </h3>
-                    {{ if .Description }}
-                      <p class="text-sm text-neutral-500 italic mt-1 line-clamp-1">
-                        {{ .Description }}
-                      </p>
-                    {{ end }}
+                  <div class="text-neutral-700 transition-colors group-hover:text-blue-500 flex-shrink-0">
+                    <i class="fa fa-chevron-right text-xs"></i>
                   </div>
-                </div>
-
-                <div class="text-neutral-700 transition-colors group-hover:text-blue-500">
-                  <i class="fa fa-chevron-right text-sm"></i>
-                </div>
-              </a>
-            {{ end }}
+                </a>
+              {{ end }}
+            </div>
           </div>
-        </div>
-      {{ end }}
+        {{ end }}
+      </div>
     </div>
   </section>
 {{ end }}

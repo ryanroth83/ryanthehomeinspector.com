@@ -1,7 +1,7 @@
 ---
 title: "Water Heater Age Lookup"
 meta_title: "Water Heater Age Lookup"
-description: "by serial number"
+description: "provided by: building-center.org"
 category: "Age Lookup"
 draft: false
 weight: 12
@@ -11,7 +11,7 @@ common_color: "#f59e0b"
 provider_name: "building-center.org"
 provider_link: "https://www.building-center.org/"
 logo: ""
-icon: "fas fa-faucet"
+icon: "water_heater-svgrepo-com.svg"
 
 brands:
   - name: "ABS"

@@ -1,9 +1,9 @@
 ---
 title: "Thermostat User Manuals"
 meta_title: "Thermostat User Manuals"
-description: "Thermostat User Manuals"
+description: "provided by: thermostat.guide"
 category: "User Manuals"
-icon: fas fa-thermometer-three-quarters
+icon: air-conditioner-heater-svgrepo-com.svg
 draft: false
 weight: 21
 new_tab: true

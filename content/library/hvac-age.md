@@ -1,12 +1,14 @@
 ---
 title: "HVAC Age Lookup"
 meta_title: "HVAC Age Lookup"
-description: "by serial number"
+description: "provided by: building-center.org"
 category: "Age Lookup"
+full_width: "force"
 category_weight: 1
 draft: false
 weight: 11
 new_tab: true
+icon: "air_conditioner-svgrepo-com.svg"
 button_color: "#3b82f6"
 common_color: "#f59e0b"
 provider_name: "building-center.org"
