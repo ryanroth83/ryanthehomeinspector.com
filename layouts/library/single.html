@@ -27,7 +27,12 @@
         {{ $.Scratch.Set "lastLetter" "" }}
         
         {{ range $sortedBrands }}
-          {{ $currentLetter := substr .name 0 1 | upper }}
+          {{/* Number to # Grouping Logic */}}
+          {{ $firstChar := substr .name 0 1 | upper }}
+          {{ $currentLetter := $firstChar }}
+          {{ if findRE "[0-9]" $firstChar }}
+            {{ $currentLetter = "#" }}
+          {{ end }}
           
           {{ if ne $currentLetter ($.Scratch.Get "lastLetter") }}
             {{ if ne ($.Scratch.Get "lastLetter") "" }}
@@ -54,25 +59,43 @@
             {{ $openInNewTab = .new_tab }}
           {{ end }}
 
+          {{ $itemColor := $buttonColor }}
+          {{ if .common }}
+            {{ $itemColor = $commonColor }}
+          {{ end }}
+
           <a href="{{ .link }}" 
              {{ if $openInNewTab }} target="_blank" rel="noopener" {{ end }}
              class="brand-item flex items-center justify-between min-h-[50px] px-4 py-2 rounded-xl border border-transparent bg-white dark:bg-neutral-900 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
-             style='--hover-col: {{ if .common }}{{ $commonColor | safeCSS }}{{ else }}{{ $buttonColor | safeCSS }}{{ end }};'
+             style='--hover-col: {{ $itemColor | safeCSS }};'
              onmouseover="this.style.borderColor='var(--hover-col)'"
              onmouseout="this.style.borderColor='transparent'">
             
             <div class="flex items-center overflow-hidden mr-2">
+              {{/* 1. Check for Logo in Assets */}}
+              {{ if .logo }}
+                {{ $logoPath := printf "images/library/%s" .logo }}
+                {{ $original := resources.Get $logoPath }}
+                {{ if $original }}
+                  {{/* Resize to 64px width and convert to WebP */}}
+                  {{ $processed := $original.Resize "64x webp" }}
+                  <img src="{{ $processed.RelPermalink }}" 
+                       alt="{{ .name }}" 
+                       class="w-7 h-7 mr-2 object-contain flex-shrink-0">
+                {{ end }}
+              {{ else if .icon }}
+                {{/* 2. Fallback to Font Icon if no logo exists */}}
+                <i class="{{ .icon }} mr-2 text-[14px]" style='color: {{ $itemColor | safeCSS }};'></i>
+              {{ end }}
+              
               <span class="text-[14px] leading-tight font-medium truncate"
-                    style='color: {{ if .common }}{{ $commonColor | safeCSS }}{{ else }}{{ $buttonColor | safeCSS }}{{ end }};'>
+                    style='color: {{ $itemColor | safeCSS }};'>
                 {{ .name }}
               </span>
             </div>
 
-            {{ if .logo }}
-            <div class="w-7 h-7 flex-shrink-0 bg-neutral-50 dark:bg-neutral-800 rounded-lg flex items-center justify-center border border-neutral-100 dark:border-neutral-700">
-              <img src="/images/library/{{ .logo }}" alt="{{ .name }}" class="max-w-full max-h-full p-1">
-            </div>
-            {{ end }}
+            {{/* Optional: Small chevron or indicator on the right */}}
+            <i class="fas fa-chevron-right text-[10px] opacity-20" style='color: {{ $itemColor | safeCSS }};'></i>
           </a>
         {{ end }}
         

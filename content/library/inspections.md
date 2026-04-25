@@ -2,8 +2,9 @@
 title: "Inspection References"
 meta_title: "Inspection Code References"
 description: "Inspection Code References"
+category: "Code References"
 draft: false
-weight: 99
+weight: 91
 ---
 #### TREC Documents
 [Texas Inspectors Standards of Practice (SOP)](https://www.trec.texas.gov/online-sops/) [(printable)](https://www.trec.texas.gov/sites/default/files/pdf-forms/SOP%20(printable%20booklet).pdf)

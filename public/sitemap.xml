@@ -4,15 +4,15 @@
   <url>
     <loc>http://localhost:1313/directory/jay_bertrand/</loc>
   </url><url>
-    <loc>http://localhost:1313/library/thermostats/</loc>
-  </url><url>
-    <loc>http://localhost:1313/library/irrigation/</loc>
-  </url><url>
     <loc>http://localhost:1313/library/hvac-age/</loc>
   </url><url>
     <loc>http://localhost:1313/library/waterheater-age/</loc>
   </url><url>
     <loc>http://localhost:1313/library/appliance-age/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/thermostats/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/irrigation/</loc>
   </url><url>
     <loc>http://localhost:1313/library/inspections/</loc>
   </url><url>

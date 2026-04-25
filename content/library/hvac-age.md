@@ -1,9 +1,11 @@
 ---
 title: "HVAC Age Lookup"
 meta_title: "HVAC Age Lookup"
-description: "HVAC Age Lookup"
+description: "by serial number"
+category: "Age Lookup"
+category_weight: 1
 draft: false
-weight: 91
+weight: 11
 new_tab: true
 button_color: "#3b82f6"
 common_color: "#f59e0b"
