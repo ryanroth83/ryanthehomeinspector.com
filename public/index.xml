@@ -17,46 +17,67 @@
       <description>&lt;p&gt;Jay Bertrand is another trusted home inspector. If I&amp;rsquo;m not available for whatever reason Jay is who I recommend. Jay is a knowledgeable inspector that shares the same honesty &amp;amp; integrity I do. My wife is a real estate agent and due do insurance restriction I can not perform inspections for her clients. Jay is on the top of the list as to who I trust to take my place.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>HVAC Age Lookup</title>
-      <link>http://localhost:1313/library/hvac-age/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid>http://localhost:1313/library/hvac-age/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Water Heater Age Lookup</title>
-      <link>http://localhost:1313/library/waterheater-age/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid>http://localhost:1313/library/waterheater-age/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Appliance Age Lookup</title>
-      <link>http://localhost:1313/library/appliance-age/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid>http://localhost:1313/library/appliance-age/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Thermostat User Manuals</title>
-      <link>http://localhost:1313/library/thermostats/</link>
+      <link>http://localhost:1313/library/manuals/thermostats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid>http://localhost:1313/library/thermostats/</guid>
+      <guid>http://localhost:1313/library/manuals/thermostats/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HVAC Age Lookup</title>
+      <link>http://localhost:1313/library/age_lookup/hvac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/library/age_lookup/hvac/</guid>
       <description></description>
     </item>
     <item>
       <title>Irrigation User Manuals</title>
-      <link>http://localhost:1313/library/irrigation/</link>
+      <link>http://localhost:1313/library/manuals/irrigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid>http://localhost:1313/library/irrigation/</guid>
+      <guid>http://localhost:1313/library/manuals/irrigation/</guid>
       <description></description>
     </item>
     <item>
-      <title>Inspection References</title>
-      <link>http://localhost:1313/library/inspections/</link>
+      <title>Water Heater Age Lookup</title>
+      <link>http://localhost:1313/library/age_lookup/waterheaters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid>http://localhost:1313/library/inspections/</guid>
-      <description>&lt;h4 id=&#34;trec-documents&#34;&gt;TREC Documents&lt;/h4&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.trec.texas.gov/online-sops/&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;Texas Inspectors Standards of Practice (SOP)&lt;/a&gt;&#xA; &lt;a href=&#34;https://www.trec.texas.gov/sites/default/files/pdf-forms/SOP%20%28printable%20booklet%29.pdf&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;(printable)&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/library/age_lookup/waterheaters/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Appliance Age Lookup</title>
+      <link>http://localhost:1313/library/age_lookup/appliances/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/library/age_lookup/appliances/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TREC SOP - Web Version</title>
+      <link>http://localhost:1313/library/inpsection_ref/trec_sop-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/library/inpsection_ref/trec_sop-web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TREC SOP - Print Version</title>
+      <link>http://localhost:1313/library/inpsection_ref/trec_sop-pdf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/library/inpsection_ref/trec_sop-pdf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Property Inspection Report</title>
+      <link>http://localhost:1313/library/inpsection_ref/trec_rei_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/library/inpsection_ref/trec_rei_/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TREC Consumer Notice</title>
+      <link>http://localhost:1313/library/inpsection_ref/trec_consumer_notice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/library/inpsection_ref/trec_consumer_notice/</guid>
+      <description></description>
     </item>
     <item>
       <title>Alan’s Plumbing</title>

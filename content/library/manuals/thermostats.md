@@ -1,12 +1,10 @@
 ---
 title: "Thermostat User Manuals"
 meta_title: "Thermostat User Manuals"
-description: "provided by: thermostat.guide"
-category: "User Manuals"
+description: "Provided by: thermostat.guide"
 icon: air-conditioner-heater-svgrepo-com.svg
 draft: false
-weight: 21
-new_tab: true
+weight: 1
 button_color: "#3b82f6"
 common_color: "#f59e0b"
 provider_name: "thermostat.guide"

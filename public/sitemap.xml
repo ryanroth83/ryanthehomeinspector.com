@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/library/age_lookup/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/jay_bertrand/</loc>
   </url><url>
-    <loc>http://localhost:1313/library/hvac-age/</loc>
+    <loc>http://localhost:1313/library/manuals/thermostats/</loc>
   </url><url>
-    <loc>http://localhost:1313/library/waterheater-age/</loc>
+    <loc>http://localhost:1313/library/age_lookup/hvac/</loc>
   </url><url>
-    <loc>http://localhost:1313/library/appliance-age/</loc>
+    <loc>http://localhost:1313/library/manuals/irrigation/</loc>
   </url><url>
-    <loc>http://localhost:1313/library/thermostats/</loc>
+    <loc>http://localhost:1313/library/manuals/</loc>
   </url><url>
-    <loc>http://localhost:1313/library/irrigation/</loc>
+    <loc>http://localhost:1313/library/age_lookup/waterheaters/</loc>
   </url><url>
-    <loc>http://localhost:1313/library/inspections/</loc>
+    <loc>http://localhost:1313/library/age_lookup/appliances/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/inpsection_ref/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/inpsection_ref/trec_sop-web/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/inpsection_ref/trec_sop-pdf/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/inpsection_ref/trec_rei_/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/inpsection_ref/trec_consumer_notice/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>

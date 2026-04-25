@@ -1,10 +1,9 @@
 ---
 title: "Water Heater Age Lookup"
 meta_title: "Water Heater Age Lookup"
-description: "provided by: building-center.org"
-category: "Age Lookup"
+description: "Provided by: building-center.org"
 draft: false
-weight: 12
+weight: 2
 new_tab: true
 button_color: "#3b82f6"
 common_color: "#f59e0b"

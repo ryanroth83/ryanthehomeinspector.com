@@ -1,12 +1,9 @@
 ---
 title: "HVAC Age Lookup"
 meta_title: "HVAC Age Lookup"
-description: "provided by: building-center.org"
-category: "Age Lookup"
-full_width: "force"
-category_weight: 1
+description: "Provided by: building-center.org"
 draft: false
-weight: 11
+weight: 2
 new_tab: true
 icon: "air_conditioner-svgrepo-com.svg"
 button_color: "#3b82f6"

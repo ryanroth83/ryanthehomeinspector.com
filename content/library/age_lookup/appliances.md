@@ -1,11 +1,10 @@
 ---
 title: "Appliance Age Lookup"
 meta_title: "Appliance Age Lookup"
-description: "provided by: building-center.org"
-category: "Age Lookup"
+description: "Provided by: building-center.org"
+weight: 3
 icon: "oven-svgrepo-com.svg"
 draft: false
-weight: 13
 new_tab: true
 button_color: "#3b82f6"
 common_color: "#f59e0b"

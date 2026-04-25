@@ -1,12 +1,9 @@
 ---
 title: "Irrigation User Manuals"
 meta_title: "Irrigation User Manuals"
-description: "links to manufacture manual page"
-category: "User Manuals"
-category_weight: 2
+description: "Links to manufacture manual page"
 draft: false
-weight: 22
-new_tab: true
+weight: 2
 icon: irrigation-svgrepo-com.svg
 button_color: "#3b82f6"
 common_color: "#f59e0b"
