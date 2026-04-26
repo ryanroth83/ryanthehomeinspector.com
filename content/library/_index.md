@@ -1,4 +1,4 @@
 ---
 title: "Information Library"
-slug: library
+slug: "library"
 ---

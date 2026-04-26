@@ -4,7 +4,7 @@ meta_title: "HVAC Age Lookup"
 description: "Provided by: building-center.org"
 draft: false
 weight: 2
-new_tab: true
+slug: "hvac"
 icon: "air_conditioner-svgrepo-com.svg"
 button_color: "#3b82f6"
 common_color: "#f59e0b"

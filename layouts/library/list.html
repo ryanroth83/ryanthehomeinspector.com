@@ -5,7 +5,16 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         
-        {{ range .Sections.ByWeight }}
+        {{/* Logic: If we have sub-sections (categories), show those. 
+             If we are inside a category, show the individual items. */}}
+        
+        {{ $displayItems := .Sections }}
+        {{ if not $displayItems }}
+          {{/* We are in a sub-category (like Manuals), so treat this folder as the single 'card' */}}
+          {{ $displayItems = slice . }}
+        {{ end }}
+
+        {{ range $displayItems.ByWeight }}
           {{ $width := .Params.full_width | default "none" }}
           
           <div class="p-8 bg-neutral-900/30 border border-neutral-800 rounded-3xl shadow-sm h-full flex flex-col"
@@ -21,8 +30,9 @@
             <div class="flex flex-col gap-4 w-full">
               {{ range .RegularPages.ByWeight }}
                 
+                {{ $isDirect := .Params.direct_link }}
                 {{ $dest := .Permalink }}
-                {{ if .Params.direct_link }}{{ $dest = .Params.direct_link }}{{ end }}
+                {{ if $isDirect }}{{ $dest = .Params.direct_link }}{{ end }}
                 {{ $tab := "" }}{{ if .Params.new_tab }}{{ $tab = "_blank" }}{{ end }}
 
                 <a href="{{ $dest | safeURL }}" 
@@ -33,7 +43,6 @@
                     <h3 class="text-lg font-bold text-white group-hover:text-blue-500 transition-colors leading-tight truncate">
                       {{ .Title }}
                     </h3>
-                    
                     {{ with .Params.description }}
                       <p class="text-xs text-neutral-500 italic mt-1 truncate">
                         {{ . }}
@@ -41,9 +50,11 @@
                     {{ end }}
                   </div>
 
+                  {{ if $isDirect }}
                   <div class="text-neutral-700 group-hover:text-blue-500 flex-shrink-0 ml-4">
                     <i class="fa fa-chevron-right text-xs"></i>
                   </div>
+                  {{ end }}
                 </a>
               {{ end }}
             </div>
