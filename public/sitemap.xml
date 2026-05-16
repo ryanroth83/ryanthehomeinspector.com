@@ -60,6 +60,8 @@
   </url><url>
     <loc>http://localhost:1313/credits/</loc>
   </url><url>
+    <loc>http://localhost:1313/documents/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/flooring/</loc>
   </url><url>
     <loc>http://localhost:1313/library/</loc>
@@ -75,6 +77,8 @@
     <loc>http://localhost:1313/ryanade/lemon-lime/</loc>
   </url><url>
     <loc>http://localhost:1313/locations/</loc>
+  </url><url>
+    <loc>http://localhost:1313/documents/logo/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/mama_bear_pest/</loc>
   </url><url>
