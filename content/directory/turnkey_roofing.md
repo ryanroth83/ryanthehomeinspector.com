@@ -1,6 +1,7 @@
 ---
 title: Turnkey Roofing & Renovations
 name: Cheney Poorman
+position: Owner
 email: Cheney@TurnKeyRR.com
 phone: (281) 665-0427
 website: TurnkeyRoofingAndRenovations.com
@@ -17,5 +18,6 @@ At TurnKey Roofing and Renovations, we’ll be helping homeowners with roof repl
 
 As a Marine veteran and someone who takes pride in doing things the right way, I’m grateful for the opportunity to serve homeowners throughout the Greater Houston area.
 
-I’d appreciate your support as I start this new chapter. If you or someone you know needs a roof inspection, roof repair, replacement, or renovation work, I’d love the opportunity to help.
-From Roofs to Renovations, We've Got You Covered. 
+If you or someone you know needs a roof inspection, roof repair, replacement, or renovation work, I’d love the opportunity to help.
+
+From Roofs to Renovations, We've Got You Covered.

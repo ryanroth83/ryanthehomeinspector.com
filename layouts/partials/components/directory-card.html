@@ -37,15 +37,26 @@
         <a href="mailto:{{ .Params.Email }}" class="block truncate hover:text-primary">{{ .Params.Email }}</a>
       </div>
       
-      <ul class="flex justify-center gap-3">
-        {{ range .Params.social }}
-          <li class="inline-block">
-            <a href="{{ .link | safeURL }}" target="_blank" class="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg hover:bg-primary transition-all">
-               <i class="{{ .icon }} text-primary group-hover:text-white text-lg"></i>
-            </a>
-          </li>
-        {{ end }}
-      </ul>
+      {{ $hasSocial := false }}
+      {{ range .Params.social }}
+        {{ if .link }}{{ $hasSocial = true }}{{ end }}
+      {{ end }}
+
+      {{ if $hasSocial }}
+        <ul class="flex justify-center gap-3 mb-4">
+          {{ range .Params.social }}
+            {{ if .link }}
+              <li class="inline-block">
+                <a href="{{ .link | safeURL }}" target="_blank" class="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg hover:bg-primary transition-all">
+                   <i class="{{ .icon }} text-primary group-hover:text-white text-lg"></i>
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      {{ else }}
+        <div class="h-10 mb-4" aria-hidden="true"></div>
+      {{ end }}
 
       <p class="mt-4 text-[10px] font-bold uppercase tracking-widest text-light group-hover:text-primary transition-colors">
         View Full Profile →

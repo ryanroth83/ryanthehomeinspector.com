@@ -1,63 +1,95 @@
-<div
-  class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 text-center">
+<div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 text-center max-w-2xl mx-auto shadow-sm">
 
-  {{ with resources.Get .Params.profile }}
-    {{ with .Fill "200x200 Top" }}
-      <img src="{{ .RelPermalink }}" class="mx-auto mb-6 rounded" width="{{ .Width }}" height="{{ .Height }}" alt="">
-    {{ end }}
-  {{ end }}
-
-  <h4 class="mb-3">
-    {{ .Params.Name }}
-  </h4>
-  <h5>
-   {{ .Params.Description }}
-  </h5>
-
-  <br>
-  {{ if .Params.Logo }}
-    {{ with resources.Get .Params.logo }}
-      {{ if not (eq .MediaType.SubType "svg") }}
-        {{ with .Resize "300x" }}
-        <img src="{{ .RelPermalink }}" class="directory-logo">
+  <div class="mb-6 block text-center">
+    {{ if .Params.Logo }}
+      {{ with resources.Get .Params.logo }}
+        {{ if not (eq .MediaType.SubType "svg") }}
+          {{ with .Resize "600x" }}
+            <img src="{{ .RelPermalink }}" class="mx-auto max-w-[380px] w-full h-auto object-contain block" alt="{{ $.Params.Company }}">
+          {{ end }}
+        {{ else }}
+          <img src="{{ .RelPermalink }}" class="mx-auto max-w-[380px] w-full h-auto object-contain block" alt="{{ $.Params.Company }}">
         {{ end }}
-      {{ else }}
-        <img src="{{ .RelPermalink }}" class="directory-logo">
+      {{ end }}
+    {{ else }}
+      <h3 class="font-bold text-2xl mb-2">
+        {{ .Params.Company }}
+      </h3>
+    {{ end }}
+    
+    {{ if .Params.Title }}
+      <p class="text-sm uppercase tracking-wider text-neutral-500 mt-1">{{ .Params.Title }}</p>
+    {{ end }}
+  </div>
+
+  <hr class="border-neutral-200 dark:border-neutral-700 my-6">
+
+  <div class="flex flex-col items-center mb-6">
+    {{ with resources.Get .Params.profile }}
+      {{ with .Fill "180x180 Top" }}
+        <img src="{{ .RelPermalink }}" class="rounded-full mx-auto mb-4 border-4 border-white dark:border-zinc-800 shadow-sm" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Params.Name }}">
       {{ end }}
     {{ end }}
-  {{ else }}
-    <h4 class="mb-3">
-      {{ .Params.Company }}
-    </h4>
-  {{ end }}
 
-  <br>
+    {{ if .Params.Name }}
+      <h4 class="text-2xl font-bold text-neutral-800 dark:text-neutral-100 mb-1">
+        {{ .Params.Name }}
+      </h4>
+    {{ end }}
+    
+    {{ if .Params.Position }}
+      <p class="text-xs font-semibold uppercase tracking-wide text-neutral-400 dark:text-neutral-500 mb-1">
+        {{ .Params.Position }}
+      </p>
+    {{ end }}
+  </div>
 
-  <div class="directory-content">
+  <div class="directory-content text-left max-w-xl mx-auto prose dark:prose-invert text-neutral-700 dark:text-neutral-300 leading-relaxed mb-8">
     {{ .Content }}
   </div>
 
-  <br>
+  <hr class="border-neutral-200 dark:border-neutral-700 my-6">
 
-  <p class="contact-link">
-    <a href="tel:{{ .Params.Phone }}">{{ .Params.Phone }}</a>
-    <br>
-    <a href="mailto:{{ .Params.Email }}">{{ .Params.Email }}</a>
-    <br>
-    <a href="{{ .Params.Website }}" target="_blank">
-      {{ .Params.Website }}</a>
-    <br>
-    <br>
-  </p>
-  <br>
-  <ul class="social-icons">
+  <div class="contact-link text-md font-medium my-4">
+    {{ if .Params.Phone }}
+      <a href="tel:{{ .Params.Phone }}" class="hover:underline text-primary">
+        {{ .Params.Phone }}
+      </a>
+    {{ end }}
+    
+    {{ if .Params.Email }}
+      {{ if .Params.Phone }}<br>{{ end }}
+      <a href="mailto:{{ .Params.Email }}" class="hover:underline text-primary">
+        {{ .Params.Email }}
+      </a>
+    {{ end }}
+    
+    {{ if .Params.Website }}
+      {{ if or .Params.Phone .Params.Email }}<br>{{ end }}
+      <a href="{{ .Params.Website | safeURL }}" target="_blank" rel="noopener" class="hover:underline text-primary">
+        {{ .Params.Website }}
+      </a>
+    {{ end }}
+  </div>
+
+  <ul class="social-icons flex justify-center gap-4 mt-6 mb-8">
     {{ range .Params.social }}
-      <li>
-        <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
-          <span class="sr-only">{{ .title }}</span>
-          <i class="{{ .icon }}"></i>
-        </a>
-      </li>
+      {{ if .link }}
+        <li>
+          <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow" class="text-neutral-500 hover:text-primary transition-colors text-xl">
+            <span class="sr-only">{{ .name }}</span>
+            <i class="{{ .icon }}"></i>
+          </a>
+        </li>
+      {{ end }}
     {{ end }}
   </ul>
+
+  <div class="mt-8 pt-4 border-t border-neutral-100 dark:border-neutral-800">
+    <a href="/directory/" class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-500 hover:text-primary transition-colors duration-200">
+      <i class="fa-solid fa-arrow-left"></i>
+      Back to Directory
+    </a>
+  </div>
+
 </div>
