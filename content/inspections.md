@@ -1,5 +1,5 @@
 ---
-title: "Inspections Services"
+title: "Inspection Services"
 description: "Inspection Services Pricing & Details"
 layout: "inspections"
 slug: inspections

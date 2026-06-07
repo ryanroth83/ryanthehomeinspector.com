@@ -282,105 +282,108 @@
           transform="rotate(45 10 10)"></polygon>
       </svg>
     </label>
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-3 hidden xl:flex xl:flex-nowrap pb-6 xl:order-1 xl:w-auto xl:space-x-4 xl:pb-0">
-      
-      
+    
+    <div class="order-3 xl:order-1 w-full xl:w-auto flex flex-col items-center justify-center text-center xl:block">
+      <ul
+        id="nav-menu"
+        class="navbar-nav hidden xl:flex xl:flex-nowrap pb-6 xl:space-x-4 xl:pb-0 mx-auto justify-center items-center text-center">
         
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a
+                class="nav-link "
+                
+                href="/directory/"
+                >Directory</a
+              >
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a
+                class="nav-link "
+                
+                href="/library/"
+                >Library</a
+              >
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item nav-dropdown group relative">
+              <input
+                type="checkbox"
+                id="submenu-services"
+                class="peer hidden xl:hidden" />
+              <label
+                for="submenu-services"
+                class="nav-link 
+                  
+                  
+                  
+                
+                  
+                  
+                  
+                 inline-flex items-center">
+                Services
+                <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </label>
+              <ul
+                class="nav-dropdown-list hidden peer-checked:block xl:invisible xl:absolute xl:block xl:opacity-0 xl:group-hover:visible xl:group-hover:opacity-100">
+                
+                  
+                  
+                  <li class="nav-dropdown-item">
+                    <a
+                      class="nav-dropdown-link "
+                      
+                      href="/services/">
+                      Inspection Services
+                    </a>
+                  </li>
+                
+                  
+                  
+                  <li class="nav-dropdown-item">
+                    <a
+                      class="nav-dropdown-link "
+                      
+                      href="/services/area">
+                      Service Area
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
         
         
-          <li class="nav-item">
+          <li class="mt-4 inline-block xl:hidden">
             <a
-              class="nav-link "
-              
-              href="/directory/"
-              >Directory</a
-            >
+              class="btn btn-outline-primary btn-sm"
+              href="/book-inspection"
+              >
+              Book Inspection Now
+            </a>
           </li>
         
-      
-        
-        
-        
-        
-          <li class="nav-item">
-            <a
-              class="nav-link "
-              
-              href="/library/"
-              >Library</a
-            >
-          </li>
-        
-      
-        
-        
-        
-        
-          <li class="nav-item nav-dropdown group relative">
-            <input
-              type="checkbox"
-              id="submenu-services"
-              class="peer hidden xl:hidden" />
-            <label
-              for="submenu-services"
-              class="nav-link 
-                
-                
-                
-              
-                
-                
-                
-               inline-flex items-center">
-              Services
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                <path
-                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </label>
-            <ul
-              class="nav-dropdown-list hidden peer-checked:block xl:invisible xl:absolute xl:block xl:opacity-0 xl:group-hover:visible xl:group-hover:opacity-100">
-              
-                
-                
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link "
-                    
-                    href="/services/">
-                    Inspection Services
-                  </a>
-                </li>
-              
-                
-                
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link "
-                    
-                    href="/services/area">
-                    Service Area
-                  </a>
-                </li>
-              
-            </ul>
-          </li>
-        
-      
-      
-        <li class="mt-4 inline-block xl:hidden">
-          <a
-            class="btn btn-outline-primary btn-sm"
-            href="/book-inspection"
-            >
-            Book Inspection Now
-          </a>
-        </li>
-      
-    </ul>
+      </ul>
+    </div>
 
     <div class="order-1 ml-auto flex items-center md:order-2 xl:ml-0">
       
