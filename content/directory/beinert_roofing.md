@@ -1,12 +1,12 @@
 ---
-title: Beinert Roofing & Restoration, LLC
+title: Beinert Roofing & Restoration
 name: 
 email: cassandra@beinertroofing.com
 phone: (832) 449-3247
 website: https://beinertroofing.com/
 profile: 
 description: Roofing & Restoration
-company: Beinert Roofing & Restoration, LLC
+company: Beinert Roofing & Restoration
 logo: /images/directory/logos/beinert_roofing.png
 directory: Roofing
 location: Houston

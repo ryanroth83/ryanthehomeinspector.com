@@ -42,6 +42,8 @@
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/bi_painting_remodel/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/beinert_roofing/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
@@ -63,6 +65,12 @@
     <loc>http://localhost:1313/documents/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/flooring/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/guard_home_warranty/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/halfacre_woodworks/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/home_usa/</loc>
   </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>
@@ -92,6 +100,8 @@
   </url><url>
     <loc>http://localhost:1313/directory/prissy_moving/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/raak_designs/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/reinel_solano/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/roofing/</loc>
@@ -104,9 +114,19 @@
   </url><url>
     <loc>http://localhost:1313/service-area/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/sullivan_mechanical/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/tebans_electrical_services/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/texas_topnotch/</loc>
+  </url><url>
     <loc>http://localhost:1313/trec_notice/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/turnkey_roofing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/typhoon_construction/</loc>
   </url><url>
     <loc>http://localhost:1313/wdi-inspection/</loc>
   </url>
