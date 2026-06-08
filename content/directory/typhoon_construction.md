@@ -1,31 +1,22 @@
 ---
 title: Typhoon Construction
-name: Philip Wedel
-email: 
-phone: (832) 381-7222
+name: Phillip & Jacque Wedel
+email: jacque@typhoonconstruction.com
+phone: (832) 381-7894
 website: http://www.typhoonconstruction.com
-profile: 
-description: 
+profile: /images/directory/profiles/Phillip-Jacque_Wedel.webp
+description: The Pros who help navigate through all your Custom home projects with comfort and ease.
 company: Typhoon Construction
-logo: 
-directory: 
+logo: /images/directory/logos/typhoon-construction.jpeg
+directory: Remodel
 location: Ft Bend County
 language: English
-licence: 
+license: 
 social:
-  - name: linkedin
-    icon: fa-brands fa-linkedin
-    link: 
   - name: facebook
     icon: fa-brands fa-square-facebook
-    link: 
-  - name: instagram
-    icon: fa-brands fa-instagram
-    link: 
-  - name: google
-    icon: fa-brands fa-google
-    link: 
-  - name: yelp
-    icon: fa-brands fa-yelp
-    link: 
+    link: https://www.facebook.com/TyphoonConst
 ---
+Typhoon Construction is a full-service residential and commercial remodeling company serving the Southwest Houston area. Our services range from small improvements, complete remodels, and custom home builds.
+
+We also service the home exteriors including siding, gutters, roofing, and custom outdoor living spaces. This family of five values functionality and style. 

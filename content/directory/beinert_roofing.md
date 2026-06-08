@@ -16,4 +16,8 @@ social:
     icon: fa-brands fa-square-facebook
     link: https://www.facebook.com/theproofisontheroof/
 ---
-We are a locally-owned and operated roofing company with locations in Rosenberg, TX, Corpus Christi, TX, and New Orleans, LA. We specialize in all types of residential and commercial roofing. We have a team of experienced and skilled roofing professionals that are dedicated to providing top-quality workmanship, maintaining a clean/safe work environment, and excellent customer service. With decades of combined experience, we have the knowledge and expertise to handle any roofing project, big or small. 
+We are a locally-owned and operated roofing company with locations in Rosenberg, TX, Corpus Christi, TX, and New Orleans, LA.
+
+We specialize in all types of residential and commercial roofing. We have a team of experienced and skilled roofing professionals that are dedicated to providing top-quality workmanship, maintaining a clean/safe work environment, and excellent customer service.
+
+With decades of combined experience, we have the knowledge and expertise to handle any roofing project, big or small. 

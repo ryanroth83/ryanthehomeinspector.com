@@ -8,24 +8,9 @@ profile:
 description: 
 company: SULLIVAN MECHANICAL LLC
 logo: 
-directory: 
+directory: Heating & Air
 location: Houston
 language: English
-licence: 
+license: 
 social:
-  - name: linkedin
-    icon: fa-brands fa-linkedin
-    link: 
-  - name: facebook
-    icon: fa-brands fa-square-facebook
-    link: 
-  - name: instagram
-    icon: fa-brands fa-instagram
-    link: 
-  - name: google
-    icon: fa-brands fa-google
-    link: 
-  - name: yelp
-    icon: fa-brands fa-yelp
-    link: 
 ---

@@ -268,9 +268,10 @@
       </a>
     </div>
     <input id="nav-toggle" type="checkbox" class="hidden" />
+    
     <label
       for="nav-toggle"
-      class="order-3 cursor-pointer flex items-center xl:hidden text-text-dark dark:text-white xl:order-1">
+      class="order-3 cursor-pointer flex items-center lg:hidden text-text-dark dark:text-white lg:order-1">
       <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
         <title>Menu Open</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
@@ -283,109 +284,107 @@
       </svg>
     </label>
     
-    <div class="order-3 xl:order-1 w-full xl:w-auto flex flex-col items-center justify-center text-center xl:block">
-      <ul
-        id="nav-menu"
-        class="navbar-nav hidden xl:flex xl:flex-nowrap pb-6 xl:space-x-4 xl:pb-0 mx-auto justify-center items-center text-center">
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex lg:flex-nowrap pb-6 lg:order-1 lg:w-auto lg:space-x-4 lg:pb-0 mx-auto justify-center items-center text-center">
+      
+      
         
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a
-                class="nav-link "
-                
-                href="/directory/"
-                >Directory</a
-              >
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a
-                class="nav-link "
-                
-                href="/library/"
-                >Library</a
-              >
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item nav-dropdown group relative">
-              <input
-                type="checkbox"
-                id="submenu-services"
-                class="peer hidden xl:hidden" />
-              <label
-                for="submenu-services"
-                class="nav-link 
-                  
-                  
-                  
-                
-                  
-                  
-                  
-                 inline-flex items-center">
-                Services
-                <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                  <path
-                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </label>
-              <ul
-                class="nav-dropdown-list hidden peer-checked:block xl:invisible xl:absolute xl:block xl:opacity-0 xl:group-hover:visible xl:group-hover:opacity-100">
-                
-                  
-                  
-                  <li class="nav-dropdown-item">
-                    <a
-                      class="nav-dropdown-link "
-                      
-                      href="/services/">
-                      Inspection Services
-                    </a>
-                  </li>
-                
-                  
-                  
-                  <li class="nav-dropdown-item">
-                    <a
-                      class="nav-dropdown-link "
-                      
-                      href="/services/area">
-                      Service Area
-                    </a>
-                  </li>
-                
-              </ul>
-            </li>
-          
         
         
-          <li class="mt-4 inline-block xl:hidden">
+          <li class="nav-item">
             <a
-              class="btn btn-outline-primary btn-sm"
-              href="/book-inspection"
-              >
-              Book Inspection Now
-            </a>
+              class="nav-link "
+              
+              href="/directory/"
+              >Directory</a
+            >
           </li>
         
-      </ul>
-    </div>
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/library/"
+              >Library</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item nav-dropdown group relative">
+            <input
+              type="checkbox"
+              id="submenu-services"
+              class="peer hidden lg:hidden" />
+            <label
+              for="submenu-services"
+              class="nav-link 
+                
+                
+                
+              
+                
+                
+                
+               inline-flex items-center">
+              Services
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </label>
+            <ul
+              class="nav-dropdown-list hidden peer-checked:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/services/">
+                    Inspection Services
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/services/area">
+                    Service Area
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+      
+      
+        <li class="mt-4 inline-block lg:hidden">
+          <a
+            class="btn btn-outline-primary btn-sm"
+            href="/book-inspection"
+            >
+            Book Inspection Now
+          </a>
+        </li>
+      
+    </ul>
 
-    <div class="order-1 ml-auto flex items-center md:order-2 xl:ml-0">
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
       
         
           <button
@@ -480,7 +479,7 @@
       
         <a
           href="/book-inspection"
-          class="btn btn-outline-primary btn-sm hidden xl:inline-block"
+          class="btn btn-outline-primary btn-sm hidden lg:inline-block"
           >
           Book Inspection Now
         </a>
@@ -653,11 +652,13 @@
 
   <div class="mb-6 block text-center">
     
-      
+      <div class="w-full flex items-center justify-center bg-white rounded-lg p-4 shadow-inner mx-auto mb-4 max-w-[380px]" style="height: 160px;">
         
-          <img src="/images/directory/logos/state_farm_logo.svg" class="mx-auto max-w-[380px] w-full h-auto object-contain block" alt="State Farm">
+          
+            <img src="/images/directory/logos/state_farm_logo.svg" class="max-h-full max-w-full object-contain mx-auto block" alt="State Farm">
+          
         
-      
+      </div>
     
     
     
@@ -685,11 +686,8 @@
 
   <div class="directory-content text-left max-w-xl mx-auto prose dark:prose-invert text-neutral-700 dark:text-neutral-300 leading-relaxed mb-8">
     <p>At Andrew Graesser State Farm, we believe the protection you have should match the things you want to protect. Although property is critical to insure, most customers agree that protecting their family’s future is most important. Call, text or stop by to get your Life Insurance plan started today.</p>
-<h6><br></h6>
 <p>At Andrew Graesser State Farm, we believe the protection you have should match the things you want to protect. Although property is critical to insure, most customers agree that protecting their family’s future is most important. Call, text or stop by to get your Life Insurance plan started today.</p>
-<h6><br></h6>
 <p>We are one of the fastest growing State Farm agencies in Houston and we&rsquo;re eager to earn your business! Call or stop by our office today to find out why! We&rsquo;re known for making the insurance experience simple and one that makes sense to you. We take seriously the task of helping protect what you&rsquo;ve worked so hard to accumulate, including and especially your family. I am a proud former student of Texas A&amp;M University, Class of 2002 where I met my wife of 20+ years. I&rsquo;m a long time resident of Houston and now live in Katy with my beautiful wife and 5 kids.</p>
-<h6><br></h6>
 <p>Our team has over 22 years of combined experience with State Farm auto insurance, homeowners insurance, renters insurance, boat insurance and life insurance and helps protect customers all over Houston and surrounding areas including Rice Military, Houston Heights, Midtown, River Oaks, Memorial, Spring Branch, Energy Corridor, and Katy areas.</p>
 
   </div>

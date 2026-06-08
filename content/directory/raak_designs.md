@@ -5,13 +5,13 @@ email:
 phone: (832) 314-2492
 website: raakhomedesigns.com
 profile: 
-description: 
+description: Custom design and remodeling
 company: RAaK Designs
-logo: 
-directory: 
+logo: /images/directory/logos/raak-intirior-design.png
+directory: Interior Design
 location: Houston
 language: English
-licence: 
+license: 
 social:
   - name: linkedin
     icon: fa-brands fa-linkedin
@@ -29,3 +29,14 @@ social:
     icon: fa-brands fa-yelp
     link: 
 ---
+Custom Design and Remodeling
+
+RAaK Designs is a custom design and remodeling company located in Katy, Texas, servicing Katy, Fulshear, Richmond and the West Houston area. 
+
+Expertise include:
+
+- Kitchen remodeling
+- Master Bath and bath remodeling
+- Custom designed and manufactured furniture pieces
+- Outdoor kitchens and living areas
+- Custom landscape and design

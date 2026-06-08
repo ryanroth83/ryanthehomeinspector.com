@@ -6,7 +6,7 @@ phone: 713-505-1613
 website: https://www.maidushine.com/
 profile: /images/directory/profiles/crystal_barron.webp
 description: Business Development
-company: 
+company: Maid U Shine
 logo: /images/directory/logos/maidushine.svg
 directory: Cleaning
 location: Houston

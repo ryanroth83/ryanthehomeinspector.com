@@ -9,6 +9,8 @@ description:
 company: B&I Painting & Remodeling
 logo: 
 directory: 
+  - Handyman
+  - Painting
 location: Houston
 language: English
 licence: 

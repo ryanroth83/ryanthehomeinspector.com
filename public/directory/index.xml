@@ -17,10 +17,45 @@
       <description></description>
     </item>
     <item>
+      <title>Electrician</title>
+      <link>http://localhost:1313/directory/electrician/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/electrician/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Flooring</title>
       <link>http://localhost:1313/directory/flooring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
       <guid>http://localhost:1313/directory/flooring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Handyman</title>
+      <link>http://localhost:1313/directory/handyman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/handyman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Heating &amp; a/C</title>
+      <link>http://localhost:1313/directory/heating--a/c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/heating--a/c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Heating &amp; Air</title>
+      <link>http://localhost:1313/directory/heating--air/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/heating--air/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HVAC</title>
+      <link>http://localhost:1313/directory/hvac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/hvac/</guid>
       <description></description>
     </item>
     <item>
@@ -38,6 +73,27 @@
       <description></description>
     </item>
     <item>
+      <title>Interior Design</title>
+      <link>http://localhost:1313/directory/interior-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/interior-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marketing</title>
+      <link>http://localhost:1313/directory/marketing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/marketing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marketing &amp; Events</title>
+      <link>http://localhost:1313/directory/marketing--events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/marketing--events/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Masonry</title>
       <link>http://localhost:1313/directory/masonry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
@@ -52,6 +108,13 @@
       <description></description>
     </item>
     <item>
+      <title>Painting</title>
+      <link>http://localhost:1313/directory/painting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/painting/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Pest Control</title>
       <link>http://localhost:1313/directory/pest-control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
@@ -63,6 +126,13 @@
       <link>http://localhost:1313/directory/plumbing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
       <guid>http://localhost:1313/directory/plumbing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Remodel</title>
+      <link>http://localhost:1313/directory/remodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/directory/remodel/</guid>
       <description></description>
     </item>
     <item>

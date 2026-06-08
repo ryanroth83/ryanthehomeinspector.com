@@ -36,8 +36,6 @@
   </url><url>
     <loc>http://localhost:1313/directory/andrew_graesser/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/angel_henderson/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/authentic_masonry/</loc>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
@@ -56,7 +54,7 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/crystal_barron/</loc>
+    <loc>http://localhost:1313/directory/maidushine/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/dees_plumbing/</loc>
   </url><url>
@@ -64,13 +62,15 @@
   </url><url>
     <loc>http://localhost:1313/documents/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/flooring/</loc>
+    <loc>http://localhost:1313/directory/electrician/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/guard_home_warranty/</loc>
+    <loc>http://localhost:1313/directory/flooring/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/halfacre_woodworks/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/home_usa/</loc>
+    <loc>http://localhost:1313/directory/handyman/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/hvac/</loc>
   </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>
@@ -80,9 +80,13 @@
   </url><url>
     <loc>http://localhost:1313/directory/insurance/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/interior-design/</loc>
+  </url><url>
     <loc>http://localhost:1313/languages/</loc>
   </url><url>
     <loc>http://localhost:1313/ryanade/lemon-lime/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/lily_lopez_portraits/</loc>
   </url><url>
     <loc>http://localhost:1313/locations/</loc>
   </url><url>
@@ -90,9 +94,13 @@
   </url><url>
     <loc>http://localhost:1313/directory/mama_bear_pest/</loc>
   </url><url>
+    <loc>http://localhost:1313/directory/marketing/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/masonry/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/movers/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/painting/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/pest-control/</loc>
   </url><url>
@@ -103,6 +111,8 @@
     <loc>http://localhost:1313/directory/raak_designs/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/reinel_solano/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/remodel/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/roofing/</loc>
   </url><url>

@@ -5,27 +5,12 @@ email:
 phone: (713) 257-5536
 website: http://texastopnotch.com
 profile: 
-description: 
+description: Pressure Washing
 company: Texas Top Notch
 logo: 
-directory: 
+directory: Cleaning
 location: Houston
 language: English
-licence: 
+license: 
 social:
-  - name: linkedin
-    icon: fa-brands fa-linkedin
-    link: 
-  - name: facebook
-    icon: fa-brands fa-square-facebook
-    link: 
-  - name: instagram
-    icon: fa-brands fa-instagram
-    link: 
-  - name: google
-    icon: fa-brands fa-google
-    link: 
-  - name: yelp
-    icon: fa-brands fa-yelp
-    link: 
 ---

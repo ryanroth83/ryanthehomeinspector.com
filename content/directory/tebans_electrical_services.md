@@ -1,31 +1,16 @@
 ---
 title: Teban’s Electrical Services, LLC
 name: Esteban Velasquez
-email: 
+email: estebvelasquez@tebanselectricalservices.com
 phone: (832) 276-8877
 website: https://www.tebanselectricalservices.net/
 profile: 
-description: 
+description: Electrical Services for your home!
 company: Teban’s Electrical Services, LLC
-logo: 
-directory: 
+logo: /images/directory/logos/teban_electrical.png
+directory: Electrician
 location: Houston
 language: English
-licence: 
-social:
-  - name: linkedin
-    icon: fa-brands fa-linkedin
-    link: 
-  - name: facebook
-    icon: fa-brands fa-square-facebook
-    link: 
-  - name: instagram
-    icon: fa-brands fa-instagram
-    link: 
-  - name: google
-    icon: fa-brands fa-google
-    link: 
-  - name: yelp
-    icon: fa-brands fa-yelp
-    link: 
+license: 
 ---
+At Teban's Electric, our priority is to provide customers with an excellent electrical service for a safer home environment. Solving any electrical issue with our qualified Electricians
