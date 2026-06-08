@@ -1,9 +1,9 @@
 ---
-title: Crystal Barron 
+title: Maid U Shine
 name: Crystal Barron 
 email: 
 phone: 713-505-1613
-website: https://www.maidushine.com/
+website: https://www.maidushine.com
 profile: /images/directory/profiles/crystal_barron.webp
 description: Business Development
 company: Maid U Shine

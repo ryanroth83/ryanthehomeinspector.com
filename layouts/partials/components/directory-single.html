@@ -2,7 +2,7 @@
 
   <div class="mb-6 block text-center">
     {{ if .Params.Logo }}
-      <div class="w-full flex items-center justify-center bg-white rounded-lg p-4 shadow-inner mx-auto mb-4 max-w-[380px]" style="height: 160px;">
+      <div class="w-full flex items-center justify-center bg-white rounded p-4 shadow-inner mx-auto mb-4 max-w-[380px]" style="height: 160px;">
         {{ with resources.Get .Params.logo }}
           {{ if not (eq .MediaType.SubType "svg") }}
             {{ with .Resize "500x" }}
@@ -14,7 +14,7 @@
         {{ end }}
       </div>
     {{ else }}
-      <h3 class="font-bold text-2xl mb-2">
+      <h3 class="font-black text-2xl mb-2 text-dark dark:text-white">
         {{ .Params.Company }}
       </h3>
     {{ end }}
@@ -29,18 +29,18 @@
   <div class="flex flex-col items-center mb-6">
     {{ with resources.Get .Params.profile }}
       {{ with .Fill "180x180 Top" }}
-        <img src="{{ .RelPermalink }}" class="rounded-full mx-auto mb-4 border-4 border-white dark:border-zinc-800 shadow-sm" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Params.Name }}">
+        <img src="{{ .RelPermalink }}" class="rounded mx-auto mb-4 border-4 border-white dark:border-zinc-800 shadow-sm" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Params.Name }}">
       {{ end }}
     {{ end }}
 
     {{ if .Params.Name }}
-      <h4 class="text-2xl font-bold text-neutral-800 dark:text-neutral-100 mb-1">
+      <h4 class="text-2xl font-black text-dark dark:text-white mb-1">
         {{ .Params.Name }}
       </h4>
     {{ end }}
     
     {{ if .Params.Position }}
-      <p class="text-xs font-semibold uppercase tracking-wide text-neutral-400 dark:text-neutral-500 mb-1">
+      <p class="text-xs font-bold uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-1">
         {{ .Params.Position }}
       </p>
     {{ end }}
@@ -52,46 +52,44 @@
 
   <hr class="border-neutral-200 dark:border-neutral-700 my-6">
 
-  <div class="contact-link text-md font-medium my-4">
+  <div class="text-xl font-black space-y-1.5 my-6 text-dark dark:text-white">
     {{ if .Params.Phone }}
-      <a href="tel:{{ .Params.Phone }}" class="hover:underline text-primary">
+      <a href="tel:{{ .Params.Phone }}" class="hover:text-primary transition-colors inline-block">
         {{ .Params.Phone }}
-      </a>
+      </a><br>
     {{ end }}
     
     {{ if .Params.Email }}
-      {{ if .Params.Phone }}<br>{{ end }}
-      <a href="mailto:{{ .Params.Email }}" class="hover:underline text-primary">
+      <a href="mailto:{{ .Params.Email }}" class="hover:text-primary transition-colors block truncate">
         {{ .Params.Email }}
       </a>
     {{ end }}
     
     {{ if .Params.Website }}
-      {{ if or .Params.Phone .Params.Email }}<br>{{ end }}
-      <a href="{{ .Params.Website | safeURL }}" target="_blank" rel="noopener" class="hover:underline text-primary">
-        {{ .Params.Website }}
+      <a href="{{ .Params.Website | safeURL }}" target="_blank" rel="noopener" class="hover:text-primary font-black mt-0.5 block truncate">
+        {{ .Params.Website | replaceRE "^https?://(www\\.)?" "" }}
       </a>
     {{ end }}
   </div>
 
-  <ul class="social-icons flex justify-center gap-4 mt-6 mb-8">
-    {{ range .Params.social }}
-      {{ if .link }}
-        <li>
-          <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow" class="text-neutral-500 hover:text-primary transition-colors text-xl">
-            <span class="sr-only">{{ .name }}</span>
-            <i class="{{ .icon }}"></i>
-          </a>
-        </li>
-      {{ end }}
-    {{ end }}
-  </ul>
+  {{ $hasSocial := false }}
+  {{ range .Params.social }}
+    {{ if .link }}{{ $hasSocial = true }}{{ end }}
+  {{ end }}
 
-  <div class="mt-8 pt-4 border-t border-neutral-100 dark:border-neutral-800">
-    <a href="/directory/" class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-500 hover:text-primary transition-colors duration-200">
-      <i class="fa-solid fa-arrow-left"></i>
-      Back to Directory
-    </a>
-  </div>
+  {{ if $hasSocial }}
+    <ul class="flex justify-center gap-6 mt-8 mb-4">
+      {{ range .Params.social }}
+        {{ if .link }}
+          <li class="inline-block">
+            <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow" class="text-primary hover:text-primary/80 transition-colors duration-200 block">
+              <span class="sr-only">{{ .name }}</span>
+              <i class="{{ .icon }} block text-center" style="font-size: 3rem !important; line-height: 1;"></i>
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  {{ end }}
 
 </div>

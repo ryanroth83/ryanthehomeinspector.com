@@ -1,9 +1,10 @@
-<div class="bg-theme-light dark:bg-darkmode-theme-light rounded-xl text-center shadow-lg border border-transparent hover:border-primary transition-all relative group overflow-hidden" style="width: 400px; height: 500px;">  
-  
-  <a href="{{ .RelPermalink }}" class="absolute inset-0 z-10" aria-label="View Full Profile"></a>
+<div 
+  onclick="if (!event.target.closest('.action-link')) { window.location.href='{{ .RelPermalink }}'; }"
+  class="bg-theme-light dark:bg-darkmode-theme-light rounded text-center shadow-lg border border-transparent hover:border-primary transition-all relative group overflow-hidden cursor-pointer select-none" 
+  style="width: 400px; height: 500px;">  
 
-  <div class="absolute top-0 left-0 right-0 p-5 pb-0 z-20">
-    <div class="w-full flex items-center justify-center bg-white rounded-lg p-4 shadow-inner" style="height: 160px; margin-top: -5px;">
+  <div class="absolute top-0 left-0 right-0 p-5 pb-0">
+    <div class="w-full flex items-center justify-center bg-white rounded p-4 shadow-inner group-hover:shadow-md transition-shadow" style="height: 160px; margin-top: -5px;">
       {{ if .Params.Logo }}
         {{ with resources.Get .Params.logo }}
           <img src="{{ .RelPermalink }}" alt="Logo" class="max-h-full max-w-full object-contain mx-auto">
@@ -18,29 +19,39 @@
     </div>
   </div>
 
-  <div class="absolute inset-x-0 top-[180px] bottom-[160px] flex items-center justify-center">
-    <div class="px-6 w-full">
-      <h3 class="text-2xl font-black text-dark dark:text-white mb-1 leading-tight">
-        {{ .Params.Company | default .Params.Name }}
-      </h3>
-      
-      {{ if and .Params.Company .Params.Name }}
-        <p class="text-sm font-bold text-neutral-500 dark:text-neutral-400 mb-2">
-          {{ .Params.Name }}
-        </p>
-      {{ end }}
-      
-      <div class="text-[11px] font-extrabold uppercase tracking-widest text-primary px-3 leading-normal">
-        {{ .Params.Description }}
-      </div>
+  <div class="absolute inset-x-0 top-[180px] bottom-[175px] flex flex-col justify-center items-center px-6">
+    <h3 class="text-2xl font-black text-dark dark:text-white mb-0.5 leading-tight truncate group-hover:text-primary transition-colors w-full">
+      {{ .Params.Company | default .Params.Name }}
+    </h3>
+    
+    {{ if and .Params.Company .Params.Name }}
+      <p class="text-xs font-bold text-neutral-500 dark:text-neutral-400 mb-1 truncate w-full">
+        {{ .Params.Name }}
+      </p>
+    {{ end }}
+    
+    <div class="text-[11px] font-extrabold uppercase tracking-widest text-primary px-3 leading-normal line-clamp-2 w-full">
+      {{ .Params.Description }}
     </div>
   </div>
 
-  <div class="absolute bottom-0 left-0 right-0 p-5 pt-0 z-30">
-    <div class="border-t border-border pt-4">
-      <div class="text-base font-black space-y-1 mb-4 text-dark dark:text-white">
-        <a href="tel:{{ .Params.Phone }}" class="hover:text-primary transition-colors relative z-20">{{ .Params.Phone }}</a><br>
-        <a href="mailto:{{ .Params.Email }}" class="block truncate hover:text-primary relative z-20">{{ .Params.Email }}</a>
+  <div class="absolute bottom-0 left-0 right-0 p-5 pt-0">
+    <div class="border-t border-border pt-3">
+      
+      <div class="text-base font-black space-y-0.5 mb-3 text-dark dark:text-white">
+        {{ if .Params.Phone }}
+          <a href="tel:{{ .Params.Phone }}" class="action-link hover:text-primary transition-colors inline-block">{{ .Params.Phone }}</a><br>
+        {{ end }}
+        
+        {{ if .Params.Email }}
+          <a href="mailto:{{ .Params.Email }}" class="action-link block truncate hover:text-primary">{{ .Params.Email }}</a>
+        {{ end }}
+        
+        {{ if .Params.Website }}
+          <a href="{{ .Params.Website | safeURL }}" target="_blank" rel="noopener" class="action-link block truncate hover:text-primary text-sm font-bold mt-0.5">
+            {{ .Params.Website | replaceRE "^https?://(www\\.)?" "" }}
+          </a>
+        {{ end }}
       </div>
       
       {{ $hasSocial := false }}
@@ -49,24 +60,21 @@
       {{ end }}
 
       {{ if $hasSocial }}
-        <ul class="flex justify-center gap-3 mb-4 relative z-20">
+        <ul class="flex justify-center gap-4 mb-2">
           {{ range .Params.social }}
             {{ if .link }}
               <li class="inline-block">
-                <a href="{{ .link | safeURL }}" target="_blank" class="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg hover:bg-primary transition-all">
-                   <i class="{{ .icon }} text-primary group-hover:text-white text-lg"></i>
+                <a href="{{ .link | safeURL }}" target="_blank" class="action-link text-primary hover:text-primary/80 transition-colors duration-200 block">
+                   <i class="{{ .icon }} block text-center" style="font-size: 2.2rem !important; line-height: 1;"></i>
                 </a>
               </li>
             {{ end }}
           {{ end }}
         </ul>
       {{ else }}
-        <div class="h-10 mb-4" aria-hidden="true"></div>
+        <div class="h-9 mb-2" aria-hidden="true"></div>
       {{ end }}
 
-      <a href="{{ .RelPermalink }}" class="mt-4 block text-[10px] font-bold uppercase tracking-widest text-light group-hover:text-primary transition-colors relative z-20 pointer-events-auto">
-        View Full Profile →
-      </a>
     </div>
   </div>
 </div>
