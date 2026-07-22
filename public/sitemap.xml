@@ -54,8 +54,6 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/maidushine/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/dees_plumbing/</loc>
   </url><url>
     <loc>http://localhost:1313/credits/</loc>
@@ -74,7 +72,7 @@
   </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>
-    <loc>http://localhost:1313/inspections/</loc>
+    <loc>http://localhost:1313/services/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/inspectors/</loc>
   </url><url>
@@ -91,6 +89,8 @@
     <loc>http://localhost:1313/locations/</loc>
   </url><url>
     <loc>http://localhost:1313/documents/logo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/directory/maidushine/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/mama_bear_pest/</loc>
   </url><url>

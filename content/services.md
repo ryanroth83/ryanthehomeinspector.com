@@ -1,8 +1,8 @@
 ---
 title: "Inspection Services"
 description: "Inspection Services Pricing & Details"
-layout: "inspections"
-slug: inspections
+layout: "services"
+slug: services
 btn_link: "/book-inspection/"
 btn_label: "Schedule Your Inspection"
 btn_new: false
@@ -36,6 +36,14 @@ sections:
           base: 240
           rate: 0.07
         description: "A strategic assessment for sellers to identify and address repair items before putting the home on the market."
+        partner:
+          enable: true
+          label: "Includes 90 Day Buy Back Guarantee"
+          info: "Starts at closing & transferable to the buyer!"
+          link: "https://nachi.org/buy"
+          logo: "images/BUY_BACK_HIGH.png"
+          color: "#3b82f6"
+          img_size: 150
 
   - title: "New Construction Phases"
     enable: true

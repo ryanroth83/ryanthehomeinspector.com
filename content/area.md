@@ -1,7 +1,7 @@
 ---
 title: "Service Area"
 layout: "service-area"
-slug: "service-area"
+slug: "area"
 alias:
   - "area"
   - "locations"
