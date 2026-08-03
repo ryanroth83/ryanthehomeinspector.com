@@ -10,8 +10,8 @@ banner:
     link: "/book-inspection"
   button2:
     enable: true
-    label: "Pricing & Details"
-    link: "/inspections"
+    label: "Services & Pricing"
+    link: "/services"
       
 # Features
 features:

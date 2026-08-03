@@ -12,7 +12,7 @@ main:
   - name: Services
     weight: 3
 
-  - name: Inspection Services
+  - name: Services & Pricing
     url: services/
     parent: Services
     weight: 1
