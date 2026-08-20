@@ -122,6 +122,13 @@
       <description>&lt;div class=&#34;scheduler-container&#34; style=&#34;position: relative; width: 100%; height: calc(100vh - 120px); overflow: hidden;&#34;&gt;&#xA;  &lt;iframe &#xA;    src=&#39;https://widget.inspectortoolbelt.com/scheduler/CO6zXczmlvbhEfIrJNwqceP95iT2?iframe=1&#39;&#xA;    style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;&#xA;    allowfullscreen&gt;&#xA;  &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
+      <title>Book Inspection</title>
+      <link>http://localhost:1313/hive-book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/hive-book/</guid>
+      <description>&lt;iframe src=&#34;https://dashboard.hiveinspect.com/embed/schedule/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1&#34; style=&#34;border:0;height:1100px;width:100%;&#34; title=&#34;Schedule Home Inspection&#34; allow=&#34;geolocation&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
       <title>Dee&#39;s Plumbing, Inc.</title>
       <link>http://localhost:1313/directory/dees_plumbing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
@@ -183,6 +190,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
       <guid>http://localhost:1313/directory/prissy_moving/</guid>
       <description>&lt;p&gt;Prissy Movers Co. LLC is a woman-led moving company located in Houston, Texas. With a focus on exceptional customer service and attention to detail, we offer a wide range of moving services to meet your needs. Whether you’re planning a residential or commercial move, need labor-only assistance, require storage facilities, or seek packing and unpacking services, Prissy Movers is here to help.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quote Inspection</title>
+      <link>http://localhost:1313/hive-quote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/hive-quote/</guid>
+      <description>&lt;iframe src=&#34;https://dashboard.hiveinspect.com/embed/quote/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1&#34; style=&#34;border:0;height:900px;width:100%;&#34; title=&#34;Get Inspection Quote&#34; allow=&#34;geolocation&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>RAaK Designs</title>
