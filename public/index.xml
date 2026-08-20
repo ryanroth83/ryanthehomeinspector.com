@@ -122,13 +122,6 @@
       <description>&lt;div class=&#34;scheduler-container&#34; style=&#34;position: relative; width: 100%; height: calc(100vh - 120px); overflow: hidden;&#34;&gt;&#xA;  &lt;iframe &#xA;    src=&#39;https://widget.inspectortoolbelt.com/scheduler/CO6zXczmlvbhEfIrJNwqceP95iT2?iframe=1&#39;&#xA;    style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;&#xA;    allowfullscreen&gt;&#xA;  &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
-      <title>Book Inspection</title>
-      <link>http://localhost:1313/hive-book/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid>http://localhost:1313/hive-book/</guid>
-      <description>&lt;iframe src=&#34;https://dashboard.hiveinspect.com/embed/schedule/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1&#34; style=&#34;border:0;height:1100px;width:100%;&#34; title=&#34;Schedule Home Inspection&#34; allow=&#34;geolocation&#34;&gt;&lt;/iframe&gt;</description>
-    </item>
-    <item>
       <title>Dee&#39;s Plumbing, Inc.</title>
       <link>http://localhost:1313/directory/dees_plumbing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
@@ -141,6 +134,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
       <guid>http://localhost:1313/credits/</guid>
       <description>&lt;div class=&#34;text-light dark:text-darkmode-light container text-center&#34;&gt;&#xA;    Site Created By:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://github.com/ryanroth83&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Ryan Roth&lt;/b&gt;&lt;/a&gt;&#xA;    &lt;br&gt;&#xA;    Powered By:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Hugo&lt;/b&gt;&lt;/a&gt; &#xA;    &lt;br&gt;&#xA;    Theme:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://github.com/zeon-studio/hugoplate&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Hugoplate&lt;/b&gt;&lt;/a&gt;&#xA;    &lt;br&gt;&#xA;    Hosted With:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Github&lt;/b&gt;&lt;/a&gt;&#xA;    &lt;br&gt;&#xA;    Served Using:  &lt;a class=&#34;text-light dark:text-darkmode-light&#34; href=&#34;https://pages.cloudflare.com/&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;Cloudflare Pages&lt;/b&gt;&lt;/a&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;br&gt;&#xA;  &lt;br&gt;&#xA;  &lt;br&gt;&#xA;  &lt;div class=&#34;devRow&#34;&gt;&#xA;      &lt;div class=&#34;devColumn&#34;&gt;&#xA;          &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&#xA;            &lt;img src=&#34;http://localhost:1313/logos/hugo-logo.svg&#34; alt=&#34;Hugo&#34; style=&#34;width:90%&#34;&gt;&#xA;          &lt;/a&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;devColumn&#34;&gt;&#xA;          &lt;a href=&#34;https://cloudflare.com/&#34; target=&#34;_blank&#34;&gt;&#xA;            &lt;img src=&#34;http://localhost:1313/logos/Cloudflare_Logo.svg&#34; alt=&#34;Cloudflare&#34; style=&#34;width:90%&#34;&gt;&#xA;          &lt;/a&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;devColumn&#34;&gt;&#xA;          &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;&#xA;            &lt;img src=&#34;http://localhost:1313/logos/GitHub_logo.svg&#34; alt=&#34;Github&#34; style=&#34;width:90%&#34;&gt;&#xA;          &lt;/a&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;!-- Notes for future credits&#xA;&#xA;Image Links:&#xA;https://pixabay.com/vectors/books-literature-pile-study-2022464/&#xA;https://pixabay.com/vectors/book-phone-telephone-communication-159880/&#xA;&#xA;&#xA;&#xA;&#xA;--&gt;&#xA;&#xA;[Icons by: fontawesome.com] (https://fontawesome.com/v5/search?m=free)</description>
+    </item>
+    <item>
+      <title>Get a Quote &amp; Schedule Online | Ryan The Home Inspector</title>
+      <link>http://localhost:1313/quote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/quote/</guid>
+      <description>&lt;div style=&#34;text-align: center; padding: 3rem 1rem; max-width: 600px; margin: 0 auto;&#34;&gt;&#xA;  &lt;h2&gt;Get a Quote &amp; Schedule Online&lt;/h2&gt;&#xA;  &lt;p style=&#34;color: #666; margin-top: 0.5rem;&#34;&gt;Select your property details to view instant pricing and lock in your inspection date.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Halfacre Woodworks LLC</title>
@@ -190,13 +190,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
       <guid>http://localhost:1313/directory/prissy_moving/</guid>
       <description>&lt;p&gt;Prissy Movers Co. LLC is a woman-led moving company located in Houston, Texas. With a focus on exceptional customer service and attention to detail, we offer a wide range of moving services to meet your needs. Whether you’re planning a residential or commercial move, need labor-only assistance, require storage facilities, or seek packing and unpacking services, Prissy Movers is here to help.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quote Inspection</title>
-      <link>http://localhost:1313/hive-quote/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
-      <guid>http://localhost:1313/hive-quote/</guid>
-      <description>&lt;iframe src=&#34;https://dashboard.hiveinspect.com/embed/quote/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1&#34; style=&#34;border:0;height:900px;width:100%;&#34; title=&#34;Get Inspection Quote&#34; allow=&#34;geolocation&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>RAaK Designs</title>

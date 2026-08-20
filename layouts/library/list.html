@@ -33,7 +33,11 @@
                 {{ $isDirect := .Params.direct_link }}
                 {{ $dest := .Permalink }}
                 {{ if $isDirect }}{{ $dest = .Params.direct_link }}{{ end }}
-                {{ $tab := "" }}{{ if .Params.new_tab }}{{ $tab = "_blank" }}{{ end }}
+                
+                {{/* Checks child_new_tab parameter, falls back to new_tab */}}
+                {{ $openNewTab := or .Params.child_new_tab .Params.new_tab }}
+                {{ $tab := "" }}
+                {{ if $openNewTab }}{{ $tab = "_blank" }}{{ end }}
 
                 <a href="{{ $dest | safeURL }}" 
                    {{ with $tab }} target="{{ . }}" rel="noopener" {{ end }}

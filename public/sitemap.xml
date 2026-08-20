@@ -48,8 +48,6 @@
   </url><url>
     <loc>http://localhost:1313/book-inspection/</loc>
   </url><url>
-    <loc>http://localhost:1313/hive-book/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/cleaning/</loc>
@@ -65,6 +63,8 @@
     <loc>http://localhost:1313/directory/electrician/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/flooring/</loc>
+  </url><url>
+    <loc>http://localhost:1313/quote/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/halfacre_woodworks/</loc>
   </url><url>
@@ -109,8 +109,6 @@
     <loc>http://localhost:1313/directory/plumbing/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/prissy_moving/</loc>
-  </url><url>
-    <loc>http://localhost:1313/hive-quote/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/raak_designs/</loc>
   </url><url>
