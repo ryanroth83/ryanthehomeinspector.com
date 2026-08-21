@@ -3,9 +3,9 @@ title: "Inspection Services"
 description: "Inspection Services Pricing & Details"
 layout: "services"
 slug: services
-btn_link: "/book-inspection/"
+btn_link: "https://dashboard.hiveinspect.com/embed/schedule/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1"
 btn_label: "Schedule Your Inspection"
-btn_new: false
+btn_new: true
 aliases: ["/pricing", "/prices", "/cost"]
 
 sections:

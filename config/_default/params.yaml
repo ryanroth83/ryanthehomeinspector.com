@@ -23,8 +23,8 @@ preloader:
   preloader: ''
 navigation_button:
   enable: true
-  label: Book Inspection Now
-  link: "/book-inspection"
+  label: Quote & Schedule Online
+  link: "https://dashboard.hiveinspect.com/embed/quote/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1"
 search:
   enable: true
   primary_color: '#121212'
@@ -111,3 +111,7 @@ social:
 author:
   name: "Ryan The Home Inspector"
   email: "ryan@ryanthehomeinspector.com"
+
+links:
+  quote: https://dashboard.hiveinspect.com/embed/quote/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1
+  schedule: https://dashboard.hiveinspect.com/embed/schedule/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1

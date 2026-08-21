@@ -1,7 +1,7 @@
 ---
 title: Beinert Roofing & Restoration
 name: 
-email: cassandra@beinertroofing.com
+email:
 phone: (832) 449-3247
 website: https://beinertroofing.com/
 profile: 

@@ -6,8 +6,8 @@ banner:
   image: "images/RTHI_Blue-Circle.png"
   button:
     enable: true
-    label: "Book Inspection"
-    link: "/book-inspection"
+    label: "Quote & Schedule Online"
+    link: "https://dashboard.hiveinspect.com/embed/quote/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1"
   button2:
     enable: true
     label: "Services & Pricing"

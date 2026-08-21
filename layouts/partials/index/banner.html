@@ -11,7 +11,10 @@
     <div class="flex flex-wrap justify-center gap-4">
       {{ with .button2 }}
         {{ if .enable }}
-          <a class="btn btn-primary" href="{{ .link | absURL }}">
+          <a class="btn btn-primary" href="{{ .link | absURL }}"
+            {{ if (hasPrefix .link `http`) }}
+              target="_blank" rel="noopener noreferrer"
+            {{ end }}>
             {{ .label }}
           </a>
         {{ end }}
@@ -19,8 +22,11 @@
 
       {{ with .button }}
         {{ if .enable }}
-          <a class="btn btn-primary" href="{{ .link | absURL }}">
-            {{ .label }}
+          <a class="btn btn-primary" href="{{ .link | absURL }}"
+            {{ if (hasPrefix .link `http`) }}
+              target="_blank" rel="noopener noreferrer"
+            {{ end }}>
+          {{ .label }}
           </a>
         {{ end }}
       {{ end }}

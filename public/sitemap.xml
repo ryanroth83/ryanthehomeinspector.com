@@ -64,6 +64,8 @@
   </url><url>
     <loc>http://localhost:1313/directory/flooring/</loc>
   </url><url>
+    <loc>http://localhost:1313/landing/</loc>
+  </url><url>
     <loc>http://localhost:1313/quote/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/halfacre_woodworks/</loc>
