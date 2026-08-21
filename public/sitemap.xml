@@ -78,8 +78,6 @@
   </url><url>
     <loc>http://localhost:1313/services/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/inspectors/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/insurance/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/interior-design/</loc>

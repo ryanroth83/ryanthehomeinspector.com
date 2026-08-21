@@ -15,6 +15,6 @@ banner:
     link: "https://dashboard.hiveinspect.com/embed/quote/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1"
   button2:
     enable: true
-    label: "Services & Pricing"
+    label: "Browse Services & Pricing"
     link: "/services"
 ---

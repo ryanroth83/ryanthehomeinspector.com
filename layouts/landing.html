@@ -1,5 +1,171 @@
-{{ define "main" }}
-  {{ partial "index/image.html" . }}
-  {{ partial "index/banner.html" . }}
-  <div class="py-12 md:py-20"></div>
-{{ end }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} | {{ site.Title }}</title>
+
+  <style>
+    /* Base Page Styling */
+    html, body {
+      background-color: #000000 !important;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .landing-wrapper {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-bottom: 3rem;
+      text-align: center;
+    }
+
+    .landing-hero-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .landing-content {
+      padding: 1.5rem 1rem;
+    }
+
+    .landing-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .landing-sub {
+      font-size: 1.1rem;
+      color: #d1d5db;
+      margin-bottom: 2rem;
+    }
+
+    /* Button Layout Container */
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 640px) {
+      .button-group {
+        flex-direction: flex-row;
+        flex-wrap: wrap;
+      }
+    }
+
+    /* Primary Styling for Actions */
+    .btn-landing {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 20px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.2s ease-in-out;
+      text-align: center;
+    }
+
+    .btn-blue {
+      background-color: #0066cc;
+      color: #ffffff !important;
+      border: 2px solid #0066cc;
+    }
+
+    .btn-blue:hover {
+      background-color: #0052a3;
+      border-color: #0052a3;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: #ffffff !important;
+      border: 2px solid #ffffff;
+    }
+
+    .btn-outline:hover {
+      background-color: #ffffff;
+      color: #000000 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="landing-wrapper">
+    
+    {{/* Top Logo Header Image */}}
+    {{ $heroImg := resources.Get "images/RTHI_Logo-landing.png" }}
+    {{ if $heroImg }}
+      <img src="{{ $heroImg.RelPermalink }}" alt="{{ site.Title }}" class="landing-hero-img">
+    {{ else }}
+      <img src="/images/RTHI_Logo-landing.png" alt="{{ site.Title }}" class="landing-hero-img">
+    {{ end }}
+
+    <div class="landing-content">
+      
+      {{ with .Params.banner }}
+        {{ with .title }}
+          <h1 class="landing-title">
+            {{ . | markdownify }}
+          </h1>
+        {{ end }}
+
+        {{ with .content }}
+          <p class="landing-sub">
+            {{ . | markdownify }}
+          </p>
+        {{ end }}
+
+        <div class="button-group">
+          
+          {{/* Primary Button (Hive Inspector Link) */}}
+          {{ with .button }}
+            {{ if .enable }}
+              <a class="btn-landing btn-blue" 
+                 href="{{ if (strings.HasPrefix .link "http") }}{{ .link | safeURL }}{{ else }}{{ .link | relLangURL }}{{ end }}"
+                 {{ if (strings.HasPrefix .link "http") }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                {{ .label }}
+              </a>
+            {{ end }}
+          {{ end }}
+
+          {{/* Secondary Button (Services & Pricing) */}}
+          {{ with .button2 }}
+            {{ if .enable }}
+              <a class="btn-landing btn-blue" 
+                 href="{{ if (strings.HasPrefix .link "http") }}{{ .link | safeURL }}{{ else }}{{ .link | relLangURL }}{{ end }}"
+                 {{ if (strings.HasPrefix .link "http") }}target="_blank" rel="noopener noreferrer"{{ end }}>
+                {{ .label }}
+              </a>
+            {{ end }}
+          {{ end }}
+
+          {{/* Homepage Fallback Link */}}
+          <a class="btn-landing btn-outline" href="/">
+            Visit Main Site
+          </a>
+
+        </div>
+      {{ end }}
+
+    </div>
+
+  </div>
+
+</body>
+</html>
