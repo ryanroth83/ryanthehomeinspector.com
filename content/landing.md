@@ -1,13 +1,11 @@
 ---
-title: "Get a Quote & Schedule Online | Ryan The Home Inspector"
-description: "Calculate instant pricing for your home inspection and select your preferred date and time online."
+title: "Get a Quote & Schedule Online"
+description: 
 layout: "landing"
-images:
-  - "/images/logo-preview.png"
 url: "/landing/"
 banner:
-  title: "\"Your Honest & Unbiased Home Inspector\""
-  content: "TREC License Number: 25791"
+  title:
+  content: "TREC License: 25791"
   image: "images/RTHI_Blue-Circle.png"
   button:
     enable: true
