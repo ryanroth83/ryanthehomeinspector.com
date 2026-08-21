@@ -4,8 +4,6 @@
   <url>
     <loc>http://localhost:1313/library/age_lookup/</loc>
   </url><url>
-    <loc>http://localhost:1313/directory/noble_inspections/</loc>
-  </url><url>
     <loc>http://localhost:1313/library/manuals/thermostats/</loc>
   </url><url>
     <loc>http://localhost:1313/library/age_lookup/hvac/</loc>
@@ -27,6 +25,8 @@
     <loc>http://localhost:1313/library/inpsection_ref/trec_rei_/</loc>
   </url><url>
     <loc>http://localhost:1313/library/inpsection_ref/trec_consumer_notice/</loc>
+  </url><url>
+    <loc>http://localhost:1313/_index-copy/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>

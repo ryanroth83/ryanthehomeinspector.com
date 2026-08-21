@@ -19,8 +19,3 @@ url: "/quote/"
   </p>
 </div>
 
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    window.location.href = "https://dashboard.hiveinspect.com/embed/quote/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1";
-  });
-</script>

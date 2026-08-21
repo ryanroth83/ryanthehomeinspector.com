@@ -1,6 +1,7 @@
 ---
 title: "Get a Quote & Schedule Online | Ryan The Home Inspector"
 description: "Calculate instant pricing for your home inspection and select your preferred date and time online."
+layout: "landing"
 images:
   - "/images/logo-preview.png"
 url: "/landing/"
@@ -17,4 +18,3 @@ banner:
     label: "Services & Pricing"
     link: "/services"
 ---
-test
