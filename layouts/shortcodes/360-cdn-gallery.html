@@ -13,7 +13,6 @@
 <div id="pano-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center;">
   <div style="position: relative; width: 90%; max-width: 1000px; height: 80vh; background: #000; border-radius: 8px; overflow: hidden;">
     <button onclick="close360Viewer()" style="position: absolute; top: 10px; right: 10px; z-index: 10000; background: #fff; color: #000; border: none; padding: 8px 12px; font-weight: bold; border-radius: 4px; cursor: pointer;">Close ✕</button>
-    <div id="modal-loading" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 1.1em; display: none;">Loading 360° Panorama...</div>
     <div id="modal-panorama" style="width: 100%; height: 100%;"></div>
   </div>
 </div>
@@ -58,48 +57,22 @@
   })();
 
   let viewerInstance = null;
-  let currentObjectUrl = null;
 
   function open360Viewer(imageSrc) {
-    const modal = document.getElementById('pano-modal');
-    const loading = document.getElementById('modal-loading');
-    
-    modal.style.display = 'flex';
-    loading.style.display = 'block';
+    document.getElementById('pano-modal').style.display = 'flex';
+    if (viewerInstance) viewerInstance.destroy();
 
-    if (viewerInstance) {
-      viewerInstance.destroy();
-      viewerInstance = null;
-    }
+    // Appending ?cors=1 forces the browser to send a fresh request with CORS headers instead of reusing the cached thumbnail image
+    const corsImageSrc = imageSrc + '?cors=1';
 
-    if (currentObjectUrl) {
-      URL.revokeObjectURL(currentObjectUrl);
-      currentObjectUrl = null;
-    }
-
-    // Fetch the image as a Blob to bypass Pannellum WebGL CORS issues
-    fetch(imageSrc)
-      .then(response => {
-        if (!response.ok) throw new Error("Network response was not ok");
-        return response.blob();
-      })
-      .then(blob => {
-        loading.style.display = 'none';
-        currentObjectUrl = URL.createObjectURL(blob);
-
-        viewerInstance = pannellum.viewer('modal-panorama', {
-          "type": "equirectangular",
-          "panorama": currentObjectUrl,
-          "autoLoad": true,
-          "compass": false,
-          "showZoomCtrl": true
-        });
-      })
-      .catch(err => {
-        loading.style.display = 'none';
-        alert("Error loading 360 image. Please check CORS settings or image URL.");
-        console.error("360 Load Error:", err);
-      });
+    viewerInstance = pannellum.viewer('modal-panorama', {
+      "type": "equirectangular",
+      "panorama": corsImageSrc,
+      "autoLoad": true,
+      "compass": false,
+      "showZoomCtrl": true,
+      "crossOrigin": "anonymous"
+    });
   }
 
   function close360Viewer() {
@@ -107,10 +80,6 @@
     if (viewerInstance) {
       viewerInstance.destroy();
       viewerInstance = null;
-    }
-    if (currentObjectUrl) {
-      URL.revokeObjectURL(currentObjectUrl);
-      currentObjectUrl = null;
     }
   }
 
