@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+{{ $folderUrl := .Get "folder" | strings.TrimRight "/" }}
+
+<div style="margin-bottom: 1rem; display: flex; justify-content: flex-end;">
+  <button id="dl-all-btn" style="padding: 6px 12px; background: #2563eb; color: #fff; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Download All Scans ⬇</button>
+</div>
+
+<div id="r2-gallery-grid" class="360-gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin: 1rem 0;">
+</div>
+
+<div id="pano-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center;">
+  <div style="position: relative; width: 90%; max-width: 1000px; height: 80vh; background: #000; border-radius: 8px; overflow: hidden;">
+    <button onclick="close360Viewer()" style="position: absolute; top: 10px; right: 10px; z-index: 10000; background: #fff; color: #000; border: none; padding: 8px 12px; font-weight: bold; border-radius: 4px; cursor: pointer;">Close ✕</button>
+    <div id="modal-panorama" style="width: 100%; height: 100%;"></div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    const folderUrl = "{{ $folderUrl }}";
+    const grid = document.getElementById('r2-gallery-grid');
+
+    fetch(`${folderUrl}/manifest.txt`)
+      .then(response => {
+        if (!response.ok) throw new Error("Could not find manifest.txt");
+        return response.text();
+      })
+      .then(text => {
+        const imageFiles = text.split('\n').map(f => f.trim()).filter(f => f.length > 0);
+
+        imageFiles.forEach(fileName => {
+          const fullUrl = `${folderUrl}/${fileName}`;
+          
+          const card = document.createElement('div');
+          card.className = '360-card';
+          card.style.cssText = 'border: 1px solid rgba(0,0,0,0.1); border-radius: 6px; overflow: hidden; background: rgba(0,0,0,0.02); display: flex; flex-direction: column;';
+          
+          card.innerHTML = `
+            <div style="cursor: pointer; position: relative; flex-grow: 1;" onclick="open360Viewer('${fullUrl}')">
+              <img src="${fullUrl}" alt="${fileName}" style="width: 100%; height: 180px; object-fit: cover; display: block;" loading="lazy">
+              <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; padding: 2px 8px; border-radius: 3px; font-size: 0.75em;">View 360°</span>
+            </div>
+            <div style="padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(0,0,0,0.05);">
+              <span style="font-size: 0.8em; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; max-width: 140px;">${fileName}</span>
+              <a href="${fullUrl}" download="${fileName}" class="r2-dl-link" style="font-size: 0.8em; text-decoration: none; padding: 4px 8px; background: #333; color: #fff; border-radius: 3px;">Download</a>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+      })
+      .catch(err => console.error("Error loading manifest.txt:", err));
+  })();
+
+  let viewerInstance = null;
+
+  function open360Viewer(imageSrc) {
+    document.getElementById('pano-modal').style.display = 'flex';
+    if (viewerInstance) viewerInstance.destroy();
+    viewerInstance = pannellum.viewer('modal-panorama', {
+      "type": "equirectangular",
+      "panorama": imageSrc,
+      "autoLoad": true,
+      "compass": false,
+      "showZoomCtrl": true
+    });
+  }
+
+  function close360Viewer() {
+    document.getElementById('pano-modal').style.display = 'none';
+    if (viewerInstance) {
+      viewerInstance.destroy();
+      viewerInstance = null;
+    }
+  }
+
+  document.getElementById('pano-modal').addEventListener('click', function(e) {
+    if (e.target === this) close360Viewer();
+  });
+
+  const dlBtn = document.getElementById('dl-all-btn');
+  if (dlBtn) {
+    dlBtn.addEventListener('click', function() {
+      const links = document.querySelectorAll('.r2-dl-link');
+      links.forEach((link, index) => {
+        setTimeout(() => {
+          const a = document.createElement('a');
+          a.href = link.href;
+          a.download = link.getAttribute('download') || '360-image';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        }, index * 300);
+      });
+    });
+  }
+</script>
