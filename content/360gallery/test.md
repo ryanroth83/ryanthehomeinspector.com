@@ -1,10 +1,8 @@
 ---
-title: "123 Main St, Rosenberg, TX"
+title: "360° Inspection Gallery"
 date: 2026-08-22
 client: "John Doe"
+address: "123 Main St, Rosenberg, TX"
+folder: "https://cdn.ryanthehomeinspector.com/360images/home360/"
+type: "360gallery"
 ---
-
-**Client:** John Doe  
-**Inspection Date:** August 22, 2026  
-
-{{< 360-cdn-gallery folder="https://cdn.ryanthehomeinspector.com/360images/home360/" >}}

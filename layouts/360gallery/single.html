@@ -1,0 +1,39 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+    {{ $page := . }}
+      <article class="360-gallery-container" style="max-width: 1100px; margin: 0 auto; padding: 2rem 1rem;">
+
+        <div class="gallery-metadata" style="display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; padding: 1.25rem; border: 1px solid var(--border-color, rgba(255,255,255,0.15)); border-radius: 8px; background: var(--bg-secondary, rgba(255,255,255,0.03)); width: 100%; box-sizing: border-box;">
+  
+          {{ with .Params.address }}
+          <div style="text-align: left;">
+            <span style="font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.05em; display: block; opacity: 0.7; margin-bottom: 0.25rem;">Property Address</span>
+            <strong style="font-size: 1.05em; color: inherit;">{{ . }}</strong>
+          </div>
+          {{ end }}
+        
+          {{ with .Params.client }}
+          <div style="text-align: center;">
+            <span style="font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.05em; display: block; opacity: 0.7; margin-bottom: 0.25rem;">Client</span>
+            <strong style="font-size: 1.05em; color: inherit;">{{ . }}</strong>
+          </div>
+          {{ end }}
+        
+          {{ with .Date }}
+          <div style="text-align: right;">
+            <span style="font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.05em; display: block; opacity: 0.7; margin-bottom: 0.25rem;">Inspection Date</span>
+            <strong style="font-size: 1.05em; color: inherit;">{{ .Format "January 2, 2006" }}</strong>
+          </div>
+          {{ end }}
+
+        </div>
+    
+      {{ with .Params.folder }}
+        {{ $shortcode := printf "{{< 360-cdn-gallery folder=\"%s\" >}}" . }}
+        {{ $shortcode | $page.RenderString }}
+      {{ else }}
+        {{ .Content }}
+      {{ end }}
+    
+    </article>
+    {{ end }}
