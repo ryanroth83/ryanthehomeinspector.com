@@ -1,0 +1,32 @@
+{{ $id := .Get "id" | default "pano-single" }}
+{{ $src := .Get "src" }}
+{{ $height := .Get "height" | default "450px" }}
+{{ $caption := .Get "caption" }}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+<div class="360-single-wrapper" style="margin: 1.5rem 0;">
+  <div id="{{ $id }}" style="width: 100%; height: {{ $height }}; border-radius: 6px; overflow: hidden;"></div>
+  
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
+    {{ if $caption }}
+      <span style="font-size: 0.9em; opacity: 0.85;">{{ $caption }}</span>
+    {{ else }}
+      <span></span>
+    {{ end }}
+    <a href="{{ $src | safeURL }}" download style="font-size: 0.85em; text-decoration: none; padding: 4px 10px; background: #333; color: #fff; border-radius: 4px;">Download 360 Image ⬇</a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    pannellum.viewer('{{ $id }}', {
+      "type": "equirectangular",
+      "panorama": "{{ $src | safeURL }}",
+      "autoLoad": true,
+      "compass": false,
+      "showZoomCtrl": true
+    });
+  });
+</script>

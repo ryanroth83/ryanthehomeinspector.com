@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+{{ $images := .Page.Resources.Match "**.jpg" }}
+{{ with .Page.Resources.Match "**.png" }}
+  {{ $images = $images | append . }}
+{{ end }}
+
+<div style="margin-bottom: 1rem; display: flex; justify-content: flex-end;">
+  <button onclick="downloadAll360Images()" style="padding: 8px 14px; background: #2563eb; color: #fff; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Download All Scans ({{ len $images }}) ⬇</button>
+</div>
+
+<div class="360-gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin: 1rem 0;">
+  {{ range $images }}
+    {{ $thumb := .Resize "600x q85" }}
+    <div class="360-card" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 6px; overflow: hidden; background: rgba(0,0,0,0.02); display: flex; flex-direction: column;">
+      
+      <div style="cursor: pointer; position: relative; flex-grow: 1;" onclick="open360Viewer('{{ .RelPermalink }}')">
+        <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ .Name }}" style="width: 100%; height: 180px; object-fit: cover; display: block;" loading="lazy">
+        <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; padding: 2px 8px; border-radius: 3px; font-size: 0.75em;">View 360°</span>
+      </div>
+
+      <div style="padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(0,0,0,0.05);">
+        <span style="font-size: 0.8em; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; max-width: 140px;">{{ .Name }}</span>
+        <a href="{{ .RelPermalink }}" download="{{ .Name }}" class="dl-link" style="font-size: 0.8em; text-decoration: none; padding: 4px 8px; background: #333; color: #fff; border-radius: 3px;">Download</a>
+      </div>
+
+    </div>
+  {{ end }}
+</div>
+
+<div id="pano-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center;">
+  <div style="position: relative; width: 90%; max-width: 1000px; height: 80vh; background: #000; border-radius: 8px; overflow: hidden;">
+    <button onclick="close360Viewer()" style="position: absolute; top: 10px; right: 10px; z-index: 10000; background: #fff; color: #000; border: none; padding: 8px 12px; font-weight: bold; border-radius: 4px; cursor: pointer;">Close ✕</button>
+    <div id="modal-panorama" style="width: 100%; height: 100%;"></div>
+  </div>
+</div>
+
+<script>
+  let viewerInstance = null;
+
+  function open360Viewer(imageSrc) {
+    document.getElementById('pano-modal').style.display = 'flex';
+    if (viewerInstance) {
+      viewerInstance.destroy();
+    }
+    viewerInstance = pannellum.viewer('modal-panorama', {
+      "type": "equirectangular",
+      "panorama": imageSrc,
+      "autoLoad": true,
+      "compass": false,
+      "showZoomCtrl": true
+    });
+  }
+
+  function close360Viewer() {
+    document.getElementById('pano-modal').style.display = 'none';
+    if (viewerInstance) {
+      viewerInstance.destroy();
+      viewerInstance = null;
+    }
+  }
+
+  document.getElementById('pano-modal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      close360Viewer();
+    }
+  });
+
+  function downloadAll360Images() {
+    const links = document.querySelectorAll('.dl-link');
+    links.forEach((link, index) => {
+      setTimeout(() => {
+        const a = document.createElement('a');
+        a.href = link.href;
+        a.download = link.getAttribute('download') || '360-image';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }, index * 300);
+    });
+  }
+</script>
