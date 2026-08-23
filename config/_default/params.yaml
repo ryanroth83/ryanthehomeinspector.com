@@ -14,7 +14,7 @@ mainSections:
   - library
 contact_form_action: '#'
 google_tag_manager: ''
-google_adsense: '868-929-5905'
+google_adsense: ''
 custom_script: ''
 copyright: 'Ryan The Home Inspector<br><br>A Division of:'
 copyright_logo: '/logos/rar_of_texas.svg'
@@ -110,7 +110,7 @@ social:
 
 author:
   name: "Ryan The Home Inspector"
-  email: "ryan@ryanthehomeinspector.com"
+  email: "ryan@ryan@ryanthehomeinspector.com"
 
 links:
   quote: https://dashboard.hiveinspect.com/embed/quote/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf?iframe=1
