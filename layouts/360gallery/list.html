@@ -1,8 +1,112 @@
 {{ define "main" }}
-{{ partial "page-header" . }}
-  <main class="container mx-auto px-4 py-8">
-    {{ with .Content }}
-      <div class="mb-8">{{ . }}</div>
-    {{ end }}
-  </main>
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container w-full">
+      <div class="bg-white dark:bg-darkmode-theme-light shadow-lg rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden mb-16">
+        <div class="p-8 md:p-12">
+          
+          <!-- Markdown Content Render -->
+          {{ with .Content }}
+            <div class="content text-center mb-8 text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
+            {{ . }}
+            </div>
+          {{ end }}
+
+
+          <!-- Optional Featured Image -->
+          {{ with .Params.image }}
+            <div class="mb-10 text-center">
+              <img src="{{ . | relURL }}" alt="360 Photo Preview" class="rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-md mx-auto max-h-80 object-cover" />
+            </div>
+          {{ end }}
+
+          <!-- Stacked Cards Container -->
+          <div class="space-y-6">
+            
+            <!-- Dynamic Feature Cards (Defined in Front Matter) -->
+            {{ range .Params.feature_cards }}
+              <div class="bg-neutral-50 dark:bg-neutral-900 p-6 md:p-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 text-center">
+                <h3 class="text-2xl font-bold text-neutral-900 dark:text-white tracking-tight mb-2">
+                  {{ .title }}
+                </h3>
+                <p class="text-base text-neutral-500 dark:text-neutral-400 mb-6 max-w-xl mx-auto">
+                  {{ .text }}
+                </p>
+                {{ if and .button_label .button_url }}
+                  <a href="{{ .button_url | relURL }}" class="btn btn-primary btn-sm h-11 px-5 inline-flex items-center justify-center whitespace-nowrap text-sm">
+                    {{ .button_label }}
+                  </a>
+                {{ end }}
+              </div>
+            {{ end }}
+
+            <!-- Client Access Portal Card -->
+            <div class="bg-neutral-50 dark:bg-neutral-900 p-6 md:p-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 text-center">
+              <h3 class="text-2xl font-bold text-neutral-900 dark:text-white tracking-tight mb-2">
+                Client Access
+              </h3>
+              <p class="text-base text-neutral-500 dark:text-neutral-400 mb-6 max-w-xl mx-auto">
+                Enter your access code to view your property inspection gallery.
+              </p>
+
+              <form onsubmit="event.preventDefault(); checkAccessCode();" class="flex flex-col sm:flex-row items-stretch gap-3 justify-center max-w-2xl mx-auto">
+                <input 
+                  type="text" 
+                  id="access-code" 
+                  placeholder="ENTER ACCESS CODE" 
+                  class="w-full sm:flex-[3] px-4 h-11 text-neutral-900 dark:text-white bg-white dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-lg placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary text-center uppercase tracking-wider font-semibold text-sm"
+                />
+                <button type="submit" class="btn btn-primary btn-sm h-11 px-5 sm:flex-[1] flex items-center justify-center whitespace-nowrap text-sm">
+                  Access Gallery
+                </button>
+              </form>
+
+              <p id="error-message" class="text-red-500 text-sm mt-4 text-center font-medium hidden">
+                Invalid access code. Please check your code and try again.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Dynamic Disclaimer Front Matter -->
+          {{ with .Params.disclaimer }}
+            <p class="text-xs text-neutral-400 dark:text-neutral-500 text-center mt-8 italic max-w-2xl mx-auto leading-relaxed">
+              * {{ . }}
+            </p>
+          {{ end }}
+
+          <!-- Dynamic Footer Text Front Matter -->
+          {{ with .Params.footer }}
+            <div class="text-sm text-neutral-500 dark:text-neutral-400 text-center mt-6 max-w-2xl mx-auto border-t border-neutral-200 dark:border-neutral-800 pt-6">
+              {{ . }}
+            </div>
+          {{ end }}
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const galleryMap = {
+      {{ range .Pages }}
+        {{ if .Params.code }}
+          "{{ .Params.code | lower }}": "{{ .RelPermalink }}",
+        {{ end }}
+      {{ end }}
+    };
+
+    function checkAccessCode() {
+      const input = document.getElementById('access-code').value.trim().toLowerCase();
+      const errorEl = document.getElementById('error-message');
+
+      if (galleryMap[input]) {
+        errorEl.classList.add('hidden');
+        window.location.href = galleryMap[input];
+      } else {
+        errorEl.classList.remove('hidden');
+      }
+    }
+  </script>
 {{ end }}

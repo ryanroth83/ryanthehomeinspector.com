@@ -8,7 +8,7 @@
     <language>en</language>
     <managingEditor>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</managingEditor>
     <webMaster>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</webMaster>
-    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 00:00:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thermostat User Manuals</title>
@@ -71,6 +71,13 @@
       <link>http://localhost:1313/library/inpsection_ref/trec_consumer_notice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
       <guid>http://localhost:1313/library/inpsection_ref/trec_consumer_notice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Phase 2 Inspection (Pre-Drywall)</title>
+      <link>http://localhost:1313/360gallery/example/</link>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 -0500</pubDate><author>ryan@ryanthehomeinspector.com (Ryan The Home Inspector)</author>
+      <guid>http://localhost:1313/360gallery/example/</guid>
       <description></description>
     </item>
     <item>

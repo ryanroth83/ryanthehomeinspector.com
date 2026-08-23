@@ -22,6 +22,11 @@ main:
     parent: Services
     weight: 2
 
+  - name: 360 Photos
+    url: 360gallery/
+    parent: Services
+    weight: 3
+
 #- name: More
 #  weight: 3
 
