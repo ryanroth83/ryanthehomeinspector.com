@@ -29,10 +29,10 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-08-22T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/360gallery/test/</loc>
+    <loc>http://localhost:1313/360gallery/</loc>
     <lastmod>2026-08-22T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/360gallery/</loc>
+    <loc>http://localhost:1313/360gallery/test/</loc>
     <lastmod>2026-08-22T00:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/360gallery/home360/</loc>

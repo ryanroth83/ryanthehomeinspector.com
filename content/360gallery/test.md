@@ -1,5 +1,5 @@
 ---
-title: "360° Inspection Gallery"
+title: "Phase 2 Inspection (Pre-Drywall)"
 date: 2026-08-22
 client: "John Doe"
 address: "123 Main St, Rosenberg, TX"

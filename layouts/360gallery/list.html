@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+  <main class="container mx-auto px-4 py-8">
+    {{ with .Content }}
+      <div class="mb-8">{{ . }}</div>
+    {{ end }}
+  </main>
+{{ end }}
