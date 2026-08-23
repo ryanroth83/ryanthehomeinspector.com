@@ -1,17 +1,20 @@
 main:
-  - name: Directory
+  - name: Information
+    weight: 1
+
+  - name: Services
+    weight: 2
+
+  - name: Trusted Directory
+    parent: Information
     url: directory/
     weight: 1
-    pin: true
 
-  - name: Library
+  - name: Information Library
+    parent: Information
     url: library/
     weight: 2
-    pin: true
   
-  - name: Services
-    weight: 3
-
   - name: Services & Pricing
     url: services/
     parent: Services
