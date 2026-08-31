@@ -70,6 +70,8 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
+    <loc>http://localhost:1313/verify/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/dees_plumbing/</loc>
   </url><url>
     <loc>http://localhost:1313/credits/</loc>
