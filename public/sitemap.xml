@@ -70,8 +70,6 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/verify/</loc>
-  </url><url>
     <loc>http://localhost:1313/directory/dees_plumbing/</loc>
   </url><url>
     <loc>http://localhost:1313/credits/</loc>
@@ -104,6 +102,8 @@
   </url><url>
     <loc>http://localhost:1313/ryanade/lemon-lime/</loc>
   </url><url>
+    <loc>http://localhost:1313/verify/</loc>
+  </url><url>
     <loc>http://localhost:1313/directory/lily_lopez_portraits/</loc>
   </url><url>
     <loc>http://localhost:1313/locations/</loc>
@@ -133,6 +133,8 @@
     <loc>http://localhost:1313/directory/reinel_solano/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/remodel/</loc>
+  </url><url>
+    <loc>http://localhost:1313/reports/</loc>
   </url><url>
     <loc>http://localhost:1313/directory/roofing/</loc>
   </url><url>

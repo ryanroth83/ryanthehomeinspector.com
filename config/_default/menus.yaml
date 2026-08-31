@@ -5,6 +5,9 @@ main:
   - name: Services
     weight: 2
 
+  - name: Reports
+    weight: 3
+
   - name: Trusted Directory
     parent: Information
     url: directory/
@@ -25,10 +28,27 @@ main:
     parent: Services
     weight: 2
 
-  - name: 360° Photo Gallery
-    url: 360gallery/
+  - name: "Quote & Schedule"
+    url: https://dashboard.hiveinspect.com/embed/quote/2d5be87a-e3c4-4b1b-865f-58e7c49e2faf
     parent: Services
     weight: 3
+
+  - name: Access Report
+    url: https://reports.hiveinspect.com
+    parent: Reports
+    weight: 1
+
+  - name: 360° Photo Gallery
+    url: 360gallery/
+    parent: Reports
+    weight: 2
+
+  - name: Sample Reports
+    url: reports/
+    parent: Reports
+    weight: 3
+
+
 
 #- name: More
 #  weight: 3
